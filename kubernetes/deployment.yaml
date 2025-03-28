@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mpcdc-app
+  labels:
+    app: mpcdc-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mpcdc-app
+  template:
+    metadata:
+      labels:
+        app: mpcdc-app
+    spec:
+      containers:
+      - name: mpcdc-app
+        image: mpcdc-app:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 5000
+        env:
+        - name: FLASK_APP
+          value: "app.py"
+        - name: FLASK_ENV
+          value: "development"
+        - name: PYTHONUNBUFFERED
+          value: "1"
+        envFrom:
+        - configMapRef:
+            name: mpcdc-config
+        - secretRef:
+            name: mpcdc-secrets
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+          requests:
+            cpu: "200m"
+            memory: "256Mi"

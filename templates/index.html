@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPCDC - Machine Learning Clustering Model</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MPCDC - Machine Learning Clustering Model</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            {% if use_mock %}
+            <div class="notification">
+                <i class="fas fa-info-circle"></i> Running in demo mode. Set a valid Databricks token in the .env file to enable full functionality.
+            </div>
+            {% endif %}
+            
+            <div class="content-wrapper">
+                <section class="main-content">
+                    <h2>Project Description</h2>
+                    <p>Welcome to the Machine Learning Clustering Model for Predictive Change and Incident Management.</p>
+                    
+                    <div class="project-description">
+                        <h3>About the Project</h3>
+                        <p>This project leverages advanced machine learning clustering techniques to analyze patterns in infrastructure changes and incidents, enabling a shift from reactive to preventive strategies for managing IT operations.</p>
+                        
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li><strong>Cluster Analysis:</strong> Identifies patterns in changes and incidents based on type and time-to-complete/resolve.</li>
+                            <li><strong>Predictive Insights:</strong> Predicts potential incidents that could arise from specific types of changes.</li>
+                            <li><strong>Action Plans:</strong> Proposes actionable strategies with confidence levels to mitigate risks and optimize resource allocation.</li>
+                        </ul>
+                        
+                        <h3>Datasets</h3>
+                        <p>The model analyzes two primary datasets:</p>
+                        <ul>
+                            <li><strong>Changes Dataset:</strong> Contains information about infrastructure changes, including type, associated services, assigned providers, and time-to-complete.</li>
+                            <li><strong>Incidents Dataset:</strong> Contains information about incidents, including type, criticality, and time-to-resolve.</li>
+                        </ul>
+                        
+                        <h3>How It Works</h3>
+                        <p>The clustering model identifies patterns in changes and incidents, such as common types that frequently lead to critical issues or delays. Based on these insights, it proposes actionable strategies to mitigate risks, prevent incidents, and optimize resource allocation.</p>
+                        
+                        <h3>Benefits</h3>
+                        <ul>
+                            <li>Shift from reactive to preventive incident management</li>
+                            <li>Optimize resource allocation</li>
+                            <li>Reduce downtime and service disruptions</li>
+                            <li>Save time, money, and resources</li>
+                        </ul>
+                        
+                        <h3>Clustering Model Visualization</h3>
+                        <div class="cluster-images">
+                            <div class="cluster-image-container">
+                                <h4>Changes Clustering</h4>
+                                <img src="{{ url_for('static', filename='images/cluster_changes.png') }}" alt="Changes Clustering Model" class="cluster-img">
+                                <p>Visualization of the clustering model for infrastructure changes, showing patterns based on type and time-to-complete.</p>
+                            </div>
+                            <div class="cluster-image-container">
+                                <h4>Incidents Clustering</h4>
+                                <img src="{{ url_for('static', filename='images/cluster_incidents.png') }}" alt="Incidents Clustering Model" class="cluster-img">
+                                <p>Visualization of the clustering model for incidents, showing patterns based on type and time-to-resolve.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <aside class="sidebar">
+                    <div class="chatbot-container">
+                        <div class="chatbot-header">
+                            <h3><i class="fas fa-robot"></i> ML Insights Assistant</h3>
+                        </div>
+                        <div class="chatbot-messages" id="chatMessages">
+                            <div class="message bot">
+                                <div class="message-content">
+                                    Hello! I'm your ML Insights Assistant. I can help you interpret clustering results and propose action plans based on your changes and incidents data. How can I assist you today?
+                                    {% if use_mock %}
+                                    <br><br><small><i>Note: I'm currently running in demo mode with predefined responses. Ask me about infrastructure, deployment, or security changes!</i></small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chatbot-input">
+                            <input type="text" id="userInput" placeholder="Type your message here...">
+                            <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MPCDC - Machine Learning Clustering Model</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+</body>
+</html>
