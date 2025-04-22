@@ -70,6 +70,125 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="change-classification-section" id="changeClassificationSection">
+                        <h3>Change Classification</h3>
+                        <p>Submit detailed information about a change to analyze its potential impact and risk level.</p>
+                        
+                        <form id="changeClassificationForm" class="change-form">
+                            <div class="form-group">
+                                <label for="infrastructure_change_id">Change ID*</label>
+                                <input type="text" id="infrastructure_change_id" name="infrastructure_change_id" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="submit_date">Submit Date</label>
+                                    <input type="datetime-local" id="submit_date" name="submit_date">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="scheduled_start_date">Scheduled Start Date</label>
+                                    <input type="datetime-local" id="scheduled_start_date" name="scheduled_start_date">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="scheduled_end_date">Scheduled End Date</label>
+                                    <input type="datetime-local" id="scheduled_end_date" name="scheduled_end_date">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="f01_chr_serviceid">Service ID*</label>
+                                    <input type="text" id="f01_chr_serviceid" name="f01_chr_serviceid" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="serviceci">Service CI*</label>
+                                    <input type="text" id="serviceci" name="serviceci" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="ASORG">AS Organization</label>
+                                    <input type="text" id="ASORG" name="ASORG">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="ASGRP">AS Group</label>
+                                    <input type="text" id="ASGRP" name="ASGRP">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="categorization_tier_1">Categorization Tier 1</label>
+                                    <select id="categorization_tier_1" name="categorization_tier_1">
+                                        <option value="">Select...</option>
+                                        <option value="INFRAESTRUCTURA">INFRAESTRUCTURA</option>
+                                        <option value="DESPLEGAMENT MULTIAMBIT">DESPLEGAMENT MULTIAMBIT</option>
+                                        <option value="DESPLEGAMENT">DESPLEGAMENT</option>
+                                        <option value="SEGURETAT">SEGURETAT</option>
+                                        <option value="INFRAESTRUCTURA MULTIAMBIT">INFRAESTRUCTURA MULTIAMBIT</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="categorization_tier_2">Categorization Tier 2</label>
+                                    <input type="text" id="categorization_tier_2" name="categorization_tier_2">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="categorization_tier_3">Categorization Tier 3</label>
+                                    <input type="text" id="categorization_tier_3" name="categorization_tier_3">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="product_cat_tier_1">Product Category Tier 1</label>
+                                    <input type="text" id="product_cat_tier_1" name="product_cat_tier_1">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="product_cat_tier_2">Product Category Tier 2</label>
+                                    <input type="text" id="product_cat_tier_2" name="product_cat_tier_2">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="product_cat_tier_3">Product Category Tier 3</label>
+                                    <input type="text" id="product_cat_tier_3" name="product_cat_tier_3">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="change_request_status">Change Request Status</label>
+                                    <input type="number" id="change_request_status" name="change_request_status" min="0" value="0">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="Num_Incidencies">Related Incident ID</label>
+                                    <input type="text" id="Num_Incidencies" name="Num_Incidencies" placeholder="e.g., INC000009582237">
+                                </div>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" id="submitChangeBtn" class="btn-primary">
+                                    <i class="fas fa-analytics"></i> Analyze Change
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <div id="classificationResults" class="classification-results hidden">
+                            <h4>Classification Results</h4>
+                            <div id="resultsContent" class="results-content">
+                                <!-- Results will be displayed here -->
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 
                 <aside class="sidebar">
@@ -80,9 +199,9 @@
                         <div class="chatbot-messages" id="chatMessages">
                             <div class="message bot">
                                 <div class="message-content">
-                                    Hello! I'm your ML Insights Assistant. I can help you interpret clustering results and propose action plans based on your changes and incidents data. How can I assist you today?
+                                    Hello! I'm your ML Insights Assistant. Please provide information about the change you'd like to analyze. You can also use the form below to submit detailed change information for classification.
                                     {% if use_mock %}
-                                    <br><br><small><i>Note: I'm currently running in demo mode with predefined responses. Ask me about infrastructure, deployment, or security changes!</i></small>
+                                    <br><br><small><i>Note: I'm currently running in demo mode with predefined responses.</i></small>
                                     {% endif %}
                                 </div>
                             </div>
@@ -104,5 +223,6 @@
     </footer>
 
     <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/change-classification.js') }}"></script>
 </body>
 </html>

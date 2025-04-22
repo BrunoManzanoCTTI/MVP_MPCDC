@@ -1,0 +1,3693 @@
+Column,Index,Label
+f01_chr_serviceid,0,ST.APP.00206
+f01_chr_serviceid,1,ST.APP.02516
+f01_chr_serviceid,2,ST.LLT.LT2
+f01_chr_serviceid,3,ST.APP.01889
+f01_chr_serviceid,4,ST.APP.00432
+f01_chr_serviceid,5,CP.APP.00021.01
+f01_chr_serviceid,6,ST.APP.01276
+f01_chr_serviceid,7,ST.APP.03217
+f01_chr_serviceid,8,ST.LLT.ETC
+f01_chr_serviceid,9,ST.LAN
+f01_chr_serviceid,10,ST.APP.02998
+f01_chr_serviceid,11,ST.APP.00140
+f01_chr_serviceid,12,ST.APP.00463
+f01_chr_serviceid,13,ST.APP.03272
+f01_chr_serviceid,14,ST.NUS.BSN3S
+f01_chr_serviceid,15,ST.NUS.BSSTI
+f01_chr_serviceid,16,ST.APP.00440
+f01_chr_serviceid,17,ST.APP.00328
+f01_chr_serviceid,18,ST.APP.02622
+f01_chr_serviceid,19,ST.APP.00073
+f01_chr_serviceid,20,ST.APP.02537
+f01_chr_serviceid,21,ST.APP.00170
+f01_chr_serviceid,22,ST.CD
+f01_chr_serviceid,23,ST.APP.04029
+f01_chr_serviceid,24,ST.APP.02579
+f01_chr_serviceid,25,ST.APP.01384
+f01_chr_serviceid,26,ST.APP.02982
+f01_chr_serviceid,27,ST.SIV
+f01_chr_serviceid,28,ST.APP.90472
+f01_chr_serviceid,29,CP.APP.02998.02
+f01_chr_serviceid,30,ST.NUS.BSITU
+f01_chr_serviceid,31,ST.APP.00205
+f01_chr_serviceid,32,ST.APP.00889
+f01_chr_serviceid,33,ST.APP.00021
+f01_chr_serviceid,34,ST.APP.02703
+f01_chr_serviceid,35,ST.APP.00441
+f01_chr_serviceid,36,ST.APP.01160
+f01_chr_serviceid,37,CP.APP.04029.04
+f01_chr_serviceid,38,ST.NUS.BSHEG
+f01_chr_serviceid,39,CP.APP.01276.01
+f01_chr_serviceid,40,ST.APP.02578
+f01_chr_serviceid,41,ST.APP.02580
+f01_chr_serviceid,42,ST.APP.03522
+f01_chr_serviceid,43,ST.APP.03195
+f01_chr_serviceid,44,ST.APP.00108
+f01_chr_serviceid,45,ST.APP.01035
+f01_chr_serviceid,46,ST.APP.01504
+f01_chr_serviceid,47,ST.APP.02506
+f01_chr_serviceid,48,ST.APP.00988
+f01_chr_serviceid,49,ST.APP.00925
+f01_chr_serviceid,50,ST.APP.01671
+f01_chr_serviceid,51,ST.APP.00387
+f01_chr_serviceid,52,ST.APP.02704
+f01_chr_serviceid,53,ST.APP.01675
+f01_chr_serviceid,54,ST.APP.03022
+f01_chr_serviceid,55,ST.APP.01038
+f01_chr_serviceid,56,CP.APP.03521.01
+f01_chr_serviceid,57,ST.APP.00865
+f01_chr_serviceid,58,ST.APP.02864
+f01_chr_serviceid,59,ST.APP.00029
+f01_chr_serviceid,60,ST.APP.00088
+f01_chr_serviceid,61,CP.APP.01370.10
+f01_chr_serviceid,62,CP.APP.02678.01
+f01_chr_serviceid,63,ST.APP.00913
+f01_chr_serviceid,64,ST.APP.01102
+f01_chr_serviceid,65,ST.APP.03803
+f01_chr_serviceid,66,ST.APP.00107
+f01_chr_serviceid,67,ST.NUS.BSSLT
+f01_chr_serviceid,68,ST.APP.03520
+f01_chr_serviceid,69,ST.APP.00487
+f01_chr_serviceid,70,ST.APP.02854
+f01_chr_serviceid,71,CP.APP.01370.11
+f01_chr_serviceid,72,ST.APP.01282
+f01_chr_serviceid,73,ST.APP.02794
+f01_chr_serviceid,74,ST.APP.01848
+f01_chr_serviceid,75,CP.APP.02680.06
+f01_chr_serviceid,76,ST.APP.01046
+f01_chr_serviceid,77,ST.APP.00794
+f01_chr_serviceid,78,ST.APP.02986
+f01_chr_serviceid,79,ST.APP.02535
+f01_chr_serviceid,80,ST.APP.00051
+f01_chr_serviceid,81,ST.APP.00857
+f01_chr_serviceid,82,ST.APP.01033
+f01_chr_serviceid,83,ST.APP.00446
+f01_chr_serviceid,84,ST.APP.03058
+f01_chr_serviceid,85,ST.APP.01708
+f01_chr_serviceid,86,ST.APP.02689
+f01_chr_serviceid,87,ST.APP.01668
+f01_chr_serviceid,88,ST.APP.02197
+f01_chr_serviceid,89,ST.APP.03481
+f01_chr_serviceid,90,ST.APP.00069
+f01_chr_serviceid,91,ST.NUS.BS3EM
+f01_chr_serviceid,92,ST.APP.01385
+f01_chr_serviceid,93,ST.APP.02589
+f01_chr_serviceid,94,CP.APP.00442.07
+f01_chr_serviceid,95,ST.APP.01844
+f01_chr_serviceid,96,ST.APP.00337
+f01_chr_serviceid,97,ST.APP.00434
+f01_chr_serviceid,98,ST.APP.01394
+f01_chr_serviceid,99,ST.APP.01078
+f01_chr_serviceid,100,ST.APP.00696
+f01_chr_serviceid,101,ST.APP.03903
+f01_chr_serviceid,102,CP.APP.01276.13
+f01_chr_serviceid,103,ST.APP.03802
+f01_chr_serviceid,104,ST.APP.01018
+f01_chr_serviceid,105,ST.APP.03227
+f01_chr_serviceid,106,ST.APP.03229
+f01_chr_serviceid,107,CP.APP.01398.08
+f01_chr_serviceid,108,ST.APP.00331
+f01_chr_serviceid,109,ST.APP.00844
+f01_chr_serviceid,110,ST.CPD.PEDR22@
+f01_chr_serviceid,111,ST.APP.01627
+f01_chr_serviceid,112,ST.APP.02692
+f01_chr_serviceid,113,ST.APP.03045
+f01_chr_serviceid,114,ST.APP.00027
+f01_chr_serviceid,115,ST.APP.00919
+f01_chr_serviceid,116,ST.APP.01682
+f01_chr_serviceid,117,ST.APP.03281
+f01_chr_serviceid,118,ST.APP.00461
+f01_chr_serviceid,119,ST.APP.02525
+f01_chr_serviceid,120,ST.APP.03162
+f01_chr_serviceid,121,ST.APP.00189
+f01_chr_serviceid,122,ST.APP.00442
+f01_chr_serviceid,123,ST.APP.02514
+f01_chr_serviceid,124,ST.APP.03243
+f01_chr_serviceid,125,ST.APP.03269
+f01_chr_serviceid,126,ST.APP.00072
+f01_chr_serviceid,127,TC.DN3
+f01_chr_serviceid,128,ST.APP.00239
+f01_chr_serviceid,129,ST.APP.02678
+f01_chr_serviceid,130,CP.APP.00441.06
+f01_chr_serviceid,131,CP.APP.03980.02
+f01_chr_serviceid,132,ST.APP.00087
+f01_chr_serviceid,133,ST.APP.01148
+f01_chr_serviceid,134,ST.APP.01655
+f01_chr_serviceid,135,ST.APP.00192
+f01_chr_serviceid,136,ST.APP.00863
+f01_chr_serviceid,137,CP.APP.02662.02
+f01_chr_serviceid,138,ST.APP.00673
+f01_chr_serviceid,139,ST.APP.00196
+f01_chr_serviceid,140,CP.APP.01398.05
+f01_chr_serviceid,141,ST.APP.01231
+f01_chr_serviceid,142,ST.APP.02603
+f01_chr_serviceid,143,ST.APP.04028
+f01_chr_serviceid,144,CP.APP.03076.01
+f01_chr_serviceid,145,ST.APP.01099
+f01_chr_serviceid,146,ST.APP.02586
+f01_chr_serviceid,147,ST.APP.02951
+f01_chr_serviceid,148,ST.APP.03215
+f01_chr_serviceid,149,ST.APP.00136
+f01_chr_serviceid,150,ST.APP.00877
+f01_chr_serviceid,151,ST.APP.02996
+f01_chr_serviceid,152,ST.APP.00204
+f01_chr_serviceid,153,ST.APP.02632
+f01_chr_serviceid,154,ST.APP.02700
+f01_chr_serviceid,155,ST.APP.01851
+f01_chr_serviceid,156,CP.APP.00463.06
+f01_chr_serviceid,157,ST.APP.01370
+f01_chr_serviceid,158,ST.APP.01642
+f01_chr_serviceid,159,ST.APP.02862
+f01_chr_serviceid,160,ST.APP.02709
+f01_chr_serviceid,161,CP.APP.01889.20
+f01_chr_serviceid,162,ST.APP.02962
+f01_chr_serviceid,163,ST.APP.03919
+f01_chr_serviceid,164,ST.APP.00805
+f01_chr_serviceid,165,ST.APP.01702
+f01_chr_serviceid,166,CP.APP.03981.01
+f01_chr_serviceid,167,ST.APP.00131
+f01_chr_serviceid,168,ST.APP.02885
+f01_chr_serviceid,169,ST.APP.02965
+f01_chr_serviceid,170,ST.APP.00866
+f01_chr_serviceid,171,ST.APP.03174
+f01_chr_serviceid,172,ST.APP.00257
+f01_chr_serviceid,173,ST.APP.00329
+f01_chr_serviceid,174,ST.APP.01566
+f01_chr_serviceid,175,ST.APP.02138
+f01_chr_serviceid,176,ST.APP.02784
+f01_chr_serviceid,177,CP.APP.00337.01
+f01_chr_serviceid,178,CP.APP.00441.07
+f01_chr_serviceid,179,ST.APP.00670
+f01_chr_serviceid,180,ST.APP.00841
+f01_chr_serviceid,181,ST.APP.01680
+f01_chr_serviceid,182,ST.APP.01841
+f01_chr_serviceid,183,ST.APP.01942
+f01_chr_serviceid,184,CP.APP.00196.08
+f01_chr_serviceid,185,ST.APP.00089
+f01_chr_serviceid,186,ST.APP.01669
+f01_chr_serviceid,187,ST.APP.02811
+f01_chr_serviceid,188,ST.APP.00945
+f01_chr_serviceid,189,ST.APP.02705
+f01_chr_serviceid,190,ST.APP.03167
+f01_chr_serviceid,191,ST.APP.01562
+f01_chr_serviceid,192,ST.APP.01653
+f01_chr_serviceid,193,ST.APP.02891
+f01_chr_serviceid,194,ST.APP.03211
+f01_chr_serviceid,195,CP.APP.01022.01
+f01_chr_serviceid,196,CP.APP.02510.01
+f01_chr_serviceid,197,ST.APP.01493
+f01_chr_serviceid,198,CP.APP.01370.06
+f01_chr_serviceid,199,CP.APP.02794.01
+f01_chr_serviceid,200,ST.APP.02935
+f01_chr_serviceid,201,ST.APP.03864
+f01_chr_serviceid,202,ST.APP.00018
+f01_chr_serviceid,203,CP.APP.00140.01
+f01_chr_serviceid,204,CP.APP.00530.01
+f01_chr_serviceid,205,ST.APP.01235
+f01_chr_serviceid,206,ST.APP.02801
+f01_chr_serviceid,207,ST.APP.02601
+f01_chr_serviceid,208,ST.APP.03214
+f01_chr_serviceid,209,ST.APP.00452
+f01_chr_serviceid,210,ST.APP.01041
+f01_chr_serviceid,211,ST.APP.01393
+f01_chr_serviceid,212,CP.APP.01642.02
+f01_chr_serviceid,213,CP.APP.02801.02
+f01_chr_serviceid,214,ST.APP.00955
+f01_chr_serviceid,215,ST.APP.02089
+f01_chr_serviceid,216,ST.APP.03208
+f01_chr_serviceid,217,ST.NUS.BSVPN
+f01_chr_serviceid,218,ST.APP.00005
+f01_chr_serviceid,219,ST.APP.01089
+f01_chr_serviceid,220,ST.APP.01645
+f01_chr_serviceid,221,ST.APP.01936
+f01_chr_serviceid,222,ST.APP.02611
+f01_chr_serviceid,223,ST.APP.03467
+f01_chr_serviceid,224,ST.APP.03800
+f01_chr_serviceid,225,CP.APP.01049.01
+f01_chr_serviceid,226,ST.APP.00011
+f01_chr_serviceid,227,ST.APP.00319
+f01_chr_serviceid,228,ST.APP.01161
+f01_chr_serviceid,229,ST.APP.01281
+f01_chr_serviceid,230,ST.APP.03173
+f01_chr_serviceid,231,CP.APP.01033.03
+f01_chr_serviceid,232,CP.APP.01038.02
+f01_chr_serviceid,233,CP.APP.01889.27
+f01_chr_serviceid,234,CP.APP.03039.01
+f01_chr_serviceid,235,ST.APP.03200
+f01_chr_serviceid,236,ST.APP.03948
+f01_chr_serviceid,237,ST.APP.01478
+f01_chr_serviceid,238,ST.APP.01677
+f01_chr_serviceid,239,ST.APP.02945
+f01_chr_serviceid,240,CP.APP.03039.02
+f01_chr_serviceid,241,ST.APP.01300
+f01_chr_serviceid,242,ST.APP.02950
+f01_chr_serviceid,243,CP.APP.03210.01
+f01_chr_serviceid,244,ST.AIL
+f01_chr_serviceid,245,ST.APP.00012
+f01_chr_serviceid,246,ST.APP.00633
+f01_chr_serviceid,247,ST.APP.00819
+f01_chr_serviceid,248,ST.APP.01277
+f01_chr_serviceid,249,ST.APP.03039
+f01_chr_serviceid,250,CP.APP.01682.01
+f01_chr_serviceid,251,ST.APP.00061
+f01_chr_serviceid,252,ST.APP.02536
+f01_chr_serviceid,253,ST.APP.02662
+f01_chr_serviceid,254,ST.APP.03047
+f01_chr_serviceid,255,ST.APP.03164
+f01_chr_serviceid,256,ST.APP.03579
+f01_chr_serviceid,257,CP.APP.00679.02(00680)
+f01_chr_serviceid,258,CP.APP.03486.05
+f01_chr_serviceid,259,ST.APP.00040
+f01_chr_serviceid,260,ST.APP.01262
+f01_chr_serviceid,261,ST.APP.02634
+f01_chr_serviceid,262,ST.APP.03219
+f01_chr_serviceid,263,CP.APP.01371.12
+f01_chr_serviceid,264,CP.APP.03289.02
+f01_chr_serviceid,265,ST.APP.00906
+f01_chr_serviceid,266,ST.APP.01021
+f01_chr_serviceid,267,ST.APP.01104
+f01_chr_serviceid,268,ST.APP.01740
+f01_chr_serviceid,269,ST.APP.03201
+f01_chr_serviceid,270,CP.APP.01029.01
+f01_chr_serviceid,271,CP.APP.02907.01
+f01_chr_serviceid,272,CP.APP.04039.11
+f01_chr_serviceid,273,ST.APP.00447
+f01_chr_serviceid,274,ST.APP.00943
+f01_chr_serviceid,275,ST.APP.02628
+f01_chr_serviceid,276,ST.APP.02807
+f01_chr_serviceid,277,CP.APP.00192.12
+f01_chr_serviceid,278,CP.APP.02559.01
+f01_chr_serviceid,279,ST.APP.00134
+f01_chr_serviceid,280,ST.APP.00139
+f01_chr_serviceid,281,ST.APP.02597
+f01_chr_serviceid,282,ST.APP.02657
+f01_chr_serviceid,283,ST.APP.03271
+f01_chr_serviceid,284,CP.APP.00829.01
+f01_chr_serviceid,285,CP.APP.01370.01
+f01_chr_serviceid,286,CP.APP.03976.02
+f01_chr_serviceid,287,ST.APP.00648
+f01_chr_serviceid,288,ST.APP.01183
+f01_chr_serviceid,289,ST.APP.02647
+f01_chr_serviceid,290,ST.APP.02715
+f01_chr_serviceid,291,ST.APP.03198
+f01_chr_serviceid,292,ST.APP.03204
+f01_chr_serviceid,293,ST.APP.03222
+f01_chr_serviceid,294,ST.APP.03247
+f01_chr_serviceid,295,ST.NUS.BSPUB
+f01_chr_serviceid,296,CP.APP.01371.11
+f01_chr_serviceid,297,CP.APP.03979.06
+f01_chr_serviceid,298,ST.APP.00102
+f01_chr_serviceid,299,ST.APP.00918
+f01_chr_serviceid,300,ST.APP.01216
+f01_chr_serviceid,301,ST.APP.02810
+f01_chr_serviceid,302,CP.APP.02879.01
+f01_chr_serviceid,303,ST.APP.00706
+f01_chr_serviceid,304,ST.APP.01693
+f01_chr_serviceid,305,CP.APP.01282.06
+f01_chr_serviceid,306,CP.APP.02680.09
+f01_chr_serviceid,307,CP.APP.03982.01
+f01_chr_serviceid,308,ST.APP.01363
+f01_chr_serviceid,309,ST.APP.01816
+f01_chr_serviceid,310,ST.APP.02869
+f01_chr_serviceid,311,ST.APP.03175
+f01_chr_serviceid,312,ST.APP.03420
+f01_chr_serviceid,313,ST.APP.03486
+f01_chr_serviceid,314,CP.APP.02206.15
+f01_chr_serviceid,315,CP.APP.02662.01
+f01_chr_serviceid,316,ST.APP.01331
+f01_chr_serviceid,317,ST.APP.02905
+f01_chr_serviceid,318,ST.APP.02990
+f01_chr_serviceid,319,ST.APP.03068
+f01_chr_serviceid,320,ST.APP.03248
+f01_chr_serviceid,321,ST.APP.03267
+f01_chr_serviceid,322,CP.APP.01370.05
+f01_chr_serviceid,323,CP.APP.01370.09
+f01_chr_serviceid,324,LT2A-253701510190
+f01_chr_serviceid,325,ST.APP.00391
+f01_chr_serviceid,326,ST.APP.00692
+f01_chr_serviceid,327,ST.APP.00829
+f01_chr_serviceid,328,ST.APP.01153
+f01_chr_serviceid,329,ST.APP.01494
+f01_chr_serviceid,330,ST.APP.02552
+f01_chr_serviceid,331,ST.APP.03199
+f01_chr_serviceid,332,ST.APP.03410
+f01_chr_serviceid,333,ST.APP.03559
+f01_chr_serviceid,334,ST.APP.03628
+f01_chr_serviceid,335,CP.APP.02700.02
+f01_chr_serviceid,336,CP.APP.02980.02
+f01_chr_serviceid,337,ST.APP.00258
+f01_chr_serviceid,338,ST.APP.00265
+f01_chr_serviceid,339,ST.APP.00625
+f01_chr_serviceid,340,ST.APP.01051
+f01_chr_serviceid,341,ST.APP.01288
+f01_chr_serviceid,342,ST.APP.02785
+f01_chr_serviceid,343,ST.APP.02980
+f01_chr_serviceid,344,ST.APP.02985
+f01_chr_serviceid,345,ST.APP.03310
+f01_chr_serviceid,346,ST.APP.03558
+f01_chr_serviceid,347,CP.APP.03864.01
+f01_chr_serviceid,348,CP.APP.03965.01
+f01_chr_serviceid,349,ST.APP.00085
+f01_chr_serviceid,350,ST.APP.00103
+f01_chr_serviceid,351,ST.APP.00342
+f01_chr_serviceid,352,ST.APP.00505
+f01_chr_serviceid,353,ST.APP.00989
+f01_chr_serviceid,354,ST.APP.01167
+f01_chr_serviceid,355,ST.APP.01489
+f01_chr_serviceid,356,ST.APP.01805
+f01_chr_serviceid,357,ST.APP.02541
+f01_chr_serviceid,358,ST.APP.03135
+f01_chr_serviceid,359,ST.APP.03268
+f01_chr_serviceid,360,ST.APP.03949
+f01_chr_serviceid,361,ST.NUS.BSBWI
+f01_chr_serviceid,362,CP.APP.00206.44
+f01_chr_serviceid,363,CP.APP.02998.10
+f01_chr_serviceid,364,CP.APP.03277.02
+f01_chr_serviceid,365,CP.APP.03980.01
+f01_chr_serviceid,366,ST.APP.00238
+f01_chr_serviceid,367,ST.APP.00854
+f01_chr_serviceid,368,ST.APP.01151
+f01_chr_serviceid,369,ST.APP.01264
+f01_chr_serviceid,370,ST.APP.01555
+f01_chr_serviceid,371,ST.APP.02039
+f01_chr_serviceid,372,ST.APP.02508
+f01_chr_serviceid,373,ST.APP.03172
+f01_chr_serviceid,374,ST.APP.03294
+f01_chr_serviceid,375,CP.APP.01111.03
+f01_chr_serviceid,376,ST.APP.00137
+f01_chr_serviceid,377,ST.APP.00697
+f01_chr_serviceid,378,ST.APP.00903
+f01_chr_serviceid,379,ST.APP.00950
+f01_chr_serviceid,380,ST.APP.00992
+f01_chr_serviceid,381,ST.APP.01207
+f01_chr_serviceid,382,ST.APP.01313
+f01_chr_serviceid,383,ST.APP.01374
+f01_chr_serviceid,384,ST.APP.01676
+f01_chr_serviceid,385,ST.APP.01792
+f01_chr_serviceid,386,ST.APP.01808
+f01_chr_serviceid,387,ST.APP.02288
+f01_chr_serviceid,388,ST.APP.02607
+f01_chr_serviceid,389,ST.APP.03523
+f01_chr_serviceid,390,ST.APP.03640
+f01_chr_serviceid,391,ST.APP.03655
+f01_chr_serviceid,392,ST.APP.04034
+f01_chr_serviceid,393,ST.NUS.BSSAN
+f01_chr_serviceid,394,CP.APP.00192.01
+f01_chr_serviceid,395,CP.APP.00196.07
+f01_chr_serviceid,396,CP.APP.01092.01
+f01_chr_serviceid,397,CP.APP.02680.03
+f01_chr_serviceid,398,CP.APP.03968.01
+f01_chr_serviceid,399,CP.APP.03976.03
+f01_chr_serviceid,400,ST.APP.00017
+f01_chr_serviceid,401,ST.APP.00176
+f01_chr_serviceid,402,ST.APP.00981
+f01_chr_serviceid,403,ST.APP.01073
+f01_chr_serviceid,404,ST.APP.01689
+f01_chr_serviceid,405,ST.APP.02650
+f01_chr_serviceid,406,ST.APP.03194
+f01_chr_serviceid,407,ST.APP.03283
+f01_chr_serviceid,408,CP.APP.00196.06
+f01_chr_serviceid,409,CP.APP.00205.46
+f01_chr_serviceid,410,CP.APP.00373.02
+f01_chr_serviceid,411,CP.APP.01370.08
+f01_chr_serviceid,412,CP.APP.01708.02
+f01_chr_serviceid,413,CP.APP.02680.10
+f01_chr_serviceid,414,ST.APP.00492
+f01_chr_serviceid,415,ST.APP.02658
+f01_chr_serviceid,416,ST.APP.03072
+f01_chr_serviceid,417,ST.APP.03518
+f01_chr_serviceid,418,CP.APP.00363.01
+f01_chr_serviceid,419,CP.APP.01050.01
+f01_chr_serviceid,420,CP.APP.01076.02
+f01_chr_serviceid,421,CP.APP.01371.10
+f01_chr_serviceid,422,CP.APP.01655.02
+f01_chr_serviceid,423,CP.APP.02998.36
+f01_chr_serviceid,424,ST.APP.00236
+f01_chr_serviceid,425,ST.APP.01072
+f01_chr_serviceid,426,ST.APP.01225
+f01_chr_serviceid,427,ST.APP.01561
+f01_chr_serviceid,428,ST.APP.01747
+f01_chr_serviceid,429,ST.APP.01900
+f01_chr_serviceid,430,ST.APP.02548
+f01_chr_serviceid,431,ST.APP.03112
+f01_chr_serviceid,432,ST.APP.03216
+f01_chr_serviceid,433,CP.APP.00192.05
+f01_chr_serviceid,434,CP.APP.00463.75
+f01_chr_serviceid,435,CP.APP.01370.07
+f01_chr_serviceid,436,CP.APP.02998.09
+f01_chr_serviceid,437,CP.APP.03975.04
+f01_chr_serviceid,438,ST.APP.00479
+f01_chr_serviceid,439,ST.APP.00666
+f01_chr_serviceid,440,ST.APP.02063
+f01_chr_serviceid,441,ST.APP.02613
+f01_chr_serviceid,442,ST.APP.03218
+f01_chr_serviceid,443,ST.APP.03289
+f01_chr_serviceid,444,ST.APP.03430
+f01_chr_serviceid,445,ST.APP.03519
+f01_chr_serviceid,446,CP.APP.01055.01
+f01_chr_serviceid,447,CP.APP.01942.01
+f01_chr_serviceid,448,ST.APP.00435
+f01_chr_serviceid,449,ST.APP.00538
+f01_chr_serviceid,450,ST.APP.01022
+f01_chr_serviceid,451,ST.APP.01023
+f01_chr_serviceid,452,ST.APP.01260
+f01_chr_serviceid,453,ST.APP.01364
+f01_chr_serviceid,454,ST.APP.02050
+f01_chr_serviceid,455,ST.APP.02654
+f01_chr_serviceid,456,ST.APP.02890
+f01_chr_serviceid,457,ST.APP.03171
+f01_chr_serviceid,458,ST.APP.03801
+f01_chr_serviceid,459,CP.APP.01370.25
+f01_chr_serviceid,460,CP.APP.02089.01
+f01_chr_serviceid,461,CP.APP.03962.01
+f01_chr_serviceid,462,CP.APP.03977.02
+f01_chr_serviceid,463,ST.APP.00028
+f01_chr_serviceid,464,ST.APP.00268
+f01_chr_serviceid,465,ST.APP.00294
+f01_chr_serviceid,466,ST.APP.01135
+f01_chr_serviceid,467,ST.APP.01783
+f01_chr_serviceid,468,ST.APP.02258
+f01_chr_serviceid,469,ST.APP.02672
+f01_chr_serviceid,470,ST.APP.02889
+f01_chr_serviceid,471,ST.APP.03918
+f01_chr_serviceid,472,CP.APP.01081.15
+f01_chr_serviceid,473,CP.APP.01103.01
+f01_chr_serviceid,474,CP.APP.02680.02
+f01_chr_serviceid,475,CP.APP.03976.04
+f01_chr_serviceid,476,CP.APP.03983.02
+f01_chr_serviceid,477,ST.APP.00106
+f01_chr_serviceid,478,ST.APP.00116
+f01_chr_serviceid,479,ST.APP.00270
+f01_chr_serviceid,480,ST.APP.00953
+f01_chr_serviceid,481,ST.APP.01245
+f01_chr_serviceid,482,ST.APP.01340
+f01_chr_serviceid,483,ST.APP.01383
+f01_chr_serviceid,484,ST.APP.01825
+f01_chr_serviceid,485,ST.APP.02560
+f01_chr_serviceid,486,ST.APP.02675
+f01_chr_serviceid,487,ST.APP.02789
+f01_chr_serviceid,488,ST.APP.02906
+f01_chr_serviceid,489,ST.APP.02936
+f01_chr_serviceid,490,ST.APP.02942
+f01_chr_serviceid,491,ST.APP.03070
+f01_chr_serviceid,492,ST.APP.03515
+f01_chr_serviceid,493,ST.APP.03652
+f01_chr_serviceid,494,CP.APP.01029.03
+f01_chr_serviceid,495,CP.APP.01038.03
+f01_chr_serviceid,496,CP.APP.01076.01
+f01_chr_serviceid,497,CP.APP.01262.01
+f01_chr_serviceid,498,CP.APP.01370.04
+f01_chr_serviceid,499,CP.APP.02197.01
+f01_chr_serviceid,500,CP.APP.03975.06
+f01_chr_serviceid,501,CP.APP.03975.11
+f01_chr_serviceid,502,CP.APP.04029.05
+f01_chr_serviceid,503,ST.APP.00515
+f01_chr_serviceid,504,ST.APP.00883
+f01_chr_serviceid,505,ST.APP.01111
+f01_chr_serviceid,506,ST.APP.01211
+f01_chr_serviceid,507,ST.APP.01291
+f01_chr_serviceid,508,ST.APP.01868
+f01_chr_serviceid,509,ST.APP.02251
+f01_chr_serviceid,510,ST.APP.02500
+f01_chr_serviceid,511,ST.APP.02590
+f01_chr_serviceid,512,ST.APP.02645
+f01_chr_serviceid,513,ST.APP.03037
+f01_chr_serviceid,514,ST.APP.03166
+f01_chr_serviceid,515,ST.APP.03193
+f01_chr_serviceid,516,ST.APP.03234
+f01_chr_serviceid,517,ST.APP.03465
+f01_chr_serviceid,518,ST.APP.90295
+f01_chr_serviceid,519,CP.APP.02704.01
+f01_chr_serviceid,520,CP.APP.02798.01
+f01_chr_serviceid,521,CP.APP.02986.02
+f01_chr_serviceid,522,CP.APP.03289.01
+f01_chr_serviceid,523,CP.APP.03967.01
+f01_chr_serviceid,524,CP.APP.04026.02
+f01_chr_serviceid,525,ST.APP.00097
+f01_chr_serviceid,526,ST.APP.00105
+f01_chr_serviceid,527,ST.APP.00245
+f01_chr_serviceid,528,ST.APP.00272
+f01_chr_serviceid,529,ST.APP.00293
+f01_chr_serviceid,530,ST.APP.01040
+f01_chr_serviceid,531,ST.APP.01061
+f01_chr_serviceid,532,ST.APP.01252
+f01_chr_serviceid,533,ST.APP.01426
+f01_chr_serviceid,534,ST.APP.01748
+f01_chr_serviceid,535,ST.APP.02003
+f01_chr_serviceid,536,ST.APP.02101
+f01_chr_serviceid,537,ST.APP.02286
+f01_chr_serviceid,538,ST.APP.02559
+f01_chr_serviceid,539,ST.APP.02569
+f01_chr_serviceid,540,ST.APP.02661
+f01_chr_serviceid,541,ST.APP.02670
+f01_chr_serviceid,542,ST.APP.02770
+f01_chr_serviceid,543,ST.APP.03049
+f01_chr_serviceid,544,ST.APP.03083
+f01_chr_serviceid,545,ST.APP.03165
+f01_chr_serviceid,546,ST.APP.03223
+f01_chr_serviceid,547,ST.APP.03452
+f01_chr_serviceid,548,ST.APP.03981
+f01_chr_serviceid,549,ST.APP.90001
+f01_chr_serviceid,550,CP.APP.00765.02
+f01_chr_serviceid,551,CP.APP.01124.01
+f01_chr_serviceid,552,CP.APP.02998.18
+f01_chr_serviceid,553,CP.APP.03976.01
+f01_chr_serviceid,554,CP.APP.03977.01
+f01_chr_serviceid,555,ST.APP.00117
+f01_chr_serviceid,556,ST.APP.00158
+f01_chr_serviceid,557,ST.APP.00373
+f01_chr_serviceid,558,ST.APP.00907
+f01_chr_serviceid,559,ST.APP.01184
+f01_chr_serviceid,560,ST.APP.01221
+f01_chr_serviceid,561,ST.APP.01691
+f01_chr_serviceid,562,ST.APP.02076
+f01_chr_serviceid,563,ST.APP.02083
+f01_chr_serviceid,564,ST.APP.02510
+f01_chr_serviceid,565,ST.APP.02529
+f01_chr_serviceid,566,ST.APP.02626
+f01_chr_serviceid,567,ST.APP.02635
+f01_chr_serviceid,568,ST.APP.02803
+f01_chr_serviceid,569,ST.APP.02861
+f01_chr_serviceid,570,ST.APP.02904
+f01_chr_serviceid,571,ST.APP.02909
+f01_chr_serviceid,572,ST.APP.02929
+f01_chr_serviceid,573,ST.APP.03677
+f01_chr_serviceid,574,ST.APP.4028
+f01_chr_serviceid,575,CP.APP.01370.23
+f01_chr_serviceid,576,CP.APP.01371.07
+f01_chr_serviceid,577,CP.APP.02998.05
+f01_chr_serviceid,578,CP.APP.03186.01
+f01_chr_serviceid,579,CP.APP.03971.01
+f01_chr_serviceid,580,CP.APP.03976.06
+f01_chr_serviceid,581,CP.APP.03980.04
+f01_chr_serviceid,582,ST.APP.00050
+f01_chr_serviceid,583,ST.APP.00159
+f01_chr_serviceid,584,ST.APP.00161
+f01_chr_serviceid,585,ST.APP.00217
+f01_chr_serviceid,586,ST.APP.00227
+f01_chr_serviceid,587,ST.APP.00280
+f01_chr_serviceid,588,ST.APP.00784
+f01_chr_serviceid,589,ST.APP.01365
+f01_chr_serviceid,590,ST.APP.01559
+f01_chr_serviceid,591,ST.APP.01575
+f01_chr_serviceid,592,ST.APP.01918
+f01_chr_serviceid,593,ST.APP.02014
+f01_chr_serviceid,594,ST.APP.02092
+f01_chr_serviceid,595,ST.APP.02563
+f01_chr_serviceid,596,ST.APP.02967
+f01_chr_serviceid,597,ST.APP.03225
+f01_chr_serviceid,598,ST.APP.03257
+f01_chr_serviceid,599,ST.APP.03263
+f01_chr_serviceid,600,ST.APP.03564
+f01_chr_serviceid,601,ST.APP.03638
+f01_chr_serviceid,602,ST.APP.03963
+f01_chr_serviceid,603,ST.APP.03968
+f01_chr_serviceid,604,CP.APP.00171.02
+f01_chr_serviceid,605,CP.APP.00697.01
+f01_chr_serviceid,606,CP.APP.00758.01
+f01_chr_serviceid,607,CP.APP.01076.03
+f01_chr_serviceid,608,CP.APP.01095.01
+f01_chr_serviceid,609,CP.APP.01370.18
+f01_chr_serviceid,610,CP.APP.01398.13
+f01_chr_serviceid,611,CP.APP.02500.01
+f01_chr_serviceid,612,CP.APP.03521.02
+f01_chr_serviceid,613,CP.APP.03982.03
+f01_chr_serviceid,614,CP.APP.03983.01
+f01_chr_serviceid,615,CP.APP.90012.42
+f01_chr_serviceid,616,ST.APP.00030
+f01_chr_serviceid,617,ST.APP.00183
+f01_chr_serviceid,618,ST.APP.00415
+f01_chr_serviceid,619,ST.APP.00586
+f01_chr_serviceid,620,ST.APP.01164
+f01_chr_serviceid,621,ST.APP.01375
+f01_chr_serviceid,622,ST.APP.01505
+f01_chr_serviceid,623,ST.APP.01551
+f01_chr_serviceid,624,ST.APP.01574
+f01_chr_serviceid,625,ST.APP.02200
+f01_chr_serviceid,626,ST.APP.02649
+f01_chr_serviceid,627,ST.APP.02674
+f01_chr_serviceid,628,ST.APP.02682
+f01_chr_serviceid,629,ST.APP.02948
+f01_chr_serviceid,630,ST.APP.02952
+f01_chr_serviceid,631,ST.APP.02960
+f01_chr_serviceid,632,ST.APP.03014
+f01_chr_serviceid,633,ST.APP.03115
+f01_chr_serviceid,634,ST.APP.03163
+f01_chr_serviceid,635,ST.APP.03280
+f01_chr_serviceid,636,ST.APP.03412
+f01_chr_serviceid,637,ST.APP.03450
+f01_chr_serviceid,638,ST.APP.03540
+f01_chr_serviceid,639,ST.APP.03560
+f01_chr_serviceid,640,ST.APP.04037
+f01_chr_serviceid,641,ST.APP.90358
+f01_chr_serviceid,642,CP.APP.00433.01
+f01_chr_serviceid,643,CP.APP.00487.05
+f01_chr_serviceid,644,CP.APP.01072.01
+f01_chr_serviceid,645,CP.APP.01145.01
+f01_chr_serviceid,646,CP.APP.01276.04
+f01_chr_serviceid,647,CP.APP.01370.12
+f01_chr_serviceid,648,CP.APP.01371.17
+f01_chr_serviceid,649,CP.APP.01889.13
+f01_chr_serviceid,650,CP.APP.01889.26
+f01_chr_serviceid,651,CP.APP.01889.34
+f01_chr_serviceid,652,CP.APP.02680.05
+f01_chr_serviceid,653,CP.APP.02869.01
+f01_chr_serviceid,654,CP.APP.02998.01
+f01_chr_serviceid,655,CP.APP.03160.01
+f01_chr_serviceid,656,CP.APP.03658.03
+f01_chr_serviceid,657,CP.APP.03979.02
+f01_chr_serviceid,658,ST.APP.00848
+f01_chr_serviceid,659,ST.APP.00874
+f01_chr_serviceid,660,ST.APP.00875
+f01_chr_serviceid,661,ST.APP.00961
+f01_chr_serviceid,662,ST.APP.01012
+f01_chr_serviceid,663,ST.APP.01303
+f01_chr_serviceid,664,ST.APP.01344
+f01_chr_serviceid,665,ST.APP.01376
+f01_chr_serviceid,666,ST.APP.01525
+f01_chr_serviceid,667,ST.APP.01788
+f01_chr_serviceid,668,ST.APP.02155
+f01_chr_serviceid,669,ST.APP.02205
+f01_chr_serviceid,670,ST.APP.02567
+f01_chr_serviceid,671,ST.APP.02717
+f01_chr_serviceid,672,ST.APP.02783
+f01_chr_serviceid,673,ST.APP.02887
+f01_chr_serviceid,674,ST.APP.02894
+f01_chr_serviceid,675,ST.APP.02961
+f01_chr_serviceid,676,ST.APP.03205
+f01_chr_serviceid,677,ST.APP.03288
+f01_chr_serviceid,678,ST.APP.03421
+f01_chr_serviceid,679,ST.APP.03556
+f01_chr_serviceid,680,ST.APP.03647
+f01_chr_serviceid,681,ST.APP.03888
+f01_chr_serviceid,682,ST.GSRV.SUPORT_CPD
+f01_chr_serviceid,683,CP.APP.00192.02
+f01_chr_serviceid,684,CP.APP.00217.02
+f01_chr_serviceid,685,CP.APP.00530.06
+f01_chr_serviceid,686,CP.APP.00586.02
+f01_chr_serviceid,687,CP.APP.01033.01
+f01_chr_serviceid,688,CP.APP.01077.01
+f01_chr_serviceid,689,CP.APP.01082.01
+f01_chr_serviceid,690,CP.APP.01104.03
+f01_chr_serviceid,691,CP.APP.01370.14
+f01_chr_serviceid,692,CP.APP.01371.02
+f01_chr_serviceid,693,CP.APP.01371.03
+f01_chr_serviceid,694,CP.APP.01653.03
+f01_chr_serviceid,695,CP.APP.02680.01
+f01_chr_serviceid,696,CP.APP.02934.01
+f01_chr_serviceid,697,CP.APP.02998.17
+f01_chr_serviceid,698,ST.APP.00323
+f01_chr_serviceid,699,ST.APP.00338
+f01_chr_serviceid,700,ST.APP.00390
+f01_chr_serviceid,701,ST.APP.00635
+f01_chr_serviceid,702,ST.APP.00637
+f01_chr_serviceid,703,ST.APP.00765
+f01_chr_serviceid,704,ST.APP.01011
+f01_chr_serviceid,705,ST.APP.01031
+f01_chr_serviceid,706,ST.APP.01169
+f01_chr_serviceid,707,ST.APP.01368
+f01_chr_serviceid,708,ST.APP.01495
+f01_chr_serviceid,709,ST.APP.01765
+f01_chr_serviceid,710,ST.APP.01822
+f01_chr_serviceid,711,ST.APP.01897
+f01_chr_serviceid,712,ST.APP.02018
+f01_chr_serviceid,713,ST.APP.02088
+f01_chr_serviceid,714,ST.APP.02157
+f01_chr_serviceid,715,ST.APP.02210
+f01_chr_serviceid,716,ST.APP.02545
+f01_chr_serviceid,717,ST.APP.02588
+f01_chr_serviceid,718,ST.APP.02671
+f01_chr_serviceid,719,ST.APP.02712
+f01_chr_serviceid,720,ST.APP.02782
+f01_chr_serviceid,721,ST.APP.02939
+f01_chr_serviceid,722,ST.APP.03129
+f01_chr_serviceid,723,ST.APP.03498
+f01_chr_serviceid,724,ST.APP.03521
+f01_chr_serviceid,725,ST.APP.03646
+f01_chr_serviceid,726,ST.APP.03947
+f01_chr_serviceid,727,ST.APP.04025
+f01_chr_serviceid,728,ST.APP.04026
+f01_chr_serviceid,729,ST.APP.04027
+f01_chr_serviceid,730,ST.APP.04080
+f01_chr_serviceid,731,ST.NUS.BSCNX
+f01_chr_serviceid,732,CP.APP.00442.08
+f01_chr_serviceid,733,CP.APP.00556.02
+f01_chr_serviceid,734,CP.APP.00863.01
+f01_chr_serviceid,735,CP.APP.01011.01
+f01_chr_serviceid,736,CP.APP.01031.01
+f01_chr_serviceid,737,CP.APP.01045.01
+f01_chr_serviceid,738,CP.APP.01081.08
+f01_chr_serviceid,739,CP.APP.01276.07
+f01_chr_serviceid,740,CP.APP.01370.26
+f01_chr_serviceid,741,CP.APP.01370.35
+f01_chr_serviceid,742,CP.APP.01371.01
+f01_chr_serviceid,743,CP.APP.01682.02
+f01_chr_serviceid,744,CP.APP.02200.08
+f01_chr_serviceid,745,CP.APP.02964.06
+f01_chr_serviceid,746,CP.APP.02998.06
+f01_chr_serviceid,747,CP.APP.03201.01
+f01_chr_serviceid,748,CP.APP.03968.12
+f01_chr_serviceid,749,CP.APP.03980.03
+f01_chr_serviceid,750,CP.APP.03981.04
+f01_chr_serviceid,751,CP.APP.03981.08
+f01_chr_serviceid,752,ST.APP.00066
+f01_chr_serviceid,753,ST.APP.00121
+f01_chr_serviceid,754,ST.APP.00171
+f01_chr_serviceid,755,ST.APP.00534
+f01_chr_serviceid,756,ST.APP.00651
+f01_chr_serviceid,757,ST.APP.00836
+f01_chr_serviceid,758,ST.APP.00915
+f01_chr_serviceid,759,ST.APP.00969
+f01_chr_serviceid,760,ST.APP.00982
+f01_chr_serviceid,761,ST.APP.01301
+f01_chr_serviceid,762,ST.APP.01433
+f01_chr_serviceid,763,ST.APP.01749
+f01_chr_serviceid,764,ST.APP.02021
+f01_chr_serviceid,765,ST.APP.02058
+f01_chr_serviceid,766,ST.APP.02148
+f01_chr_serviceid,767,ST.APP.02194
+f01_chr_serviceid,768,ST.APP.02568
+f01_chr_serviceid,769,ST.APP.02583
+f01_chr_serviceid,770,ST.APP.02651
+f01_chr_serviceid,771,ST.APP.02806
+f01_chr_serviceid,772,ST.APP.02851
+f01_chr_serviceid,773,ST.APP.02877
+f01_chr_serviceid,774,ST.APP.03094
+f01_chr_serviceid,775,ST.APP.03098
+f01_chr_serviceid,776,ST.APP.03160
+f01_chr_serviceid,777,ST.APP.03185
+f01_chr_serviceid,778,ST.APP.03232
+f01_chr_serviceid,779,ST.APP.03292
+f01_chr_serviceid,780,ST.APP.03400
+f01_chr_serviceid,781,ST.APP.03534
+f01_chr_serviceid,782,ST.APP.03623
+f01_chr_serviceid,783,ST.APP.03631
+f01_chr_serviceid,784,ST.APP.03926
+f01_chr_serviceid,785,ST.APP.03951
+f01_chr_serviceid,786,ST.APP.90354
+f01_chr_serviceid,787,ST.NUS.BSMOB
+f01_chr_serviceid,788,ST.NUS.BSVEU
+f01_chr_serviceid,789,ST.SCE
+f01_chr_serviceid,790,CP.APP.00196.01
+f01_chr_serviceid,791,CP.APP.00206.27
+f01_chr_serviceid,792,CP.APP.00206.76
+f01_chr_serviceid,793,CP.APP.00223.01
+f01_chr_serviceid,794,CP.APP.00440.02
+f01_chr_serviceid,795,CP.APP.00442.01
+f01_chr_serviceid,796,CP.APP.00463.33
+f01_chr_serviceid,797,CP.APP.00559.01
+f01_chr_serviceid,798,CP.APP.01084.01
+f01_chr_serviceid,799,CP.APP.01104.02
+f01_chr_serviceid,800,CP.APP.01337.02
+f01_chr_serviceid,801,CP.APP.01370.20
+f01_chr_serviceid,802,CP.APP.01371.16
+f01_chr_serviceid,803,CP.APP.01627.01
+f01_chr_serviceid,804,CP.APP.02580.04
+f01_chr_serviceid,805,CP.APP.02700.01
+f01_chr_serviceid,806,CP.APP.02998.12
+f01_chr_serviceid,807,CP.APP.02998.19
+f01_chr_serviceid,808,CP.APP.03521.03
+f01_chr_serviceid,809,CP.APP.03979.05
+f01_chr_serviceid,810,ST.APP.00243
+f01_chr_serviceid,811,ST.APP.00449
+f01_chr_serviceid,812,ST.APP.00817
+f01_chr_serviceid,813,ST.APP.01005
+f01_chr_serviceid,814,ST.APP.01016
+f01_chr_serviceid,815,ST.APP.01154
+f01_chr_serviceid,816,ST.APP.01200
+f01_chr_serviceid,817,ST.APP.01295
+f01_chr_serviceid,818,ST.APP.01306
+f01_chr_serviceid,819,ST.APP.01349
+f01_chr_serviceid,820,ST.APP.01371
+f01_chr_serviceid,821,ST.APP.01392
+f01_chr_serviceid,822,ST.APP.01516
+f01_chr_serviceid,823,ST.APP.02001
+f01_chr_serviceid,824,ST.APP.02196
+f01_chr_serviceid,825,ST.APP.02680
+f01_chr_serviceid,826,ST.APP.02698
+f01_chr_serviceid,827,ST.APP.02824
+f01_chr_serviceid,828,ST.APP.02827
+f01_chr_serviceid,829,ST.APP.02872
+f01_chr_serviceid,830,ST.APP.02879
+f01_chr_serviceid,831,ST.APP.03050
+f01_chr_serviceid,832,ST.APP.03209
+f01_chr_serviceid,833,ST.APP.03261
+f01_chr_serviceid,834,ST.APP.03406
+f01_chr_serviceid,835,ST.APP.03525
+f01_chr_serviceid,836,ST.APP.04052
+f01_chr_serviceid,837,ST.NUS.BSIPS
+f01_chr_serviceid,838,ST.SMS
+f01_chr_serviceid,839,CP.APP.00204.01
+f01_chr_serviceid,840,CP.APP.00373.03
+f01_chr_serviceid,841,CP.APP.00432.03
+f01_chr_serviceid,842,CP.APP.00530.03
+f01_chr_serviceid,843,CP.APP.01081.07
+f01_chr_serviceid,844,CP.APP.01107.01
+f01_chr_serviceid,845,CP.APP.01282.07
+f01_chr_serviceid,846,CP.APP.01337.01
+f01_chr_serviceid,847,CP.APP.01371.06
+f01_chr_serviceid,848,CP.APP.01702.02
+f01_chr_serviceid,849,CP.APP.02206.28
+f01_chr_serviceid,850,CP.APP.02537.08
+f01_chr_serviceid,851,CP.APP.02552.01
+f01_chr_serviceid,852,CP.APP.02620.01
+f01_chr_serviceid,853,CP.APP.02634.01
+f01_chr_serviceid,854,CP.APP.02692.48
+f01_chr_serviceid,855,CP.APP.02801.01
+f01_chr_serviceid,856,CP.APP.02869.02
+f01_chr_serviceid,857,CP.APP.02945.01
+f01_chr_serviceid,858,CP.APP.03112.01
+f01_chr_serviceid,859,CP.APP.03206.01
+f01_chr_serviceid,860,CP.APP.03486.03
+f01_chr_serviceid,861,CP.APP.03981.06
+f01_chr_serviceid,862,CP.APP.03981.07
+f01_chr_serviceid,863,CP.APP.03981.11
+f01_chr_serviceid,864,ST.APP.00039
+f01_chr_serviceid,865,ST.APP.00047
+f01_chr_serviceid,866,ST.APP.00074
+f01_chr_serviceid,867,ST.APP.00079
+f01_chr_serviceid,868,ST.APP.00138
+f01_chr_serviceid,869,ST.APP.00177
+f01_chr_serviceid,870,ST.APP.00178
+f01_chr_serviceid,871,ST.APP.00223
+f01_chr_serviceid,872,ST.APP.00225
+f01_chr_serviceid,873,ST.APP.00286
+f01_chr_serviceid,874,ST.APP.00353
+f01_chr_serviceid,875,ST.APP.00367
+f01_chr_serviceid,876,ST.APP.00448
+f01_chr_serviceid,877,ST.APP.00548
+f01_chr_serviceid,878,ST.APP.00556
+f01_chr_serviceid,879,ST.APP.00559
+f01_chr_serviceid,880,ST.APP.00575
+f01_chr_serviceid,881,ST.APP.00590
+f01_chr_serviceid,882,ST.APP.00626
+f01_chr_serviceid,883,ST.APP.00703
+f01_chr_serviceid,884,ST.APP.00762
+f01_chr_serviceid,885,ST.APP.00867
+f01_chr_serviceid,886,ST.APP.00921
+f01_chr_serviceid,887,ST.APP.01015
+f01_chr_serviceid,888,ST.APP.01053
+f01_chr_serviceid,889,ST.APP.01103
+f01_chr_serviceid,890,ST.APP.01106
+f01_chr_serviceid,891,ST.APP.01114
+f01_chr_serviceid,892,ST.APP.01213
+f01_chr_serviceid,893,ST.APP.01215
+f01_chr_serviceid,894,ST.APP.01337
+f01_chr_serviceid,895,ST.APP.01398
+f01_chr_serviceid,896,ST.APP.01400
+f01_chr_serviceid,897,ST.APP.01657
+f01_chr_serviceid,898,ST.APP.01673
+f01_chr_serviceid,899,ST.APP.02074
+f01_chr_serviceid,900,ST.APP.02605
+f01_chr_serviceid,901,ST.APP.02606
+f01_chr_serviceid,902,ST.APP.02907
+f01_chr_serviceid,903,ST.APP.02978
+f01_chr_serviceid,904,ST.APP.02994
+f01_chr_serviceid,905,ST.APP.03003
+f01_chr_serviceid,906,ST.APP.03016
+f01_chr_serviceid,907,ST.APP.03076
+f01_chr_serviceid,908,ST.APP.03087
+f01_chr_serviceid,909,ST.APP.03093
+f01_chr_serviceid,910,ST.APP.03256
+f01_chr_serviceid,911,ST.APP.03451
+f01_chr_serviceid,912,ST.APP.03917
+f01_chr_serviceid,913,ST.APP.03924
+f01_chr_serviceid,914,ST.APP.90301
+f01_chr_serviceid,915,CP.APP.00192.04
+f01_chr_serviceid,916,CP.APP.00196.03
+f01_chr_serviceid,917,CP.APP.00206.22
+f01_chr_serviceid,918,CP.APP.00434.02
+f01_chr_serviceid,919,CP.APP.00463.34
+f01_chr_serviceid,920,CP.APP.00479.01
+f01_chr_serviceid,921,CP.APP.00530.05
+f01_chr_serviceid,922,CP.APP.00635.02
+f01_chr_serviceid,923,CP.APP.00651.01
+f01_chr_serviceid,924,CP.APP.00743.03
+f01_chr_serviceid,925,CP.APP.00819.01
+f01_chr_serviceid,926,CP.APP.01061.01
+f01_chr_serviceid,927,CP.APP.01068.01
+f01_chr_serviceid,928,CP.APP.01086.01
+f01_chr_serviceid,929,CP.APP.01099.08
+f01_chr_serviceid,930,CP.APP.01276.17
+f01_chr_serviceid,931,CP.APP.01305.02
+f01_chr_serviceid,932,CP.APP.01371.09
+f01_chr_serviceid,933,CP.APP.01371.14
+f01_chr_serviceid,934,CP.APP.01653.01
+f01_chr_serviceid,935,CP.APP.01868.01
+f01_chr_serviceid,936,CP.APP.01889.21
+f01_chr_serviceid,937,CP.APP.01889.25
+f01_chr_serviceid,938,CP.APP.02076.02
+f01_chr_serviceid,939,CP.APP.02091.06
+f01_chr_serviceid,940,CP.APP.02200.03
+f01_chr_serviceid,941,CP.APP.02529.02
+f01_chr_serviceid,942,CP.APP.02537.01
+f01_chr_serviceid,943,CP.APP.02580.01
+f01_chr_serviceid,944,CP.APP.02586.01
+f01_chr_serviceid,945,CP.APP.02620.02
+f01_chr_serviceid,946,CP.APP.02869.03
+f01_chr_serviceid,947,CP.APP.02939.02
+f01_chr_serviceid,948,CP.APP.02945.02
+f01_chr_serviceid,949,CP.APP.02998.04
+f01_chr_serviceid,950,CP.APP.02998.07
+f01_chr_serviceid,951,CP.APP.02998.11
+f01_chr_serviceid,952,CP.APP.02998.28
+f01_chr_serviceid,953,CP.APP.02998.34
+f01_chr_serviceid,954,CP.APP.03160.02
+f01_chr_serviceid,955,CP.APP.03227.01
+f01_chr_serviceid,956,CP.APP.03486.04
+f01_chr_serviceid,957,CP.APP.03970.03
+f01_chr_serviceid,958,CP.APP.03973.10
+f01_chr_serviceid,959,CP.APP.03979.03
+f01_chr_serviceid,960,ST.APP.00019
+f01_chr_serviceid,961,ST.APP.00119
+f01_chr_serviceid,962,ST.APP.00216
+f01_chr_serviceid,963,ST.APP.00252
+f01_chr_serviceid,964,ST.APP.00256
+f01_chr_serviceid,965,ST.APP.00292
+f01_chr_serviceid,966,ST.APP.00306
+f01_chr_serviceid,967,ST.APP.00336
+f01_chr_serviceid,968,ST.APP.00451
+f01_chr_serviceid,969,ST.APP.00453
+f01_chr_serviceid,970,ST.APP.00582
+f01_chr_serviceid,971,ST.APP.00639
+f01_chr_serviceid,972,ST.APP.00688
+f01_chr_serviceid,973,ST.APP.00708
+f01_chr_serviceid,974,ST.APP.00757
+f01_chr_serviceid,975,ST.APP.00778
+f01_chr_serviceid,976,ST.APP.00828
+f01_chr_serviceid,977,ST.APP.00886
+f01_chr_serviceid,978,ST.APP.00954
+f01_chr_serviceid,979,ST.APP.00985
+f01_chr_serviceid,980,ST.APP.01085
+f01_chr_serviceid,981,ST.APP.01086
+f01_chr_serviceid,982,ST.APP.01455
+f01_chr_serviceid,983,ST.APP.01514
+f01_chr_serviceid,984,ST.APP.01515
+f01_chr_serviceid,985,ST.APP.01524
+f01_chr_serviceid,986,ST.APP.01537
+f01_chr_serviceid,987,ST.APP.01549
+f01_chr_serviceid,988,ST.APP.01576
+f01_chr_serviceid,989,ST.APP.01583
+f01_chr_serviceid,990,ST.APP.01647
+f01_chr_serviceid,991,ST.APP.01698
+f01_chr_serviceid,992,ST.APP.01718
+f01_chr_serviceid,993,ST.APP.01733
+f01_chr_serviceid,994,ST.APP.01739
+f01_chr_serviceid,995,ST.APP.01751
+f01_chr_serviceid,996,ST.APP.01830
+f01_chr_serviceid,997,ST.APP.01843
+f01_chr_serviceid,998,ST.APP.02005
+f01_chr_serviceid,999,ST.APP.02009
+f01_chr_serviceid,1000,ST.APP.02020
+f01_chr_serviceid,1001,ST.APP.02239
+f01_chr_serviceid,1002,ST.APP.02290
+f01_chr_serviceid,1003,ST.APP.02581
+f01_chr_serviceid,1004,ST.APP.02617
+f01_chr_serviceid,1005,ST.APP.02665
+f01_chr_serviceid,1006,ST.APP.02696
+f01_chr_serviceid,1007,ST.APP.02720
+f01_chr_serviceid,1008,ST.APP.02722
+f01_chr_serviceid,1009,ST.APP.02823
+f01_chr_serviceid,1010,ST.APP.02866
+f01_chr_serviceid,1011,ST.APP.02897
+f01_chr_serviceid,1012,ST.APP.02927
+f01_chr_serviceid,1013,ST.APP.02995
+f01_chr_serviceid,1014,ST.APP.03064
+f01_chr_serviceid,1015,ST.APP.03134
+f01_chr_serviceid,1016,ST.APP.03177
+f01_chr_serviceid,1017,ST.APP.03401
+f01_chr_serviceid,1018,ST.APP.03505
+f01_chr_serviceid,1019,ST.APP.03608
+f01_chr_serviceid,1020,ST.APP.03650
+f01_chr_serviceid,1021,ST.APP.03653
+f01_chr_serviceid,1022,ST.APP.03654
+f01_chr_serviceid,1023,ST.APP.03696
+f01_chr_serviceid,1024,ST.APP.03941
+f01_chr_serviceid,1025,ST.APP.03976
+f01_chr_serviceid,1026,ST.APP.03999
+f01_chr_serviceid,1027,ST.APP.04024
+f01_chr_serviceid,1028,ST.APP.04039
+f01_chr_serviceid,1029,ST.APP.04046
+f01_chr_serviceid,1030,ST.APP.90025
+f01_chr_serviceid,1031,ST.APP.90296
+f01_chr_serviceid,1032,ST.MOB
+f01_chr_serviceid,1033,ST.NUS.BSNUS
+f01_chr_serviceid,1034,ST.PDS
+f01_chr_serviceid,1035,ST.PTF.VIR
+f01_chr_serviceid,1036,ST.SNE
+f01_chr_serviceid,1037,CP.APP.00176.02
+f01_chr_serviceid,1038,CP.APP.00189.02
+f01_chr_serviceid,1039,CP.APP.00196.09
+f01_chr_serviceid,1040,CP.APP.00205.09
+f01_chr_serviceid,1041,CP.APP.00206.01
+f01_chr_serviceid,1042,CP.APP.00206.52
+f01_chr_serviceid,1043,CP.APP.00387.01
+f01_chr_serviceid,1044,CP.APP.00387.02
+f01_chr_serviceid,1045,CP.APP.00441.01
+f01_chr_serviceid,1046,CP.APP.00463.05
+f01_chr_serviceid,1047,CP.APP.00463.11
+f01_chr_serviceid,1048,CP.APP.00463.18
+f01_chr_serviceid,1049,CP.APP.00463.25
+f01_chr_serviceid,1050,CP.APP.00463.27
+f01_chr_serviceid,1051,CP.APP.00463.28
+f01_chr_serviceid,1052,CP.APP.00463.31
+f01_chr_serviceid,1053,CP.APP.00463.77
+f01_chr_serviceid,1054,CP.APP.00463.85
+f01_chr_serviceid,1055,CP.APP.00602.02
+f01_chr_serviceid,1056,CP.APP.00666.01
+f01_chr_serviceid,1057,CP.APP.00688.01
+f01_chr_serviceid,1058,CP.APP.00717.01
+f01_chr_serviceid,1059,CP.APP.00745.01
+f01_chr_serviceid,1060,CP.APP.00760.01
+f01_chr_serviceid,1061,CP.APP.01035.01
+f01_chr_serviceid,1062,CP.APP.01035.09
+f01_chr_serviceid,1063,CP.APP.01081.20
+f01_chr_serviceid,1064,CP.APP.01092.03
+f01_chr_serviceid,1065,CP.APP.01093.01
+f01_chr_serviceid,1066,CP.APP.01116.01
+f01_chr_serviceid,1067,CP.APP.01154.01
+f01_chr_serviceid,1068,CP.APP.01216.01
+f01_chr_serviceid,1069,CP.APP.01216.06
+f01_chr_serviceid,1070,CP.APP.01262.02
+f01_chr_serviceid,1071,CP.APP.01276.12
+f01_chr_serviceid,1072,CP.APP.01370.13
+f01_chr_serviceid,1073,CP.APP.01371.04
+f01_chr_serviceid,1074,CP.APP.01398.11
+f01_chr_serviceid,1075,CP.APP.01653.02
+f01_chr_serviceid,1076,CP.APP.01675.01
+f01_chr_serviceid,1077,CP.APP.01877.01
+f01_chr_serviceid,1078,CP.APP.01889.23
+f01_chr_serviceid,1079,CP.APP.01889.30
+f01_chr_serviceid,1080,CP.APP.01889.35
+f01_chr_serviceid,1081,CP.APP.02020.01
+f01_chr_serviceid,1082,CP.APP.02090.01
+f01_chr_serviceid,1083,CP.APP.02206.17
+f01_chr_serviceid,1084,CP.APP.02537.05
+f01_chr_serviceid,1085,CP.APP.02559.02
+f01_chr_serviceid,1086,CP.APP.02680.07
+f01_chr_serviceid,1087,CP.APP.02699.07
+f01_chr_serviceid,1088,CP.APP.02701
+f01_chr_serviceid,1089,CP.APP.02703.01
+f01_chr_serviceid,1090,CP.APP.02862.01
+f01_chr_serviceid,1091,CP.APP.02889.01
+f01_chr_serviceid,1092,CP.APP.02998.13
+f01_chr_serviceid,1093,CP.APP.02998.24
+f01_chr_serviceid,1094,CP.APP.03257.01
+f01_chr_serviceid,1095,CP.APP.03801.01
+f01_chr_serviceid,1096,CP.APP.03962.02
+f01_chr_serviceid,1097,CP.APP.03977.03
+f01_chr_serviceid,1098,CP.APP.03981.03
+f01_chr_serviceid,1099,CP.APP.04039.12
+f01_chr_serviceid,1100,CP.APP.90301.05
+f01_chr_serviceid,1101,ST.APP.00071
+f01_chr_serviceid,1102,ST.APP.00127
+f01_chr_serviceid,1103,ST.APP.00182
+f01_chr_serviceid,1104,ST.APP.00200
+f01_chr_serviceid,1105,ST.APP.00274
+f01_chr_serviceid,1106,ST.APP.00307
+f01_chr_serviceid,1107,ST.APP.00322
+f01_chr_serviceid,1108,ST.APP.00388
+f01_chr_serviceid,1109,ST.APP.00481
+f01_chr_serviceid,1110,ST.APP.00565
+f01_chr_serviceid,1111,ST.APP.00570
+f01_chr_serviceid,1112,ST.APP.00597
+f01_chr_serviceid,1113,ST.APP.00608
+f01_chr_serviceid,1114,ST.APP.00714
+f01_chr_serviceid,1115,ST.APP.00736
+f01_chr_serviceid,1116,ST.APP.00777
+f01_chr_serviceid,1117,ST.APP.00818
+f01_chr_serviceid,1118,ST.APP.00822
+f01_chr_serviceid,1119,ST.APP.00964
+f01_chr_serviceid,1120,ST.APP.01067
+f01_chr_serviceid,1121,ST.APP.01307
+f01_chr_serviceid,1122,ST.APP.01314
+f01_chr_serviceid,1123,ST.APP.01366
+f01_chr_serviceid,1124,ST.APP.01367
+f01_chr_serviceid,1125,ST.APP.01377
+f01_chr_serviceid,1126,ST.APP.01396
+f01_chr_serviceid,1127,ST.APP.01412
+f01_chr_serviceid,1128,ST.APP.01462
+f01_chr_serviceid,1129,ST.APP.01465
+f01_chr_serviceid,1130,ST.APP.01511
+f01_chr_serviceid,1131,ST.APP.01554
+f01_chr_serviceid,1132,ST.APP.01556
+f01_chr_serviceid,1133,ST.APP.01587
+f01_chr_serviceid,1134,ST.APP.01742
+f01_chr_serviceid,1135,ST.APP.01744
+f01_chr_serviceid,1136,ST.APP.01745
+f01_chr_serviceid,1137,ST.APP.01759
+f01_chr_serviceid,1138,ST.APP.01763
+f01_chr_serviceid,1139,ST.APP.01776
+f01_chr_serviceid,1140,ST.APP.01813
+f01_chr_serviceid,1141,ST.APP.01842
+f01_chr_serviceid,1142,ST.APP.01874
+f01_chr_serviceid,1143,ST.APP.01876
+f01_chr_serviceid,1144,ST.APP.01890
+f01_chr_serviceid,1145,ST.APP.02017
+f01_chr_serviceid,1146,ST.APP.02081
+f01_chr_serviceid,1147,ST.APP.02122
+f01_chr_serviceid,1148,ST.APP.02126
+f01_chr_serviceid,1149,ST.APP.02151
+f01_chr_serviceid,1150,ST.APP.02267
+f01_chr_serviceid,1151,ST.APP.02558
+f01_chr_serviceid,1152,ST.APP.02596
+f01_chr_serviceid,1153,ST.APP.02621
+f01_chr_serviceid,1154,ST.APP.02723
+f01_chr_serviceid,1155,ST.APP.02786
+f01_chr_serviceid,1156,ST.APP.02856
+f01_chr_serviceid,1157,ST.APP.02859
+f01_chr_serviceid,1158,ST.APP.02876
+f01_chr_serviceid,1159,ST.APP.02908
+f01_chr_serviceid,1160,ST.APP.02944
+f01_chr_serviceid,1161,ST.APP.02946
+f01_chr_serviceid,1162,ST.APP.03010
+f01_chr_serviceid,1163,ST.APP.03055
+f01_chr_serviceid,1164,ST.APP.03073
+f01_chr_serviceid,1165,ST.APP.03170
+f01_chr_serviceid,1166,ST.APP.03197
+f01_chr_serviceid,1167,ST.APP.03207
+f01_chr_serviceid,1168,ST.APP.03259
+f01_chr_serviceid,1169,ST.APP.03417
+f01_chr_serviceid,1170,ST.APP.03456
+f01_chr_serviceid,1171,ST.APP.03500
+f01_chr_serviceid,1172,ST.APP.03501
+f01_chr_serviceid,1173,ST.APP.03538
+f01_chr_serviceid,1174,ST.APP.03557
+f01_chr_serviceid,1175,ST.APP.03634
+f01_chr_serviceid,1176,ST.APP.03664
+f01_chr_serviceid,1177,ST.APP.03967
+f01_chr_serviceid,1178,ST.APP.03980
+f01_chr_serviceid,1179,ST.APP.03982
+f01_chr_serviceid,1180,ST.APP.04049
+f01_chr_serviceid,1181,ST.APP.04060
+f01_chr_serviceid,1182,ST.APP.04063
+f01_chr_serviceid,1183,ST.APP.04068
+f01_chr_serviceid,1184,ST.APP.4025
+f01_chr_serviceid,1185,ST.APP.90340
+f01_chr_serviceid,1186,ST.APP.90356
+f01_chr_serviceid,1187,CP.APP.00178.03
+f01_chr_serviceid,1188,CP.APP.00196.02
+f01_chr_serviceid,1189,CP.APP.00196.04
+f01_chr_serviceid,1190,CP.APP.00196.05
+f01_chr_serviceid,1191,CP.APP.00200.02
+f01_chr_serviceid,1192,CP.APP.00204.02
+f01_chr_serviceid,1193,CP.APP.00206.02
+f01_chr_serviceid,1194,CP.APP.00373.01
+f01_chr_serviceid,1195,CP.APP.00434.01
+f01_chr_serviceid,1196,CP.APP.00434.03
+f01_chr_serviceid,1197,CP.APP.00440.01
+f01_chr_serviceid,1198,CP.APP.00463.07
+f01_chr_serviceid,1199,CP.APP.00463.08
+f01_chr_serviceid,1200,CP.APP.00463.10
+f01_chr_serviceid,1201,CP.APP.00463.12
+f01_chr_serviceid,1202,CP.APP.00463.13
+f01_chr_serviceid,1203,CP.APP.00463.14
+f01_chr_serviceid,1204,CP.APP.00463.15
+f01_chr_serviceid,1205,CP.APP.00463.16
+f01_chr_serviceid,1206,CP.APP.00463.17
+f01_chr_serviceid,1207,CP.APP.00463.19
+f01_chr_serviceid,1208,CP.APP.00463.21
+f01_chr_serviceid,1209,CP.APP.00463.22
+f01_chr_serviceid,1210,CP.APP.00463.23
+f01_chr_serviceid,1211,CP.APP.00463.24
+f01_chr_serviceid,1212,CP.APP.00463.26
+f01_chr_serviceid,1213,CP.APP.00463.36
+f01_chr_serviceid,1214,CP.APP.00463.63
+f01_chr_serviceid,1215,CP.APP.00463.74
+f01_chr_serviceid,1216,CP.APP.00463.78
+f01_chr_serviceid,1217,CP.APP.00463.79
+f01_chr_serviceid,1218,CP.APP.00463.80
+f01_chr_serviceid,1219,CP.APP.00463.81
+f01_chr_serviceid,1220,CP.APP.00463.82
+f01_chr_serviceid,1221,CP.APP.00463.83
+f01_chr_serviceid,1222,CP.APP.00463.86
+f01_chr_serviceid,1223,CP.APP.00463.87
+f01_chr_serviceid,1224,CP.APP.00463.89
+f01_chr_serviceid,1225,CP.APP.00463.90
+f01_chr_serviceid,1226,CP.APP.00487.02
+f01_chr_serviceid,1227,CP.APP.00487.03
+f01_chr_serviceid,1228,CP.APP.00487.04
+f01_chr_serviceid,1229,CP.APP.00530.07
+f01_chr_serviceid,1230,CP.APP.00530.08
+f01_chr_serviceid,1231,CP.APP.00570.01
+f01_chr_serviceid,1232,CP.APP.00602.03
+f01_chr_serviceid,1233,CP.APP.00637.01
+f01_chr_serviceid,1234,CP.APP.00649.01
+f01_chr_serviceid,1235,CP.APP.00649.02
+f01_chr_serviceid,1236,CP.APP.00697.04
+f01_chr_serviceid,1237,CP.APP.00743.02
+f01_chr_serviceid,1238,CP.APP.00863.02
+f01_chr_serviceid,1239,CP.APP.00869.01
+f01_chr_serviceid,1240,CP.APP.00887.01
+f01_chr_serviceid,1241,CP.APP.00989.01
+f01_chr_serviceid,1242,CP.APP.01018.05
+f01_chr_serviceid,1243,CP.APP.01022.02
+f01_chr_serviceid,1244,CP.APP.01025.02
+f01_chr_serviceid,1245,CP.APP.01025.09
+f01_chr_serviceid,1246,CP.APP.01029.02
+f01_chr_serviceid,1247,CP.APP.01033.04
+f01_chr_serviceid,1248,CP.APP.01035.06
+f01_chr_serviceid,1249,CP.APP.01035.10
+f01_chr_serviceid,1250,CP.APP.01051.03
+f01_chr_serviceid,1251,CP.APP.01051.04
+f01_chr_serviceid,1252,CP.APP.01053.01
+f01_chr_serviceid,1253,CP.APP.01060.01
+f01_chr_serviceid,1254,CP.APP.01072.02
+f01_chr_serviceid,1255,CP.APP.01073.01
+f01_chr_serviceid,1256,CP.APP.01076.04
+f01_chr_serviceid,1257,CP.APP.01076.05
+f01_chr_serviceid,1258,CP.APP.01078.05
+f01_chr_serviceid,1259,CP.APP.01079.01
+f01_chr_serviceid,1260,CP.APP.01096.01
+f01_chr_serviceid,1261,CP.APP.01104.01
+f01_chr_serviceid,1262,CP.APP.01110.01
+f01_chr_serviceid,1263,CP.APP.01115.01
+f01_chr_serviceid,1264,CP.APP.01148.01
+f01_chr_serviceid,1265,CP.APP.01370.02
+f01_chr_serviceid,1266,CP.APP.01371.05
+f01_chr_serviceid,1267,CP.APP.01371.13
+f01_chr_serviceid,1268,CP.APP.01371.19
+f01_chr_serviceid,1269,CP.APP.01398.01
+f01_chr_serviceid,1270,CP.APP.01398.02
+f01_chr_serviceid,1271,CP.APP.01398.07
+f01_chr_serviceid,1272,CP.APP.01874.03
+f01_chr_serviceid,1273,CP.APP.01889.28
+f01_chr_serviceid,1274,CP.APP.01942.02
+f01_chr_serviceid,1275,CP.APP.02088.01
+f01_chr_serviceid,1276,CP.APP.02091.02
+f01_chr_serviceid,1277,CP.APP.02148.01
+f01_chr_serviceid,1278,CP.APP.02200.02
+f01_chr_serviceid,1279,CP.APP.02206.38
+f01_chr_serviceid,1280,CP.APP.02529.01
+f01_chr_serviceid,1281,CP.APP.02537.07
+f01_chr_serviceid,1282,CP.APP.02580.03
+f01_chr_serviceid,1283,CP.APP.02594.02
+f01_chr_serviceid,1284,CP.APP.02657.05
+f01_chr_serviceid,1285,CP.APP.02657.06
+f01_chr_serviceid,1286,CP.APP.02680.04
+f01_chr_serviceid,1287,CP.APP.02682.01
+f01_chr_serviceid,1288,CP.APP.02699.01
+f01_chr_serviceid,1289,CP.APP.02699.03
+f01_chr_serviceid,1290,CP.APP.02700.04
+f01_chr_serviceid,1291,CP.APP.02939.01
+f01_chr_serviceid,1292,CP.APP.02945.09
+f01_chr_serviceid,1293,CP.APP.02964.03
+f01_chr_serviceid,1294,CP.APP.02964.04
+f01_chr_serviceid,1295,CP.APP.02964.08
+f01_chr_serviceid,1296,CP.APP.02964.10
+f01_chr_serviceid,1297,CP.APP.02998.08
+f01_chr_serviceid,1298,CP.APP.02998.20
+f01_chr_serviceid,1299,CP.APP.02998.26
+f01_chr_serviceid,1300,CP.APP.02998.27
+f01_chr_serviceid,1301,CP.APP.03039.08
+f01_chr_serviceid,1302,CP.APP.03130.01
+f01_chr_serviceid,1303,CP.APP.03131.01
+f01_chr_serviceid,1304,CP.APP.03160.03
+f01_chr_serviceid,1305,CP.APP.03171.08
+f01_chr_serviceid,1306,CP.APP.03209.01
+f01_chr_serviceid,1307,CP.APP.03210.02
+f01_chr_serviceid,1308,CP.APP.03242.23
+f01_chr_serviceid,1309,CP.APP.03242.53
+f01_chr_serviceid,1310,CP.APP.03242.58
+f01_chr_serviceid,1311,CP.APP.03270.01
+f01_chr_serviceid,1312,CP.APP.03283.02
+f01_chr_serviceid,1313,CP.APP.03948.20
+f01_chr_serviceid,1314,CP.APP.03973.05
+f01_chr_serviceid,1315,CP.APP.03975.01
+f01_chr_serviceid,1316,CP.APP.03975.02
+f01_chr_serviceid,1317,CP.APP.03975.03
+f01_chr_serviceid,1318,CP.APP.03975.05
+f01_chr_serviceid,1319,CP.APP.03975.07
+f01_chr_serviceid,1320,CP.APP.03975.08
+f01_chr_serviceid,1321,CP.APP.03976.05
+f01_chr_serviceid,1322,CP.APP.03977.04
+f01_chr_serviceid,1323,CP.APP.03977.05
+f01_chr_serviceid,1324,CP.APP.03979.01
+f01_chr_serviceid,1325,CP.APP.03981.02
+f01_chr_serviceid,1326,CP.APP.04022.02
+f01_chr_serviceid,1327,CP.APP.04022.05
+f01_chr_serviceid,1328,CP.APP.04029.06
+f01_chr_serviceid,1329,CP.APP.04029.07
+f01_chr_serviceid,1330,CP.APP.90025.04
+f01_chr_serviceid,1331,CP.APP.90137.01
+f01_chr_serviceid,1332,CP.APP.90260.18
+f01_chr_serviceid,1333,ST.APP.00010
+f01_chr_serviceid,1334,ST.APP.00043
+f01_chr_serviceid,1335,ST.APP.00237
+f01_chr_serviceid,1336,ST.APP.00285
+f01_chr_serviceid,1337,ST.APP.00359
+f01_chr_serviceid,1338,ST.APP.00471
+f01_chr_serviceid,1339,ST.APP.00474
+f01_chr_serviceid,1340,ST.APP.00537
+f01_chr_serviceid,1341,ST.APP.00542
+f01_chr_serviceid,1342,ST.APP.00602
+f01_chr_serviceid,1343,ST.APP.00615
+f01_chr_serviceid,1344,ST.APP.00618
+f01_chr_serviceid,1345,ST.APP.00649
+f01_chr_serviceid,1346,ST.APP.00669
+f01_chr_serviceid,1347,ST.APP.00689
+f01_chr_serviceid,1348,ST.APP.00711
+f01_chr_serviceid,1349,ST.APP.00735
+f01_chr_serviceid,1350,ST.APP.00760
+f01_chr_serviceid,1351,ST.APP.00769
+f01_chr_serviceid,1352,ST.APP.00824
+f01_chr_serviceid,1353,ST.APP.00838
+f01_chr_serviceid,1354,ST.APP.00839
+f01_chr_serviceid,1355,ST.APP.00850
+f01_chr_serviceid,1356,ST.APP.00862
+f01_chr_serviceid,1357,ST.APP.00869
+f01_chr_serviceid,1358,ST.APP.00890
+f01_chr_serviceid,1359,ST.APP.00896
+f01_chr_serviceid,1360,ST.APP.00938
+f01_chr_serviceid,1361,ST.APP.00967
+f01_chr_serviceid,1362,ST.APP.01014
+f01_chr_serviceid,1363,ST.APP.01034
+f01_chr_serviceid,1364,ST.APP.01037
+f01_chr_serviceid,1365,ST.APP.01047
+f01_chr_serviceid,1366,ST.APP.01049
+f01_chr_serviceid,1367,ST.APP.01068
+f01_chr_serviceid,1368,ST.APP.01096
+f01_chr_serviceid,1369,ST.APP.01113
+f01_chr_serviceid,1370,ST.APP.01139
+f01_chr_serviceid,1371,ST.APP.01168
+f01_chr_serviceid,1372,ST.APP.01181
+f01_chr_serviceid,1373,ST.APP.01203
+f01_chr_serviceid,1374,ST.APP.01251
+f01_chr_serviceid,1375,ST.APP.01315
+f01_chr_serviceid,1376,ST.APP.01319
+f01_chr_serviceid,1377,ST.APP.01326
+f01_chr_serviceid,1378,ST.APP.01339
+f01_chr_serviceid,1379,ST.APP.01343
+f01_chr_serviceid,1380,ST.APP.01346
+f01_chr_serviceid,1381,ST.APP.01373
+f01_chr_serviceid,1382,ST.APP.01428
+f01_chr_serviceid,1383,ST.APP.01435
+f01_chr_serviceid,1384,ST.APP.01460
+f01_chr_serviceid,1385,ST.APP.01485
+f01_chr_serviceid,1386,ST.APP.01527
+f01_chr_serviceid,1387,ST.APP.01538
+f01_chr_serviceid,1388,ST.APP.01572
+f01_chr_serviceid,1389,ST.APP.01644
+f01_chr_serviceid,1390,ST.APP.01654
+f01_chr_serviceid,1391,ST.APP.01678
+f01_chr_serviceid,1392,ST.APP.01683
+f01_chr_serviceid,1393,ST.APP.01688
+f01_chr_serviceid,1394,ST.APP.01728
+f01_chr_serviceid,1395,ST.APP.01760
+f01_chr_serviceid,1396,ST.APP.01768
+f01_chr_serviceid,1397,ST.APP.01790
+f01_chr_serviceid,1398,ST.APP.01817
+f01_chr_serviceid,1399,ST.APP.01835
+f01_chr_serviceid,1400,ST.APP.01838
+f01_chr_serviceid,1401,ST.APP.01877
+f01_chr_serviceid,1402,ST.APP.01893
+f01_chr_serviceid,1403,ST.APP.01902
+f01_chr_serviceid,1404,ST.APP.02015
+f01_chr_serviceid,1405,ST.APP.02024
+f01_chr_serviceid,1406,ST.APP.02097
+f01_chr_serviceid,1407,ST.APP.02167
+f01_chr_serviceid,1408,ST.APP.02187
+f01_chr_serviceid,1409,ST.APP.02206
+f01_chr_serviceid,1410,ST.APP.02289
+f01_chr_serviceid,1411,ST.APP.02307
+f01_chr_serviceid,1412,ST.APP.02526
+f01_chr_serviceid,1413,ST.APP.02528
+f01_chr_serviceid,1414,ST.APP.02551
+f01_chr_serviceid,1415,ST.APP.02591
+f01_chr_serviceid,1416,ST.APP.02593
+f01_chr_serviceid,1417,ST.APP.02620
+f01_chr_serviceid,1418,ST.APP.02637
+f01_chr_serviceid,1419,ST.APP.02669
+f01_chr_serviceid,1420,ST.APP.02706
+f01_chr_serviceid,1421,ST.APP.02714
+f01_chr_serviceid,1422,ST.APP.02721
+f01_chr_serviceid,1423,ST.APP.02736
+f01_chr_serviceid,1424,ST.APP.02757
+f01_chr_serviceid,1425,ST.APP.02780
+f01_chr_serviceid,1426,ST.APP.02787
+f01_chr_serviceid,1427,ST.APP.02822
+f01_chr_serviceid,1428,ST.APP.02833
+f01_chr_serviceid,1429,ST.APP.02868
+f01_chr_serviceid,1430,ST.APP.02878
+f01_chr_serviceid,1431,ST.APP.02924
+f01_chr_serviceid,1432,ST.APP.02931
+f01_chr_serviceid,1433,ST.APP.02933
+f01_chr_serviceid,1434,ST.APP.02937
+f01_chr_serviceid,1435,ST.APP.02949
+f01_chr_serviceid,1436,ST.APP.02959
+f01_chr_serviceid,1437,ST.APP.02964
+f01_chr_serviceid,1438,ST.APP.02968
+f01_chr_serviceid,1439,ST.APP.03013
+f01_chr_serviceid,1440,ST.APP.03089
+f01_chr_serviceid,1441,ST.APP.03130
+f01_chr_serviceid,1442,ST.APP.03168
+f01_chr_serviceid,1443,ST.APP.03179
+f01_chr_serviceid,1444,ST.APP.03180
+f01_chr_serviceid,1445,ST.APP.03231
+f01_chr_serviceid,1446,ST.APP.03244
+f01_chr_serviceid,1447,ST.APP.03276
+f01_chr_serviceid,1448,ST.APP.03286
+f01_chr_serviceid,1449,ST.APP.03306
+f01_chr_serviceid,1450,ST.APP.03411
+f01_chr_serviceid,1451,ST.APP.03413
+f01_chr_serviceid,1452,ST.APP.03419
+f01_chr_serviceid,1453,ST.APP.03475
+f01_chr_serviceid,1454,ST.APP.03484
+f01_chr_serviceid,1455,ST.APP.03529
+f01_chr_serviceid,1456,ST.APP.03570
+f01_chr_serviceid,1457,ST.APP.03601
+f01_chr_serviceid,1458,ST.APP.03816
+f01_chr_serviceid,1459,ST.APP.03891
+f01_chr_serviceid,1460,ST.APP.03942
+f01_chr_serviceid,1461,ST.APP.03965
+f01_chr_serviceid,1462,ST.APP.03979
+f01_chr_serviceid,1463,ST.APP.03984
+f01_chr_serviceid,1464,ST.APP.04018
+f01_chr_serviceid,1465,ST.APP.04078
+f01_chr_serviceid,1466,ST.APP.90372
+f01_chr_serviceid,1467,ST.LLICENCIES
+f01_chr_serviceid,1468,ST.LLT.MAQUINARI
+f01_chr_serviceid,1469,ST.NUS.BSORG
+f01_chr_serviceid,1470,ST.SVC
+serviceci,0,GAUDI - GESTIO DE TRIBUTS
+serviceci,1,GTR: GESTIO TELEMATICA RAMADERA
+serviceci,2,"SUPORT PRESENCIAL, PROVISIO, PLATAFORMA I IMPRESSIO"
+serviceci,3,ECAP - SISTEMA ASSISTENCIAL ATENCIO PRIMARIA
+serviceci,4,GSIT: TRAMITAR EN LINIA
+serviceci,5,E-RVC: REGISTRE VITIVINICOLA DE CATALUNYA - TRANSFORMACIO
+serviceci,6,ARGOS SAP ASSISTENCIAL
+serviceci,7,DUNWEB: SISTEMA INTEGRAL DE GESTIO I PRESENTACIO DECLARACIONS
+serviceci,8,ESPAI DE TREBALL I COL·LABORACIO
+serviceci,9,GESTIO DE LAN
+serviceci,10,EP - SIEP: SISTEMA D'INFORMACIO DE L'EXECUCIO PENAL DE CATALUNYA
+serviceci,11,GDN: GESTIONA LA DECLARACIO I SEGUIMENT DELS PLANS DE DEJECCIONS RAMADERES
+serviceci,12,PICA
+serviceci,13,TRAMITADOR MULTIFAMILIA
+serviceci,14,BSN3S - N3 SEUS
+serviceci,15,BSSTI - SERVEIS PER TI
+serviceci,16,GSIT: FRONTAL D'AGENTS. CQS - BUSTIA DE CONTACT. CITA PREVIA
+serviceci,17,SISTEMA D'INFORMACIO DE TITOLS DE FAMILIES NOMBROSES I MONOPARENTALS
+serviceci,18,SGRH - SISTEMA DE GESTIO DE RECURSOS HUMANS
+serviceci,19,CON: GESTIO INTEGRADA CONTROLS
+serviceci,20,ITSM - REMEDY
+serviceci,21,SIC - SISTEMA D'INFORMACIO DE CONSUM
+serviceci,22,CONNECTIVITAT DE DADES
+serviceci,23,SEU ELECTRONICA ATC (SEU2/SRC)
+serviceci,24,CPPAC: CALCUL I PAGAMENTS - NOVA PAC 2014-2020
+serviceci,25,SC - SISTEMA D'INFORMACIO DE MEDIACIO CIVIL
+serviceci,26,ELECTIA - REGISTRE D'ACTES ELECTORALS
+serviceci,27,INTEGRAL DE VEU
+serviceci,28,DGP - ALTRES SERVEIS
+serviceci,29,EP - SIEP-BIO: SISTEMA DE BIOMETRIA
+serviceci,30,BSITU - INTERNET D'USUARIS
+serviceci,31,SEU ELECTRONICA ATC (PORTAL TRANSACCIONAL)
+serviceci,32,OBSERVATORI CADENA AGROALIMENTARIA
+serviceci,33,CLIO - REGISTRE DE COOPERATIVES I SOCIETATS LABORALS
+serviceci,34,RVC: REGISTRE VITIVINICOLA DE CATALUNYA
+serviceci,35,SI GEDAC: GESTIO DE L'ESCOLARITZACIO DELS ALUMNES DE CATALUNYA (GEDAC)
+serviceci,36,GSIT: AREA PRIVADA
+serviceci,37,ATRI - PORTAL DE L'EMPLEAT DE LA GENERALITAT DE CATALUNYA
+serviceci,38,"IEET – ESTADES TURISTIQUES (940,950)"
+serviceci,39,BSHEG - HOSTING EINES DE GESTIO
+serviceci,40,ARGOS SAP ASSISTENCIAL - HIS
+serviceci,41,NPAC: RECOLLIDA I CONSOLIDACIO DE LES DECLARACIONS DE LA POLITICA AGRARIA COMUNITARIA - PAC
+serviceci,42,QUADERN D'EXPLOTACIO AGRICOLA
+serviceci,43,VSOCIAL - SISTEMA DE VALORACIO I ORIENTACIO (ESOCIAL)
+serviceci,44,SIMDCAT
+serviceci,45,GIN: GESTIO D'AJUTS A INVERSIONS
+serviceci,46,SI GSA: GESTIO DE LES PROVES D'OBTENCIO DE TITOLS I CERTIFICATS DELS ALUMNES
+serviceci,47,GABJUR - GESTIO INTEGRAL DEL GABINET JURIDIC
+serviceci,48,GSIT: CANAL EMPRESA
+serviceci,49,TEI - TRAMITADOR D'EXPEDIENTS INTERDEPARTAMENTAL I ENTORN D'ADMINISTRACIO
+serviceci,50,REGISTRE D'EMPRESES ACREDITADES DEL SECTOR DE CONSTRUCCIO (REAS)
+serviceci,51,GESTIO DE L'ORIENTACIO DELS DEMANDANTS (GALILEO)
+serviceci,52,GECO+: GESTOR CONTINGUTS I PORTALS
+serviceci,53,SI RALC: REGISTRE D'ALUMNES DE CATALUNYA (RALC)
+serviceci,54,PORTAL DE FEINA ACTIVA
+serviceci,55,PORTAL DEL TREBALLADOR
+serviceci,56,SI SAGA: SISTEMA D'ADMINISTRACIO I GESTIO ACADEMICA DELS CENTRES DOCENTS PUBLICS
+serviceci,57,WSOCIAL - RELACIO AMB EL MON LOCAL - INTERVENCIO SOCIAL
+serviceci,58,REGISTRE PUBLIC DE CONTRACTES
+serviceci,59,CATSALUT-COMMONS
+serviceci,60,SGLL: LLICENCIES DE CAÇA I PESCA
+serviceci,61,ECNP: ESCOLA NAUTICOPESQUERA
+serviceci,62,EJCAT-INT-TRA (TRAMITACIO-GESTIO PROCESSAL)
+serviceci,63,ESFERA
+serviceci,64,GESCON - GESTIO D'ACTES DE CONCILIACIONS
+serviceci,65,SI AVA: AVALUACIO D'ALUMNES
+serviceci,66,BSSLT - SERVEIS PER LLDT
+serviceci,67,GIDAAM: GESTIO D'INGRESSOS
+serviceci,68,SSOCIAL - SISTEMA DE GESTIO DE RECURSOS I SERVEIS DE L'ESOCIAL
+serviceci,69,PARLA.CAT
+serviceci,70,SISTEMA INTEGRAL DE RECEPTA ELECTRONICA
+serviceci,71,ARGOS ECONOMIC FINANCER
+serviceci,72,EJCAT-SUP-TRACOM (TRAMITACIO COMUNICACIO)
+serviceci,73,PLATAFORMA SEGURETAT DE PACIENTS (PROSP CAT - SNISP CAT)
+serviceci,74,LLIBRES DE REGISTRE D'EMISIONS
+serviceci,75,EJCAT-SUP-OSB (BUS DE SERVEIS)
+serviceci,76,SI HTE: HOMOLOGACIO DE TITOLS NO UNIVERSITARIS
+serviceci,77,GESTIO DE PUBLICACIONS DEL PDOGC I PJ (AGP)
+serviceci,78,SOLUCIO TRANSVERSAL DE GESTIO D'ARXIUS ESPAIDOC
+serviceci,79,SISTEMA INFORMACIO GEOGRAFICA CORPORATIU
+serviceci,80,ASI: SOL.LICITUD MODIFICACIONS SIGPAC ALFANUMERIC
+serviceci,81,PLATAFORMA DE SERVEIS DE CONTRACTACIO PUBLICA
+serviceci,82,SI DWHCORPORATIU: SISTEMA ANALITIC D'INDICADORS CORPORATIUS
+serviceci,83,SARCAT : APLICACIO WEB  DE REGISTRE
+serviceci,84,WEB DE CONSULTA I TRAMITS DE FIANCES
+serviceci,85,ACCESNET - ADMINISTRACIO
+serviceci,86,EJCAT - DOCUMENTS I ESQUEMES DE TRAMITACIO D'EJCAT (CDEE)
+serviceci,87,SISTEMA D'INTERMEDIACIO DE LES COMUNITATS AUTONOMES (SICAS)
+serviceci,88,MIT - MODUL D'INTEGRACIO DE TRAMITS
+serviceci,89,SERVEI AREA INFRAESTRUCTURES
+serviceci,90,BS3EM - TERCERES EMPRESES
+serviceci,91,CMV: CERTIFICAT MATERIAL VEGETAL
+serviceci,92,SC - SPICA
+serviceci,93,INFOTIC
+serviceci,94,GSIT::INTERN: GESTOR D'APUNTS DIFERITS
+serviceci,95,PCAA-PREVENCIO I CONTROL AMBIENTAL DE LES ACTIVITATS
+serviceci,96,GSIT: CONFIGURAR TRAMITS A LA EA. FRAMEWORK DE FORMULARIS
+serviceci,97,LSOCIAL - GESTIO CONTRACTE PROGRAMA
+serviceci,98,EP - SIPC - SISTEMA INFORMACIO PENITENCIARI CATALA
+serviceci,99,HISTORIA CLINICA COMPARTIDA - LA MEVA SALUT
+serviceci,100,SI GCONCERT: GESTIO DELS CENTRES PRIVATS AMB ENSENYAMENTS CONCERTATS
+serviceci,101,ACTIC ACREDITACIONS TIC. GESTOR D'USUARIS I PLATAFORMA D'EXAMENS (GUC)
+serviceci,102,ARGOS SAP ASSISTENCIAL - ETPAT
+serviceci,103,LAMEVADUN
+serviceci,104,DSOCIAL. DADES MESTRES DE LA PROTECCIO SOCIAL
+serviceci,105,ECOSISCAT
+serviceci,106,SI TITOLS: GESTIO DE TITOLS NO UNIVERSITARIS
+serviceci,107,CPD PEDROSA I 22@
+serviceci,108,GESVER - VEHICLES DE REPRESENTACIO
+serviceci,109,SINI@ - SISTEMA D'INFORMACIO D'INFANCIA I ADOLESCENCIA
+serviceci,110,TEMIS2 - JUTJATS UNIPERSONALS
+serviceci,111,HISTORIA CLINICA COMPARTIDA
+serviceci,112,REPOSITORI CENTRAL DE DADES DE SALUT
+serviceci,113,SISTEMA INTEGRAT DE TRIBUTS (E-SPRIU)
+serviceci,114,ACCESNET
+serviceci,115,COMUNICACIO D'OBERTURA DE CENTRES DE TREBALL (OCT)
+serviceci,116,INT.ERP (PERSONAL I INTEGRACIONS)
+serviceci,117,SGD: GESTIO EXPEDIENTS I DOCUMENTS ELECTRONICS
+serviceci,118,RGC-CURAM
+serviceci,119,RODALIES DE CATALUNYA. SERVEIS
+serviceci,120,TRAMAS: TRAMITADOR D'ASSEGURANCES I SINISTRES
+serviceci,121,APP CICLE AIGUA PHP (PLATGESCAT)
+serviceci,122,BI ATENCIO CIUTADANA
+serviceci,123,EFICIENCIA ENERGETICA
+serviceci,124,FRAMEWORKS EFORMULARIS
+serviceci,125,GSIT::INTERN: SERVEIS-APIS
+serviceci,126,COM: CERTIFICATS DE COMUNALS
+serviceci,127,CONNECTIVITAT DE DADES N3
+serviceci,128,GSIT: LES MEVES DADES
+serviceci,129,DEP - SISTEMA D'INFORMACIO DE LA DEPENDENCIA
+serviceci,130,SI ESFERA
+serviceci,131,FORMACIO SANITARIA ESPECIALITZADA
+serviceci,132,ECA: ESCOLES DE CAPACITACIO AGRARIA
+serviceci,133,ICAM - SIGIT - GESTIO DE LA INCAPACITAT TEMPORAL
+serviceci,134,SI IOC: GESTIO ACADEMICA I ADMINISTRATIVA DE L'INSTITUT OBERT DE CATALUNYA
+serviceci,135,FRAMEWORK SIC
+serviceci,136,REGISTRE ELECTRONIC D'EMPRESES LICITADORES
+serviceci,137,REACAT - TREC - CLOUD
+serviceci,138,"SCL PLATAFORMA, ATENCIO PERSONALITZADA I CERCADORS"
+serviceci,139,GICAR
+serviceci,140,TEMIS2 - GENERAL
+serviceci,141,APLICACIONS I SERVEIS WEB DEL SIP
+serviceci,142,BOGA
+serviceci,143,BUS DE SERVEIS ATC
+serviceci,144,DADJUS- EVIDENCIA - BI DE JUSTICIA
+serviceci,145,GESTIO ANC ARXIUSENLINIA CERCADOR
+serviceci,146,REGISTRES AGRICOLES
+serviceci,147,ROC - REGISTRE OFICIAL DE CENTRES I ESTUDIS UNIVERSITARIS
+serviceci,148,SI USUARIS: ADMINISTRACIO DE RECURSOS PER A L'ACCES A LES APLICACIONS WEB
+serviceci,149,CONVOCATORIES DE TREBALL ICS
+serviceci,150,MAQUINES RECREATIVES I D'ATZAR (TRAMITACIO TELEMATICA)
+serviceci,151,PERFOC: AUTORITZACIONS SOTMESES AL DECRET 64/1995
+serviceci,152,ANALISI D'INFORMACIO DELS TRIBUTS GESTIONATS PER L'ATC (DWH)
+serviceci,153,ISISSCAT-IS3
+serviceci,154,SPE-SERVEISPEREMPRENDRE
+serviceci,155,SEF - SEGUIMENT DE FLOTES DE VEHICLES
+serviceci,156,PICA: PRODUCTE AEAT - AGENCIA TRIBUTARIA ESPANYOLA
+serviceci,157,RCO - REGISTRE DE CONTRACTES
+serviceci,158,REGISTRES SANITARIS
+serviceci,159,DOCTRAM - DOCUMENTACIO DE TRAMITS TELEMATICS
+serviceci,160,EJCAT-(MODULS DE TRAMITACIO) EJCTRA
+serviceci,161,CATJOC
+serviceci,162,ECAP - ASSISTENCIAL
+serviceci,163,SOSTIC
+serviceci,164,CIRCUIT DEL DOGC
+serviceci,165,PLASH (PLA SERRA HUNTER TRANSFORMAT)
+serviceci,166,HES - INTEGRADOR D'IMATGES
+serviceci,167,LES - LLISTES D'ESPERA
+serviceci,168,OPNET: PROGRAMA OPERATIU D'OPFH'S
+serviceci,169,GESPRO - GESTIO DE PROJECTES D'INFRAESTRUCTURES
+serviceci,170,GEEC 2.0
+serviceci,171,SOBRE DIGITAL EN LICITACIO ELECTRONICA
+serviceci,172,CATCOMP
+serviceci,173,REE - REGISTRE D'ENTITATS ESPORTIVES- NOU
+serviceci,174,SALA DE PREMSA II
+serviceci,175,SISTEMA D'INFORMACIO DEL FONS DE GARANTIA DE PENSIONS
+serviceci,176,SISTEMA D’INFORMACIO DE GESTIO DE VIOLENCIES MASCLISTES
+serviceci,177,GESTIO DE PATRIMONI DE LA GENERALITAT
+serviceci,178,REGISTRE DE CENTRES
+serviceci,179,RUDEL - RECOLLIDA DE DADES UNIFICADA ALS ENS LOCALS
+serviceci,180,SISTEMA INTEGRAL D'ESTADISTIQUES DE BIBLIOTEQUES (SINTESI)
+serviceci,181,TRACPT - CAPACITACIO PROFESSIONAL TRANSPORTISTES
+serviceci,182,WEB D'INFORMACIO I TRAMITACIO CIUTADANA DEL SOC
+serviceci,183,BI SOC
+serviceci,184,EGT: GESTIO D'ESTADISTIQUES
+serviceci,185,GICAR: DIRECTORI CORPORATIU
+serviceci,186,SISTEMA INTEGRAT D'ACCIONS I BENEFICIARIS
+serviceci,187,BI OBSERVATORI DEL TREBALL
+serviceci,188,GSIT: ELS MEUS DOCUMENTS
+serviceci,189,INT.CONVOCAT - CONVOCATORIES DE BOMBERS DE CATALUNYA
+serviceci,190,SISTEMA D'ACREDITACIO DE CENTRES SANITARIS
+serviceci,191,PLATAFORMA REE
+serviceci,192,REGISTRE DE SOL.LICITANTS D'HPO
+serviceci,193,ICAM - GEA - GESTIO D'EXPEDIENTS
+serviceci,194,RCA - REGISTRE CENTRAL D'ASSEGURATS
+serviceci,195,SIGOV - SISTEMA DE GESTIO I TRAMITACIO DE DOCUMENTS DEL GOVERN
+serviceci,196,VIBRA - LA CULTURA DINS TEU
+serviceci,197,EINES BALANÇ ENERGETIC: SUBVENCIONS I EINES ICAEN
+serviceci,198,ENS: ENS - TRACTAMENT D'US GENERAL D'ENSENYAMENT
+serviceci,199,REGISTRE DE MORTALITAT DE CATALUNYA
+serviceci,200,REP - REGISTRE DE PROFESSIONALS DE L'ESPORT
+serviceci,201,EJCAT-SUP-GDO (GESTIO DE DOCUMENTS)
+serviceci,202,SISTEMA DE GESTIO DE CENSOS ATC (MIRO)
+serviceci,203,SISTEMA DE TARJETA GROGA DEL CFVCAT (STG)
+serviceci,204,ROCAMP: EMISSIO CARNETS FITOSANITARIS
+serviceci,205,E-DERAN: GESTIONA LA DECLARACIO I SEGUIMENT DELS PLANS DE DEJECCIONS RAMADERES
+serviceci,206,PLATAFORMA DE SERVEIS DE GESTIO DOCUMENTAL
+serviceci,207,SIIP: SISTEMA D'INFORMACIO D'INICIATIVES PARLAMENTARIES
+serviceci,208,EJCAT-TAX-TAXES JUDICIALS
+serviceci,209,PIMPEU - PROGRAMACIO I IMPLANTACIO ESTUDIS UNIVERSITARIS
+serviceci,210,EP - SIJJ - SISTEMA D'INFORMACIO DE JUSTICIA JUVENIL
+serviceci,211,SAC - APLICACIO DE GESTIO / WEBSERVICES
+serviceci,212,SI TME: TAULES MESTRES
+serviceci,213,BSVPN - VPN USUARIS GENERALITAT
+serviceci,214,EXPEDIENTS DE REGULACIO D'OCUPACIO
+serviceci,215,OPENSHIFT CPD4
+serviceci,216,PLATAFORMA DE SERVEIS DE GESTIO DOCUMENTAL: GENERADOR PLANTILLES/DOCUMENTS
+serviceci,217,RSA LITTLE
+serviceci,218,SI APLIST: APLICACIONS DE GESTIO DELS SERVEIS TERRITORIALS
+serviceci,219,GESTIO INGRESOS APS
+serviceci,220,PAT-SIMDCAT
+serviceci,221,PPP: PREUS PAGATS I PERCEBUTS
+serviceci,222,SI CFP: CATALEG DE LA FORMACIO PROFESSIONAL
+serviceci,223,SIDER - PROGRAMA DE DESENVOLUPAMENT RURAL
+serviceci,224,SISTEMA DE GESTIO ELECTRONICA PLUS (SGE+)
+serviceci,225,WEB DEL GOVERN I PRESIDENT
+serviceci,226,BIG DATA - DATALAKE
+serviceci,227,GTAF: GESTIO TELEMATICA D'ACTIVITATS DE FORMACIO
+serviceci,228,PRV: PLANS DE REESTRUCTURACIO DE VINYA 2009- 2012
+serviceci,229,SISTEMA D'ATENCIO A PERSONES AMB DISCAPACITAT
+serviceci,230,GESTIO DOCENT I ECONOMICA DE L'EAPC
+serviceci,231,REGISTRE D'ORGANS DE REPRESENTACIO DEL PERSONAL
+serviceci,232,SILICON - FARMACIA HOSPITALARIA
+serviceci,233,DATAMARTS DEL CATSALUT
+serviceci,234,DWHCORPORATIU: DMA_SIDIE - SISTEMA D'INFORMACIO D'INDICADORS I ESTADISTICA
+serviceci,235,ECAP - ASS - HISTORIAL CLINIC
+serviceci,236,GRADUAT EN EDUCACIO SECUNDARIA OBLIGATORIA (GESO)
+serviceci,237,CTR - GESTIO DE LA CONTRACTACIO
+serviceci,238,MONITORATGE (BSM)
+serviceci,239,PFC - CATALEG DE PRODUCTES FARMACEUTICS
+serviceci,240,RECOLLIDA D'INFORMACIO DE LES FEDERACIONS ESPORTIVES DE CATALUNYA (ESPORT FEDERAT)
+serviceci,241,INT.EPRJ - EXPEDIENTS DE PREVENCIO I PLANIFICACIO
+serviceci,242,VCPE: VENDA DE CAPTURES PESQUERES
+serviceci,243,ACCES A INTERNET LOCAL
+serviceci,244,"BIG DATA, PADOCT I LOGS"
+serviceci,245,CLASSIFICACIO D'EMPRESES
+serviceci,246,"FOC - FESTA, FOC I PIROTECNIA (_FOC)"
+serviceci,247,GACELA - CURES INFERMERIA
+serviceci,248,PORTAL DE CENTRES I INTRANET
+serviceci,249,PUNIC: PAGAMENT UNIC - PAGAMENT BASIC
+serviceci,250,ACCESNET - APLICACIO PRINCIPAL
+serviceci,251,AKISTIC - GESTIO DE LA DEMANDA I DELS PROJECTES
+serviceci,252,CONNECTA'T AL VOLUNTARIAT
+serviceci,253,ERGO - ESPAI DE REGISTRE DE GOVERN OBERT
+serviceci,254,GEA - GESTIO DE COMPONENTS SANGUINIS
+serviceci,255,HOST CCB: INTEGRACIO INFORMACIO COMPTABLE D'AJUTS FEOGA
+serviceci,256,REACAT - TREC
+serviceci,257,EPSILON: PORTAL EMPLEAT
+serviceci,258,LIMS 3.0 CABRILS I REUS
+serviceci,259,REGISTRE DEL SECTOR PUBLIC LOCAL DE CATALUNYA
+serviceci,260,TALAIA - PLATAFORMA DISTRIBUÏDA
+serviceci,261,XCAC: DADES COMPTABLES EXPLOTACIONS AGRARIES DE CATALUNYA
+serviceci,262,CALENDARI LABORAL (CALAB)
+serviceci,263,EJCAT-IAP-RED (REGISTRE I PRESENTACIO D'ESCRITS)
+serviceci,264,INVENTARI PATRIMONIAL
+serviceci,265,SCAR_OLD
+serviceci,266,SI CWS: CATALEG DE SERVEIS WEB
+serviceci,267,SI ESTADISTICA: GENERACIO DE L'ESTADISTICA
+serviceci,268,XEAC - XARXA D'ESTACIONS DE CONTROL DE LES EMISSIONS A L'ATMOSFERA
+serviceci,269,EJCAT+-INT-APU+ (GESTIO APUD-ACTA)
+serviceci,270,INT.DPX (DESPATX DE BOMBERS)
+serviceci,271,JURSI - EXPEDIENTS DIGITALS D'ASSESSORIA JURIDICA
+serviceci,272,MOE: MAPA DE L'OFERTA EDUCATIVA
+serviceci,273,OPO: GESTIO SOL·LICITUD OPOSICIONS
+serviceci,274,"SARCAT : WEBSERVICES DE REGISTRE, REGISTRE INTERN I COMPULSA ELECTRONICA"
+serviceci,275,SIREC
+serviceci,276,UCIS
+serviceci,277,BI XCAC: ANALISI I QUADRES DE COMANDAMENT EN BUSINESS OBJECTS
+serviceci,278,MODUL: MASTER CLOUD SIC 3.0
+serviceci,279,PER WEB: REPOSITORI UNIC PERSONES RELACIONADES AMB EL DEPARTAMENT
+serviceci,280,REGMAQ: REGISTRE DE MAQUINARIA
+serviceci,281,SEGUIMENT DE LA FLOTA PESQUERA
+serviceci,282,TAIS - TRAMITADOR D'AJUTS I SUBVENCIONS
+serviceci,283,TRAMITADOR GENERIC : WEB
+serviceci,284,BSPUB - PUBLICACIO DOMINIS
+serviceci,285,CIRE - GESTIO DE NOMINES DEL CENTRE D'INICIATIVES PER A LA REINSERCIO (EPSILON)
+serviceci,286,EGP - EXPROPIACIONS I GESTIO PATRIMONIAL
+serviceci,287,EJCAT-INT-AGU (ARXIU GESTIO D'UBICACIONS)
+serviceci,288,GEFACT.EMIX -GENERADOR DE FACTURES ELECTRONIQUES
+serviceci,289,GESTIO DE CERTIFICATS DE CATALA
+serviceci,290,OAPC: OBSERVATORI DE PREUS AGROALIMENTARIS DE CATALUNYA
+serviceci,291,RPC-AC - ACCES CIUTADA AL REGISTRE PUBLIC DE CONTRACTES
+serviceci,292,SERVEIS EMPLEAT
+serviceci,293,SI MODULS COMUNS PER AL DESPLEGAMENT DE L'AE
+serviceci,294,SIFECAT 1420
+serviceci,295,CONTA - COMUNICACIONS D'ACCIDENTS DE TREBALL
+serviceci,296,EJCAT-INT-RIR (REGISTRE)
+serviceci,297,GEAI: GESTIO COS AGENTS RURALS
+serviceci,298,GECO+: WEB MUNICAT
+serviceci,299,PORTASIGNATURES DIGITAL
+serviceci,300,ACCES A FUNCIONS I DADES
+serviceci,301,GUAU - GESTIO DE L'ACCES A LA UNIVERSITAT
+serviceci,302,INT.CONVOCAT - CONVOCATORIES D'AGENTS RURALS DE CATALUNYA
+serviceci,303,ORT - PRESCRIPCIO ELECTRONICA ORTOPROTETICA
+serviceci,304,RUP - REGISTRE D'UNITATS PROVEÏDORES
+serviceci,305,VIDEOCONSULTA ESPECIALITZADA
+serviceci,306,ARGOS ECONOMIC FINANCER - SAP R/3
+serviceci,307,BO SALUT
+serviceci,308,CMBD - CONJUNT MINIM BASIC DE DADES
+serviceci,309,EJCAT-INT-RGU (REGISTRE DE GUARDIA)
+serviceci,310,ICAM - MODUL SERVEI WEB
+serviceci,311,INT.ATBG - GESTIO DE TAXES PELS SERVEIS DE BOMBERS
+serviceci,312,RAF - REGISTRE D'ACTIVITAT DE FARMACIA
+serviceci,313,SAP PORTAL
+serviceci,314,SC - ASSISTENCIA JURIDICA GRATUÏTA
+serviceci,315,TALAIA - PLATAFORMA CORPORATIVA D'OBSERVABILITAT
+serviceci,316,TRAMITACIO SERVEIS PUBLICS TRANSPORT
+serviceci,317,"APP CICLE AIGUA .NET (EMD,SGQA)"
+serviceci,318,FSE - FACTURACIO DE SERVEIS SANITARIS
+serviceci,319,INT.GBV - GESTIO DE BOMBERS VOLUNTARIS: APP
+serviceci,320,ITACA
+serviceci,321,ODP - ORDENACIO DESENVOLUPAMENT PROFESSIONAL
+serviceci,322,PLATAFORMA PARTICIPA
+serviceci,323,REACAT - TREC - ONPREMISE
+serviceci,324,REPOSITORI D'EPIDEMIOLOGIA DE CATALUNYA
+serviceci,325,STETSA - SERVEIS DE TRAMITACIO ELECTRONICA TSA
+serviceci,326,VISITES A PALAU
+serviceci,327,APP EQUITAT MENSTRUAL
+serviceci,328,CEEC - CENS D'EQUIPAMENTS ESPORTIUS DE CATALUNYA
+serviceci,329,DOSIS
+serviceci,330,EJCAT-INT-EXX (EXPEDIENT ELECTRONIC)
+serviceci,331,EJCAT-INT-SSE (SAFATA DE SIGNATURA ELECTRONICA)
+serviceci,332,FORMULARIS WEBS GENCAT
+serviceci,333,"GEFACT - PLATAFORMA PER A LA RECEPCIO, CUSTODIA I REDISTRIBUCIO DE FACTURES ELECTRONIQUES"
+serviceci,334,INVENTARIS D'INFRAESTRUCTURES DE TELECOMUNICACIONS DEL CTTI (SITC)
+serviceci,335,MANTENIMENT_ECO
+serviceci,336,PROCEDIMENT SANCIONADOR
+serviceci,337,RADAE
+serviceci,338,SERVIDORS SIGPAC
+serviceci,339,SI GEL: GESTIO ECONOMICA I COMPTABLE PER A LES LLARS D'INFANTS
+serviceci,340,ARCO-GESTACT
+serviceci,341,FORMULARI INSCRIPCIO CURSOS DE TSF
+serviceci,342,GESTIO DELS ORGANS COL.LEGIATS
+serviceci,343,ISISSCAT: PLATAFORMA PROCESSOS
+serviceci,344,OPENSHIFT SALUT CPD4
+serviceci,345,PLATAFORMA CORPORATIVA D'INTRANETS
+serviceci,346,PLATAFORMA CORPORATIVA D'INTRANETS: MODUL SUPORT A INFRAESTRUCTURA
+serviceci,347,SI AGORA: SISTEMA D'ALLOTJAMENT MULTIPLE DE MOODLE I D'INTRANETS (AGORA)
+serviceci,348,SI DE GESTIO D'IMATGES I D'OBJECTES DE TSF
+serviceci,349,TRAMITADOR AUTOESCOLES
+serviceci,350,VOLUNTARIAT PER LA LLENGUA
+serviceci,351,"APP CICLE AIGUA JAVA (SDIM,WDMA,TECA,RSPIE)"
+serviceci,352,BIS CORPORATIUS
+serviceci,353,BSBWI - AMPLE DE BANDA INTERNET
+serviceci,354,CECE - GESTIO CURSOS ESCOLA CATALANA ESPORT
+serviceci,355,COSTES TRAMITACIO D'EXPEDIENTS
+serviceci,356,DATAWAREHOUSE BI DE FP
+serviceci,357,DUN CROMOS: RECINTES DECLARATS A DUN
+serviceci,358,GEN: JUSTIFICACIO DE PAGAMENTS FEOGA
+serviceci,359,MAPA DE TRAMITS INFORMATIU (MTI)
+serviceci,360,PROGRAMA DE REVISIO DE MENUS ESCOLARS DE CATALUNYA
+serviceci,361,SISTEMA D'ENTRADA DE FACTURES AL REGISTRE DE FACTURES (SEFAC)
+serviceci,362,SIVAC - SISTEMA D'INFORMACIO DE VACUNES
+serviceci,363,TITULACIONS JUVENTUT
+serviceci,364,DOSSIERS DE PREMSA
+serviceci,365,ECOVIAT - ADSCRIPCIO DESCOMPTES I AUTORIZACIO CARRIL D'ALTA OCUPACIO PER A VEHICLES ECOLOGICS
+serviceci,366,EP - SIEP-EJG (EXPEDIENTS DE JUSTICIA DE LA GENERALITAT)
+serviceci,367,EXPEDIENT ELECTRONIC DE PERSONAL
+serviceci,368,GAUDI - GESTOR DOCUMENTAL
+serviceci,369,GESTIO DE DADES ELECTORALS
+serviceci,370,GESTIO DEL FONS SOCIAL EUROPEU (FSECAT)
+serviceci,371,INFORMES ESTRANGERIA
+serviceci,372,INT.DPARC (VISOR GIS)
+serviceci,373,MODUL DE CONSULTES GENERIQUES DEL DEPARTAMENT
+serviceci,374,PORTAL DELS MEDIADORS D'ASSEGURANCES
+serviceci,375,SI AAC: AVALUACIO I ACREDITACIO DE COMPETENCIES
+serviceci,376,AJ-FPJ-FITXES DE PERITS JUDICIALS
+serviceci,377,APLICACIO NUCLI - DNS INTERIOR.INTRANET.GENCAT.CAT
+serviceci,378,APLICACIO NUCLI - PLATAFORMA MAINFRAME DGP
+serviceci,379,BALANÇ SOCIAL DE LES EMPRESES D'INSERCIO (REI-BS)
+serviceci,380,BI ITC - BI DE LA INSPECCIO DE TREBALL DE CATALUNYA
+serviceci,381,BORPAS: BORPAS - OFERTES DE TREBALL
+serviceci,382,BSSAN - ANELLA SANITARIA
+serviceci,383,DIRECTORI D'EMPRESES I ESTABLIMENTS
+serviceci,384,"ELABORACIO, SOL·LICITUD I CALCUL DE TAXES D'AUTORITZACIONS INICIALS DE TREBALL PER A PERSONES ESTRANGERES (PTR)"
+serviceci,385,GESTIO DE PRESSUPOSTOS I LIQUIDACIONS
+serviceci,386,GESTOR DOCUMENTAL PADOCT
+serviceci,387,GFE: FRUITA A LES ESCOLES
+serviceci,388,ICT
+serviceci,389,INT.HERMES - REGISTRE PLANS D'AUTOPROTECCIO
+serviceci,390,NOU PORTAL DE PAGAMENTS DE SANCIONS
+serviceci,391,PSOCIAL - ACREDITACIONS (ESOCIAL)
+serviceci,392,REAP-CRM AREA D'EMPRESA
+serviceci,393,SISP - SISTEMA D'INFORMACIO DE SERVEIS I PERSONES DE DTES
+serviceci,394,TRAMITACIO ELECTRONICA D'URBANISME
+serviceci,395,ACT_CATALUNYA.COM
+serviceci,396,EJCAT-INT-GRP (GESTIO DE REQUERIMENTS POLICIALS)
+serviceci,397,GICAR: APROVISIONAMENT TRANSFORMAT
+serviceci,398,GICEC: SISTEMA DE GESTIO DE L'ICEC
+serviceci,399,MODUL: MASTER DE CPD1 DEL FRAMEWORK SIC
+serviceci,400,PACS
+serviceci,401,PQPI: PFI - APLICACIO GESTIO PFIS
+serviceci,402,RESER: RESERVES DE VEHICLES DEL DARP
+serviceci,403,SI EPERGAM: GESTIO DE BIBLIOTEQUES ALS CENTRES DOCENTS
+serviceci,404,SIAPS - EINA INSPECTORA
+serviceci,405,SIGEUS - SISTEMA DE GESTIO DELS ESTUDIS UNIVERSITARIS
+serviceci,406,SIPAE-POLIGONS D'ACTIVITAT ECONOMICA
+serviceci,407,ACCESNET - ADMINISTRACIO (APLICACIO AL NUVOL)
+serviceci,408,CAMPUS VIRTUAL I SUPORT A L'ACTIVITAT ACADEMICA (CVSAA)
+serviceci,409,EJCAT-INT-IMLCFC (INSTITUT DE MEDICINA LEGAL I CIENCIES FORENSES DE CATALUNYA)
+serviceci,410,EJCAT-INT-ORG (ORGANITZADOR)
+serviceci,411,GICAR: AUTENTICACIO TRANSFORMAT
+serviceci,412,GRE - GESTIO DE RECLAMACIONS I SUGGERENCIES
+serviceci,413,GSA - GESTIO DE SEGURETAT I ACCES
+serviceci,414,INFRA - PORTAL - BBDD
+serviceci,415,ISOCIAL - PLATAFORMA D'INTEGRACIO PROCESSOS DE NEGOCI (ESOCIAL)
+serviceci,416,PAUTIC (ITSM - REMEDY): DISCOVERY OUTPOST
+serviceci,417,PICEM - SISTEMA D'INDICADORS CULTURALS
+serviceci,418,SCDIAP
+serviceci,419,XECAT - PGEC: PLATAFORMA GESTIO D’EQUIPAMENTS CIVICS
+serviceci,420,ACCESNET PROFESSORAT
+serviceci,421,APLICACIO DE GESTIO DE REPRESENTANTS EN PROCESSOS SELECTIUS DEL MON LOCAL
+serviceci,422,BOR: BOR_ADMIN - GESTIO DE LA BORSA DE TREBALL DE PERSONAL INTERI/SUBSTITUT DOCENT
+serviceci,423,CENS D'ENTITATS DEL VOLUNTARIAT DE CATALUNYA
+serviceci,424,CERT: REGISTRE DE CERTIFICATS
+serviceci,425,EJCAT-INT-POR (PORTAL)
+serviceci,426,EP - SIPC+
+serviceci,427,GAF - GESTIO D'AFORAMENTS DE TRANSIT
+serviceci,428,GESTIO D'ORDRES DEL DEPARTAMENT (THEMIS)
+serviceci,429,GIC - PAC
+serviceci,430,MODUL DE COMUNICACIO AMB LA PICA
+serviceci,431,SI RESEE: REGISTRE D'EQUIPAMENTS DE SUPORT EDUCACIO ESPECIAL
+serviceci,432,SI ZCLIC: SUPORT A L'US D'APLICACIONS PL DE CREACIO D'ACTIVITATS EDUCATIVES MULTIMEDIA
+serviceci,433,SIGREP - SISTEMA D'INFORMACIO DEL GABINET DE PROTOCOL I RELACIONS EXTERNES
+serviceci,434,ECONSULTA
+serviceci,435,EJCAT-INT-IJU (MODELS INFRASTRUCTURA JURIDICA)
+serviceci,436,EP - SIEP-AUTOSERVEI
+serviceci,437,FEMP: FONS EUROPEU MARITIM I DE LA PESCA
+serviceci,438,KSOCIAL - CATALEG DE PRODUCTES DEL DEPARTAMENT DSO (ESOCIAL)
+serviceci,439,MODUL: BINARIS DE CLOUD DEL FRAMEWORK SIC
+serviceci,440,PICA: BUS OPENSHIFT
+serviceci,441,PRODUCTE CLICK & DECIDE
+serviceci,442,PUBLICACIO A INTERNET DE LES TAULES D'AVALUACIO DOCUMENTAL (_CERCATAAD)
+serviceci,443,SCAR
+serviceci,444,SISTEMA D'INFORMACIO D'ARXIUS (SIA)
+serviceci,445,WEB ACT (WEB DEPARTAMENTAL DE L'AGENCIA CATALANA DE TURISME)
+serviceci,446,AJR-AGENDA DE CITACIONS I ASSENYALAMENTS DE JUDICIS RAPIDS
+serviceci,447,BD DE REGIDORS DELS MUNICIPIS DE CATALUNYA
+serviceci,448,CATALUNYA PROFESSIONAL
+serviceci,449,EDU365: PORTAL DE CONTINGUTS EDUCATIUS PER A LA COMUNITAT EDUCATIVA
+serviceci,450,GESTIO DE LA TRADUCCIO I INTERPRETACIO JURADA
+serviceci,451,GSIT: TRAMITACIO ATESA
+serviceci,452,PORTASIGNATURES PER A LES AUTORITZACIONS INICIALS DE TREBALL (CDS)
+serviceci,453,RCSW - REGISTRE DE CENTRES SANITARIS WEB
+serviceci,454,RECONEIXEMENT D'INTERES SANITARI
+serviceci,455,RURALDATA:INTEGRACIO DE LES DADES RURALS
+serviceci,456,SI BEQUES: BEQUES D'ALUMNES D'ENSENYAMENTS NO UNIVERSITARIS
+serviceci,457,SI ENS: PROCESSOS GENERALS DEL DEPT. D'ENSENYAMENT
+serviceci,458,SISTEMA DE RELACIO AMB EL CONTRIBUENT
+serviceci,459,STM - AGRUPACIO D'APLICACIONS DE COMPONENTS TECNOLOGICS
+serviceci,460,APLIST: CALENDARI ESCOLAR
+serviceci,461,EJCAT+-INT-EXP (EXPEDIENT ELECTRONIC)
+serviceci,462,NOTIFICACIONS D'ACTIVITATS EN EL LLEURE
+serviceci,463,PROSPECCIO DE PLAGUES
+serviceci,464,RAC - REGISTRE D'ACTIVITAT CATSALUT
+serviceci,465,RPUC - REGISTRE DE PLANEJAMENT URBANISTIC DE CATALUNYA
+serviceci,466,SFTP CPD4
+serviceci,467,SGI: INSPECCIONS CONTROL AGROALIMENTARI
+serviceci,468,SI OFEEDU: OFERTA EDUCATIVA DELS CENTRES DOCENTS
+serviceci,469,SISTEMA DE GESTIO PERSONES GENT (SI GENT)
+serviceci,470,"SISTEMA DE VIGILANCIA, CONTROL ALIMENTARI, CONTROL AMBIENTAL I ALERTES"
+serviceci,471,APLICACIO NUCLI - FIREWALLS CPD DGP
+serviceci,472,CCP - CATALEG CORPORATIU DE PROCESSOS
+serviceci,473,EJCAT-INT-GEF (GESTIO D'EFECTES)
+serviceci,474,EVENTHUB - HUB CORPORATIU D'ESDEVENIMENTS
+serviceci,475,GEAC CORPORATIU
+serviceci,476,GESTOR DE SORTIDES
+serviceci,477,GIA: REGISTRE D'INDUSTRIES AGROALIMENTARIES
+serviceci,478,GPE - SISTEMA DE GESTIO DE PRESTACIONS ECONOMIQUES
+serviceci,479,HES - CONSENTIMENT INFORMAT
+serviceci,480,IIA: AJUTS A LES INDUSTRIES AGROALIMENTARIES
+serviceci,481,INAPDEP: INAPDEP - INVENTARI APLICACIONS DEL DEPARTAMENT
+serviceci,482,INT.SIRGA - SISTEMA D’INFORMACIO PER A LA GESTIO ACADEMICA DE L’ISPC
+serviceci,483,PERSONAL INTEGRA - PERSONAL DE LA INSPECCIO DE TREBALL DE CATALUNYA
+serviceci,484,PUBLICACIO DE DADES ELECTORALS
+serviceci,485,RFID/QR-PATOLOGIA FORENSE (RFID/QR)
+serviceci,486,SAGE
+serviceci,487,SI BAT: PROCESSOS ASSOCIATS AL BATXILLERAT
+serviceci,488,SISTEMA D'INFORMACIO COMISSIO JURIDICA ASSESSORA (SICJA)
+serviceci,489,SISTEMA INFORMACIO GEOGRAFICA ATC (SIG CORPORATIU)
+serviceci,490,"SIT - SISTEMA INFORMACIO TERRITORIAL, NOVA RIT"
+serviceci,491,TRASLLATS: GSD_TRASLLATS - GESTIO SOL·LICITUDS DOCENTS - TRASLLATS
+serviceci,492,VISOR DEL MAPA URBANISTIC DE CATALUNYA MUC
+serviceci,493,"APLICACIO DE CONSULTA WEB DE LA BD D'AUL@ A TRAVES DEL WSNW (EDICIONS, CERTIFICATS, AGENDA)"
+serviceci,494,BANC DE CONTINGUTS MULTIMEDIA ACT
+serviceci,495,BASE DE DADES DE LA SEU ELECTRONICA DE LA GENERALITAT
+serviceci,496,BI ELECTIA
+serviceci,497,BKINT - BACK OFFICE D'INTEGRACIO
+serviceci,498,BOR: BOR - BORSA DE TREBALL DE PERSONAL INTERI/SUBSTITUT DOCENT
+serviceci,499,CIT
+serviceci,500,ECA - ENTITATS CULTURALS I ASSOCIACIONS (_ECACRM)
+serviceci,501,EJCAT-INT-EDI (EDITOR)
+serviceci,502,EL MEU ESPAI ATC
+serviceci,503,GOVERNANÇA RADIOELECTRICA
+serviceci,504,MODULAB
+serviceci,505,OPO: SISTEMA DE GESTIO INTEGRAL D'OPOSICIONS
+serviceci,506,PLA DE GOVERN
+serviceci,507,PORTAL DE LES TIC DE LA GENERALITAT DE CATALUNYA
+serviceci,508,PORTAL SERVEI DE DESENVOLUPAMENT EMPRESARIAL
+serviceci,509,R3C - REGISTRE PUBLIC DE CONVENIS DE COL·LABORACIO I COOPERACIO
+serviceci,510,RENDA BASICA D'EMANCIPACIO
+serviceci,511,RSIPAC - REGISTRE SANITARI D'INDUSTRIES
+serviceci,512,RSPCL - REGISTRE DEL SECTOR PUBLIC LOCAL DE CATALUNYA
+serviceci,513,"SERVEIS SOA (GENDOC, CONDOC, CSV, SIGDOC)"
+serviceci,514,SERVICE PROVES RESTRINGIDES
+serviceci,515,SI BORPAS: BORSA DE TREBALL DE PERSONAL D'ADMINISTRACIO I SERVEIS
+serviceci,516,SISTEMA D'ADMINISTRACIO I GESTIO ACADEMICA (SAGA)
+serviceci,517,WEB CARNET JOVE (WEBCJ)
+serviceci,518,WEB DE PRESSUPOSTOS
+serviceci,519,ACA PLATAFORMA
+serviceci,520,ACCIO DE GOVERN 2011 - 2014
+serviceci,521,ARXIU DE LA MEMORIA
+serviceci,522,BD DE PUBLICACIONS DEL DGAP
+serviceci,523,CCS - CENTRES CATSALUT
+serviceci,524,CEDULES D'HABITABILITAT
+serviceci,525,DADES DE PERSONAL
+serviceci,526,DIGIPATICS
+serviceci,527,EDIWEB - EDICIO I VISUALITZACIO DE DOCUMENTS DE TSF
+serviceci,528,EPSILON DE L'INCASOL
+serviceci,529,FRUIT: REGISTRE FRUITA DOLÇA I CITRICS
+serviceci,530,FUNCIONS COMUNES D'ECONOMIA
+serviceci,531,GESTIO DEL EMMAGATZEMATGE FISIC DELS DOCUMENTS DE TRAMITACIO (ESPAIDOC)
+serviceci,532,GEU - GESTIO D'EXPEDIENTS D'URBANISME
+serviceci,533,HES - HISTORIAL ELECTRONIC DE SALUT-MODULS CORE
+serviceci,534,HOUSING CPD2 DE L'INCASOL
+serviceci,535,INFANCIA RESPON (UDEPMI)
+serviceci,536,INFRA - BIGDATA CLOUDERA - SERVIDOR D'APLICACIO
+serviceci,537,INT.SIPCAT - SISTEMA D'INFORMACIO PER A LES POLICIES LOCALS DE CATALUNYA
+serviceci,538,INTRANET ESCOLA D'ADMINISTRACIO PUBLICA DE CATALUNYA
+serviceci,539,MODUL D'INTERFICIES DE TSF
+serviceci,540,RALC: REGISTRE D'ALUMNES DE CATALUNYA
+serviceci,541,SFTP CPD2
+serviceci,542,SI ODISSEA: ENTORN VIRTUAL DE FORMACIO DEL PROFESSORAT I PAS
+serviceci,543,SI SII: SISTEMA D'INTERCANVI D'INFORMACIO
+serviceci,544,SISTEMA DE GESTIO DE TUTELES (SI TUTELES)
+serviceci,545,TEEC - TRAMITADOR ELECTRONIC D'EXPEDIENTS DE CONTRACTACIO
+serviceci,546,TRAMITADOR GENERIC
+serviceci,547,TRANSPORTS ESPECIALS TRESA
+serviceci,548,VEH: DADES DE FLOTA DE VEHICLES
+serviceci,549,CREACULTURA.CAT
+serviceci,550,EINES BALANÇ ENERGETIC
+serviceci,551,EP - SIEP-EPSMM (SAFATA DE MULTIVALIDACIO I MULTISIGNATURA)
+serviceci,552,GESTIO DEL PROJECTE DELS DISCAPACITATS INTEL·LECTUALS
+serviceci,553,GIN: GESTIO D'INGRESSOS
+serviceci,554,INDEXA: GESTOR DE PROCEDIMENTS DEL DEPARTAMENT
+serviceci,555,INT.SICECAT II - GESTIO EMERGENCIES CECAT
+serviceci,556,INT.WEB - WEB DEL DEPARTAMENT D'INTERIOR
+serviceci,557,INTRASOL
+serviceci,558,IRENEU - RECOLLIDA DE LA INFORMACIO D'ACTIVITATS D'R+D+I
+serviceci,559,PARICS
+serviceci,560,PARLA.CAT - AULA MESTRA
+serviceci,561,PATT: PLA ANUAL DE TRANSFERENCIA TECNOLOGICA
+serviceci,562,SERVEIS WEB D'INTERCANVI D'INFORMACIO AMB TDSAN
+serviceci,563,SI CAMPS: SOL·LICITUDS DE PARTICIPACIO DELS CENTRES A LES ACTIVITATS DELS CDA
+serviceci,564,SI MSG: APLICACIO D'ENVIAMENT DE CORREUS
+serviceci,565,SIG-CAR: RECURSOS PROP D'UNA INCIDENCIA EN EL MEDI
+serviceci,566,SISTEMA DE GESTIO DE RISCOS LABORALS DE LA GENERALITAT
+serviceci,567,SITRAN - ORACLE - TSA
+serviceci,568,SIUAC
+serviceci,569,WEB INFORMACIO DE CONVENIS COL·LECTIUS
+serviceci,570,XECAT: XARXA EQUIPAMENTS
+serviceci,571,ACA: ARXIU CENTRAL ADMINISTRATIUS
+serviceci,572,ACCES PARCS DES DE QUALSEVOL LLOC DEL GLOBUS (SIG-PARCS)
+serviceci,573,ACCESNET CENTRES
+serviceci,574,ASA: CAPTURA POLISSES FITXER D'AGROSEGURO
+serviceci,575,CAC-CERTIFICACIONS D'ASSISTENCIA A CURSOS
+serviceci,576,CDP - CATALEG DE DIAGNOSTICS I PROCEDIMENTS
+serviceci,577,CENS D'ENTITATS JUVENILS
+serviceci,578,EAGG - TIC - GESTIO DE LA BBDD PERSONES
+serviceci,579,EJCAT+-INT-EIT (ESCRIPTORI I TAULER)
+serviceci,580,EJCAT-SUP-GUS (GESTIO D’USUARIS)
+serviceci,581,EP - SIEP: VIDEOTRUCADES
+serviceci,582,ESPAIDOC
+serviceci,583,ETL TALEND BDE-SAC
+serviceci,584,FILESERVER PER C/S A CPD2
+serviceci,585,"GENERACIO, CONVERSIO I IMPRESSIO DE DOCUMENTS I PLANTILLES (BIFDOC)"
+serviceci,586,GESTIO INFRAESTRUCTURA IDESCAT
+serviceci,587,ICAM - AUS - ATENCIO A L'USUARI
+serviceci,588,INDICADORS DE CONJUNTURA ECONOMICA - ICE_PBI (IPAD)
+serviceci,589,INSTAL·LACIONS JUVENILS
+serviceci,590,ISARDVDI - ESCRIPTORIS VIRTUALS
+serviceci,591,MTES - MODUL DE TRAMITACIO ELECTRONICA SEGURA
+serviceci,592,PROGRAMACAT (_PROGRAMACAT)
+serviceci,593,RSNM - REGISTRE SISTEMA DE NOTIFICACIONS MICROBIOLOGIQUES
+serviceci,594,SC - BORSA D'INTERINS (BIJ)
+serviceci,595,SCAT - SISTEMA DE CONEIXEMENT DE LES ACTUACIONS AL TERRITORI
+serviceci,596,SERVEI DE RECONEIXEMENT FACIAL - FMS
+serviceci,597,SEU JUDICIAL ELECTRONICA (GECO+)
+serviceci,598,SI MITE: MENJADOR I TRANSPORT ESCOLAR
+serviceci,599,SI PLD: GESTIO DEL CALCUL I PUBLICACIO DE LES PLANTILLES DOCENTS DELS CENTRES DOCENTS PUBLICS
+serviceci,600,SISTEMA D'INFORMACIO DE SALUT LABORAL
+serviceci,601,WEB D'HOTELS (REGISTRE DE VIATGERS)
+serviceci,602,ACA WEB: PORTAL TRIBUTARI
+serviceci,603,ACTUACIONS AL TERRITORI
+serviceci,604,APE: AVALUACIO PERSONAL DOCENT
+serviceci,605,BASE DE DADES DE LA SEU ELECTRONICA DE LA GENERALITAT: BACK-OFFICE
+serviceci,606,BOR: NOVACO - SOL·LICITUD D'ADMISSIO A LA BORSA DE TREBALL DE PERSONAL INTERI DOCENT
+serviceci,607,COPE: CONTROLS OFICIALS PESQUERS
+serviceci,608,COSTIC / CONTIC - REPERCUSSIO DEL COST DE LES TIC / CONTROL D'ACORD DE NIVELL DE SERVEI TIC
+serviceci,609,EINA CONFORCAT
+serviceci,610,EJCAT+-IAP-BOT-TELEGRAM
+serviceci,611,GESPRE - GESTIO DE LA DOCUMENTACIO DEL GABINET DE LA PRESIDENCIA
+serviceci,612,GESTIO DE CONCURSOS DE TRASLLAT
+serviceci,613,GESTIO DEL LLOC WEB DE CONSUM (WEB-ACC): MODUL CLOUD
+serviceci,614,GIS - CORPORATIU: INFO OPERATIVA EN TEMPS REAL
+serviceci,615,HES - PREMS I PROMS
+serviceci,616,ICT: INSTAL·LACIONS COMUNES DE TELECOMUNICACIONS
+serviceci,617,IMOBCAT
+serviceci,618,INDIC - INVENTARI DIGITAL DE CENTRE
+serviceci,619,"INT.ERP (VEHICLES, LOGISTICA I MANTENIMENT)"
+serviceci,620,INT.GEAC - GESTIO DE L'EXPEDIENT DE L'ARXIU CENTRAL
+serviceci,621,MATRICAT-ORGANISMES DE CONTROL I ITV'S (OCIT)
+serviceci,622,OPENSHIFT CPD2
+serviceci,623,PETICIONS VEHICLES OFICIALS
+serviceci,624,PLA D'EQUIPAMENTS CULTURALS TERRITORIALS DE CATALUNYA (PEC CAT)
+serviceci,625,PLATAFORMA DE SEGURETAT HES
+serviceci,626,PORTALPREINSCRIPCIONS (ROLXN)
+serviceci,627,REGISTRES SANITARIS AMBIT CONSELLERIA
+serviceci,628,RGC-WEB
+serviceci,629,SC - GESTIO DE LA CONTRACTACIO DE RRHH
+serviceci,630,SERVEIS WEB CONSUMIDORS GIDECAT (CONVOCATORIES)
+serviceci,631,SI ENS: ENSENYAMENTS
+serviceci,632,SIGDAR: PARCEL·LES AGRICOLES DE CATALUNYA
+serviceci,633,STEMARIUM
+serviceci,634,TEMIS2 - SERVEI D'ACTES I COMUNICACIONS (SAC)
+serviceci,635,TIC - GESTIO DE PROJECTES DE L'AREA TIC - DIRECTORI D'USUARIS
+serviceci,636,WEB DE LA FILMOTECA DE CATALUNYA
+serviceci,637,WEB TURISME ACCESSIBLE ACT
+serviceci,638,WSOCIAL-SEG - RELACIO AMB EL MON LOCAL - MODUL DE SEGURETAT
+serviceci,639,AEA - ATENCIO ESPECIALITZADA AMBULATORIA
+serviceci,640,AJ-GIF-GESTIO INTEGRAL DE FISCALIA
+serviceci,641,APLICACIO NUCLI - BALANCEJADORS NODGP
+serviceci,642,ARCONTE: APLICACIO
+serviceci,643,ARGOS SAP ASSISTENCIAL - ETC
+serviceci,644,CENSCOM-CENS D'ESTABLIMENTS COMERCIALS
+serviceci,645,CERCADOR DE RECURSOS
+serviceci,646,DIRCON
+serviceci,647,EAGG - GESTIO DE RESERVES DE VEHICLES (NOU)
+serviceci,648,ECAP - ADM OPERADOR
+serviceci,649,ECAP - HES - VISOR
+serviceci,650,ECAP - WEB - ECONSULTA ESPECIALITZADA
+serviceci,651,EJCAT-IAP-TTA (PRESENTACIO DE DEMANDES)
+serviceci,652,EJCAT-INT-EST (ESTADISTIQUES)
+serviceci,653,EJCAT-SUP-STD (SERVEI DE TRANSFORMACIO DE DOCUMENTS)
+serviceci,654,EP - SIEP-AVEP: AGENDA I RESERVA DE SALES PER A VIDEOCONFERENCIES
+serviceci,655,FORMULARIS INTRANET DEPARTAMENTAL
+serviceci,656,GCO
+serviceci,657,GESTOR DE NOTIFICACIONS DE L'ACA
+serviceci,658,GIDEP: GESTIO INTERNA DEPARTAMENTAL
+serviceci,659,HES - CENTRE D'AJUDA I MOTOR DE CERCA
+serviceci,660,INT.CCSSVP - COMUNICACIO DE CONTRACTES I SERVEIS DE SEGURETAT
+serviceci,661,INT.FORMINT - GESTIO DE LA FORMACIO DEL DEPARTAMENT D'INTERIOR
+serviceci,662,INTEGRADOR DE PROCESSOS D'ECONOMIA
+serviceci,663,MAPA D'ENERGIA I GAS (MAPEIG)
+serviceci,664,MERLI: ALOMA
+serviceci,665,OPENSHIFT CPD3
+serviceci,666,REGISTRE DE DEFUNCIONS
+serviceci,667,SAP PORTAL INCASOL
+serviceci,668,SEGUIMENT D'ACTUACIONS DE DTES
+serviceci,669,SERVEIS PROACTIUS::INTERN: REGISTRE DE CONSENTIMENTS I SERVEIS PROACTIUS – CLOUD
+serviceci,670,SI PER LA DG DE POLITICA FINANCERA
+serviceci,671,SUMA - AGREGACIO DE PETICIONS DE COMPRA
+serviceci,672,SUPORT A L'ACTIVITAT ACADEMICA DE DSO
+serviceci,673,SUPORT SERVEIS CPD
+serviceci,674,TIPGRI-TRAMESA D'INFORMACIO PRESSUPOSTARIA DELS ENS LOCALS
+serviceci,675,ZCLIC: ZONA CLIC
+serviceci,676,AGIN: ALTA / GESTIO D'INCIDENCIES
+serviceci,677,APLICACIO NUCLI - BALANCEJADORS DGP
+serviceci,678,APP CARNET JOVE
+serviceci,679,APP CIUTADA
+serviceci,680,APP DENUNCIES DE TRANSIT
+serviceci,681,BSCNX - CATNIX
+serviceci,682,BUTLLETINS GENCAT
+serviceci,683,CALCULADORES PER EFICIENCIA ENERGETICA
+serviceci,684,CEEREE - CENS D'EQUIPAMENTS I REGISTRE D'ENTITATS
+serviceci,685,CMD: CONCURS MERITS DIRECTORS
+serviceci,686,CONTROL HORARI PERSONAL ADMINISTRACIO I SERVEIS (PAS)
+serviceci,687,CWS: POWER BI GATEWAY
+serviceci,688,DALI I GRAFS
+serviceci,689,DWHCORPORATIU: DMA_SIDEN - DATAWAREHOUSE DEL DEPARTAMENT
+serviceci,690,EAGG -TRAMESA MASSIVA DE CORREU AL DEPARTAMENT
+serviceci,691,ECND: ASSIGNACIO DE CARRECS DOCENTS NO DIRECTIUS
+serviceci,692,EJCAT-IAP (EXTRANET DEL PROFESSIONAL)
+serviceci,693,EJCAT-INT-COR (CORREUS)
+serviceci,694,EJCAT-INT-VEX (VISOR EXPEDIENT ELECTRONIC)
+serviceci,695,EJCAT-SUP-CEE (COMUNICACIO AMB ENTITATS EXTERNES)
+serviceci,696,EP - SIEP-EPGDI (GESTOR D'IDENTITATS)
+serviceci,697,GESTIO ANC CANVIS MASSIUS TEXTUALS (CANVISMASS)
+serviceci,698,GESTIO CENTRALITZADA DE LOGS
+serviceci,699,GESTIO DE CONVENIS DEL DTES
+serviceci,700,GESTIO DE MANTENIMENTS I SERVEIS
+serviceci,701,GESTIO DE VEHICLES DEL DTES
+serviceci,702,INTRANET DEPARTAMENT DE SALUT
+serviceci,703,MAPA CONTINU DE TRANSIT
+serviceci,704,MENU D'APLICACIONS DE DTES
+serviceci,705,MODUL: SLAVE DE CPD2 DEL FRAMEWORK SIC
+serviceci,706,PREMSA PL
+serviceci,707,QUADRE DE COMANDAMENT OPERATIU
+serviceci,708,REGISTRE DE CATALANS I CATALANES A L'EXTERIOR
+serviceci,709,SAP PI INCASOL
+serviceci,710,SC - EXPEDIENTS DE CIVIL (CIV)
+serviceci,711,SFTP CPD3
+serviceci,712,SI ACO: QUESTIONARIS SOBRE LES AULES D'ACOLLIDA
+serviceci,713,"SI GES-ISA: GESTIO ACADEMICA, ADMINISTRATIVA I CAMPUS VIRTUAL DE L'ESDAP (GES-ISA)"
+serviceci,714,SISTEMA DE TARGETES ACREDITATIVES DE LA DISCAPACITAT (SI TAC)
+serviceci,715,SISTEMA PUBLIC D'EQUIPAMENTS ESCENICS I MUSICALS
+serviceci,716,SISTEMA VALISA VIRTUAL DE TSF
+serviceci,717,TRADUCTORS. MOTOR DE PARELLES OCCITA
+serviceci,718,TRAMITACIO (TRAMITACIO D'ATESTATS DEL COS DELS MOSSOS D'ESQUADRA)
+serviceci,719,WSOCIAL - SISTEMA D'ENTORN DE TREBALL PER A LA INTERVENCIO SOCIAL DE L'ESOCIAL
+serviceci,720,ACCESNET - CONSULTA RAPIDA PER A CLOUD PUBLIC
+serviceci,721,AGENDA REVISIONS MEDIQUES
+serviceci,722,API MANAGER TRANSVERSAL
+serviceci,723,AQUARIUS TIME SERIES
+serviceci,724,ARCONTE
+serviceci,725,ARGOS SAP ASSISTENCIAL - INTEGRACIONS
+serviceci,726,AWS
+serviceci,727,BIOBANC
+serviceci,728,BSMOB - SERVEIS PER MOBILS
+serviceci,729,BSVEU - NUS DE VEU
+serviceci,730,CGE: CONTRACTE GLOBAL I DE L'ASSESSORAMENT AGRARI
+serviceci,731,COMANDES MATERIAL 2.0 (CM2_0)
+serviceci,732,CONNECTIVITAT ESPECIFICA
+serviceci,733,DIRECTORI DE BIBLIOTEQUES CATALANES
+serviceci,734,EINA DE GESTIO PEL CRBMC (CENTRE DE RESTAURACIO DE BENS MOBLES DE CATALUNYA)
+serviceci,735,EJCAT - REMOT
+serviceci,736,EJCAT+-INT-GRE (GESTIO DEL RESPONSABLE)
+serviceci,737,EJCAT+-INT-TDJ+ (TRIBUNAL DEL JURAT)
+serviceci,738,EJCAT-IAP-CJG (CONSULTA DE JUSTICIA GRATUÏTA)
+serviceci,739,EP - SIEP-EXPEP (EXTRANET DE PERSONES EN EXECUCIO PENAL)
+serviceci,740,FIE: FIE - FITXA INFORMATIVA DE L'ESTUDI
+serviceci,741,GEA - GESTIO EXPEDIENTS EXPROPIACIONS
+serviceci,742,GECAT - GESTIO ECONOMICA DE LA GENERALITAT DE CATALUNYA
+serviceci,743,GECO+: PORTAL WEB ICS.GENCAT.CAT
+serviceci,744,GES-ISA: ESDAP - GESTIO DE L'INSTITUT SUPERIOR D'ARTS
+serviceci,745,GESPROWEB - CONTROL DE PROJECTES D'INFRAESTRUCTURES
+serviceci,746,GESTIO DEL LLOC WEB DE CONSUM (WEB-ACC)
+serviceci,747,GESTIO I ADMINISTRACIO DE PROTOCOLS D'INSPECCIO EN PROTECCIO DE LA SALUT
+serviceci,748,GESTIO INTEGRAL DE LA VERIFICACIO I JUSTIFICACIO
+serviceci,749,GOVERNMENT OF CATALONIA
+serviceci,750,GSD: GSD_HOST - GESTIO SOL·LICITUDS DOCENTS - HOST
+serviceci,751,GSIT::INTERN: SERVEIS ETL
+serviceci,752,HES - MPI
+serviceci,753,HES - PROGRAMACIO PER MOTIUS
+serviceci,754,"ICAM - STR - ESTRUCTURA, CONFIGURACIO I PARAMETRITZACIO"
+serviceci,755,INT.ESAD - SEGUIMENT D’ASSUMPTES I DOCUMENTACIO
+serviceci,756,INTRANET EMPRESA
+serviceci,757,INVENTARI PATRIMONIAL: REPORTING PBI MICROSOFT
+serviceci,758,IQUALITAT DEL PROGRAMARI
+serviceci,759,LLETRES A LES AULES
+serviceci,760,LLM: LLICENCIES DE MARISCADORS I VAIXELLS
+serviceci,761,MAER - MITJANS AERIS BOMBRES
+serviceci,762,PAP-PLANIFICACIO D'ACTUACIONS PREVENTIVES
+serviceci,763,PAUTIC (ITSM - REMEDY): DISCOVERY
+serviceci,764,PERMISOS D'INTERVENCIONS ARQUEOLOGIQUES (PINTER)
+serviceci,765,PLATAFORMA TRANSVERSAL DE DADES DE LA GENERALITAT DE CATALUNYA
+serviceci,766,PORTAL DE PREMSA
+serviceci,767,PUNT CENTRAL D'INFORMACIO
+serviceci,768,QUAIRE - PORTAL DE LA QUALITAT DE L'AIRE
+serviceci,769,REGISTRE DE PROFESSIONALS SANITARIS (RPS)
+serviceci,770,REGISTRE DE SINDICATS I ASSOCIACIONS PROFESSIONALS (RSAE)
+serviceci,771,REGISTRE ELECTRONIC D'EMPRESES LICITADORES - RELI
+serviceci,772,SIVECAT-CENS DE VEHICLES I INSPECCIO TECNICA DE VEHICLES
+serviceci,773,STXWORD - GAUDI
+serviceci,774,TESEO
+serviceci,775,TRIATGE
+serviceci,776,ACTIC BI
+serviceci,777,ALFIL
+serviceci,778,APLICACIO ACCES A DADES DE PADOCT/DALI/MIRO/BIGSTDE
+serviceci,779,APLICACIO DE GESTIO DE SOL·LICITUDS DE QUESTIONARIS I PROVES DE CATALA PER A PROCESSOS SELECTIUS
+serviceci,780,BSIPS - ADREÇAMENT IP SEUS
+serviceci,781,CERCADOR DELS ALLOTJAMENTS TURISTICS
+serviceci,782,CIRE - GESTIO ALIMENTACIO (MIA)
+serviceci,783,CONTRACTES DE PERSONAL DE TSF
+serviceci,784,CWS: CITA PREVIA
+serviceci,785,DATA SCIENCE
+serviceci,786,DATA WAREHOUSE DEL GECAT
+serviceci,787,DGN - CATALEG DE DIAGNOSTICS I PROCEDIMENTS
+serviceci,788,DOCUMENTACIO I CATALOGACIO DE L'INVENTARI DELS MUSEUS (MUSEUMPLUS): CONSOL-APP
+serviceci,789,ECODIF
+serviceci,790,EJCAT+-SUP-POR+ (PORTAL)
+serviceci,791,EJCAT-(MODULS COMPLEMENTARIS) EJCCOM
+serviceci,792,EJCAT-SUP-TME (TAULES MESTRES)
+serviceci,793,ENQUESTA D'ESTABLIMENTS AMB REGIM D'INTERNAMENT
+serviceci,794,ENVIAMENT MASSIU SMS
+serviceci,795,EP - SIEP-EPGUS (GESTIO D'USUARIS)
+serviceci,796,EP - SIEP-EPSTA (SAFATA DE TASQUES I AVISOS)
+serviceci,797,ESE: ELECCIONS SINDICALS
+serviceci,798,GAUDI - ARQUITECTURA
+serviceci,799,GECO+: PORTAL DEL DIXIT
+serviceci,800,GESTIO DE TAXES (GTS)
+serviceci,801,GESTIO DEL TERRITORI
+serviceci,802,GESTOR DE CURSOS
+serviceci,803,GICAR: AUTENTICACIO
+serviceci,804,GSIT: CITA PREVIA
+serviceci,805,GSIT::INTERN: API TRAMITACIO
+serviceci,806,GTA - GESTIO DE LA TARGETA SANITARIA
+serviceci,807,ICAM - PLATAFORMA CLINICA XAVIER GOMILA
+serviceci,808,INT.EDPJ - EXPEDIENTS DIGITALITZATS DE PERSONAL
+serviceci,809,ISISSCAT: PLATAFORMA INTEROPERABILITAT
+serviceci,810,JOC DRETS INFANTS
+serviceci,811,MODUL TRANSVERSAL PER ANNEXAR DOCUMENTS
+serviceci,812,MODULS DE SERVEIS COMUNS (EJCAT)
+serviceci,813,NPAC_DVP-VENDA_PER_PROXIMITAT
+serviceci,814,PICA: PRODUCTE NT - NOTIFICACIONS ELECTRONIQUES
+serviceci,815,PLATAFORMA CORPORATIVA DE RPA
+serviceci,816,PUBLICACIO ESTATICA INTERNET
+serviceci,817,SARCAT : PORTAL DE FORMACIO ALS USUARIS
+serviceci,818,SC - SIGEP (SISTEMA DE GESTIO PATRIMONIAL)
+serviceci,819,SI OVTPUBLI: PUBLICACIONS DE LLISTES I RESULTATS DE CONVOCATORIES
+serviceci,820,SI SICEN: SISTEMA D'INFORMACIO DE CENTRE
+serviceci,821,SIE- CBL - CENTRAL DE BALANÇOS
+serviceci,822,WSOCIAL-OBS - RELACIO AMB EL MON LOCAL - MODUL D'OBSERVABILITAT
+serviceci,823,AAH - AGUTS HOSPITALARIS
+serviceci,824,ACA CC
+serviceci,825,AJ-TSJ-SALA DE GOVERN DEL TSJC
+serviceci,826,ANALISI D'INFORMACIO DELS TRIBUTS GESTIONATS PER L'ATC (DWH) - ODI
+serviceci,827,ARF: AJUT RECONVERSIO PLANTACIONS DE FRUITA DOLÇA
+serviceci,828,ARGOS ECONOMIC FINANCER - SAP XI
+serviceci,829,BORSA DE TREBALL DE TSF
+serviceci,830,"BUS DE INTEROPERATIBILITAT D'APLICACIONS TRIBUTARIES (BUS, APIM, KAFKA CORPORATIU)"
+serviceci,831,CARNETS GENT GRAN
+serviceci,832,CERCADORS DE TELECOMUNICACIONS
+serviceci,833,CONSULTA CARTERA DE SERVEIS SOCIALS
+serviceci,834,COP: LLIBRE COMPTABLE AJUTS FEOGA
+serviceci,835,DIRECTORI TELEFONIC DE TSF
+serviceci,836,DOCUMENTACIO I CATALOGACIO DE L'INVENTARI DELS MUSEUS (MUSEUMPLUS)
+serviceci,837,EAGG - RESERVA DE SALES
+serviceci,838,EJCAT-SUP-GPP (GESTIO DE PERSONES I PROFESSIONALS)
+serviceci,839,ENQUESTES
+serviceci,840,ESPRIU - CONTRIBUENT 360
+serviceci,841,ESTADISTIQUES VISITES OAC
+serviceci,842,ESTIU: GSD_ESTIU - GESTIO SOL·LICITUDS DOCENTS - ESTIU
+serviceci,843,FORMULARI WEB D'INSCRIPCIO A LLISTES DE DISTRIBUCIO DE L'EAPC I GESTIO D'AQUESTES
+serviceci,844,GCONV: GESTIO DELS CONVENIS DEL DEPARTAMENT
+serviceci,845,GDT. GENCAT DIGITAL TRAMITACIO
+serviceci,846,GECO+: WEB_DAAM: PORTAL CORPORATIU DEL DEPARTAMENT
+serviceci,847,GESTIO ANC TEXTUAL (GANCGIACTEXTUAL)
+serviceci,848,GESTORTRAMESES
+serviceci,849,GICEC: PROGRAMARIS DE L'ARXIU DE LA FILMOTECA (AXIELL)
+serviceci,850,GIS CONSULTA DADES DEL PATRIMONI CULTURAL IMMOBLE CATALA (EGIPCI)
+serviceci,851,HES - IMMUNITZACIONS
+serviceci,852,HES - LANDING PACE
+serviceci,853,HES - PLANIFICAT ADMINISTRATIU
+serviceci,854,ICAM - GPV - PROGRAMACIO DE VISITES
+serviceci,855,IMPRESSIO MASSIVA DELS CERTIFICATS DE L'IRPF (IRW CERTIFICATS IRPF)
+serviceci,856,INFOTUR: GESTOR DEL RECULL INFORMACIO TURISTICA DE CATALUNYA
+serviceci,857,INT.DPXIO - DESPATX DE BOMBERS: INTEGRACIONS
+serviceci,858,INT.SCF - CAMPANYA FORESTAL
+serviceci,859,INVENTARI DEL PATRIMONI ARQUEOLOGIC
+serviceci,860,INVENTARI PUBLIC
+serviceci,861,JUSTIFICACIO ECONOMICA LINIES DE SUBVENCIONS (JERJES)
+serviceci,862,KHALIX QC
+serviceci,863,LSR-ORALIMS: LABORATORI DE SANITAT RAMADERA
+serviceci,864,MONITORATGE (BSM) - APLICACIO
+serviceci,865,MOODLE CONFORCAT
+serviceci,866,OBSERVATORI D'OCUPACIO - SEGURETAT I SALUT LABORAL
+serviceci,867,OFERTA MUNICIPAL D'ESTABLIMENTS TURISTICS
+serviceci,868,PLASH (PLA SERRA HUNTER TRANSFORMAT) - CLOUD
+serviceci,869,PLATAFORMA DE SERVEIS DE GESTIO DOCUMENTAL: APLICATIU
+serviceci,870,PORTAL PATRIMONI FESTIU
+serviceci,871,PPCI: PASSAREL·LA DAAM - PORTAL CIUTADA
+serviceci,872,QUADRE DE SEGURETAT DE PACIENTS
+serviceci,873,RADAE: MODUL CORE
+serviceci,874,RCOW - REGISTRE DE CONTRACTES WEB
+serviceci,875,RESEE: REGISTRE D'EQUIPAMENTS DE SUPORT EDUCACIO ESPECIAL
+serviceci,876,RESERVA DE SALES EMC
+serviceci,877,RFHNC.CLOUD - REGISTRE DE PERSONAL FUNCIONARI AMB HABILITACIO DE CARACTER ESTATAL DE CATALUNYA
+serviceci,878,SARCAT : PORTAL DE SUPORT ALS CONNECTORS
+serviceci,879,SC - SISTEMA DE GESTIO DE BORSES DE PERSONAL (SGBP)
+serviceci,880,SERVEIS
+serviceci,881,SI ALEXANDRIA: BIBLIOTECA DE RECURSOS DIGITALS
+serviceci,882,SI EED: ENTORN D’EXPLOTACIO DE DADES (EED)
+serviceci,883,SI GESTILS: GUIA D'ESTILS DEL DEPARTAMENT D'ENSENYAMENT
+serviceci,884,SI INAPDEP: CATALEG D'APLICACIONS
+serviceci,885,SI MOE: MAPA DE L'OFERTA EDUCATIVA
+serviceci,886,SI OBR: PLANIFICACIO I CONSTRUCCIO D'OBRES (OBR)
+serviceci,887,SI PDCENTRE: GESTIO I SEGUIMENT DELS DIFERENTS PROJECTES DE CENTRES
+serviceci,888,SI QCEN: QUESTIONARIS PER ALS CENTRES DOCENTS
+serviceci,889,SISTEMA CRM ACT
+serviceci,890,SUBHASTA ELECTRONICA
+serviceci,891,TALAIA - APM
+serviceci,892,TEMIS2-MODULS DEL SISTEMA DE GESTIO PROCESSAL
+serviceci,893,"TERRITORIAL (BASE DE DADES TERRITORIAL ( PAISOS, DEMARCACIO, MUNICIPIS, LOCALITATS, ADRECES, ... )"
+serviceci,894,TRADUCTORS. MOTORS DE PARELLS NO OCCITA
+serviceci,895,VIDEOATENCIO CIUTADANA
+serviceci,896,VIGILANCIA EPIDEMIOLOGICA SALUT LABORAL
+serviceci,897,XAC PREMSA (_PANDORA)
+serviceci,898,ACA CC / SAMCAT
+serviceci,899,ADMINISTRACIO SERVEIS DE MISSATGERIA
+serviceci,900,APLICACIO NUCLI - CONTROLADORS DE DOMINI DGP
+serviceci,901,APLICACIO NUCLI - FIREWALL PERIMETRAL DGP
+serviceci,902,APLICACIO NUCLI - FIREWALLS CPD NODGP
+serviceci,903,APLICACIO NUCLI - STORAGE TRANSVERSAL
+serviceci,904,APLICACIONS WEB DMAH - GECO
+serviceci,905,APPLET D'EDICIO OPEN OFFICE DE DTES
+serviceci,906,ARCONTE: PORTAL PROFESSIONALS
+serviceci,907,ARGOS SAP ASSISTENCIAL - ETINF
+serviceci,908,ARP - ASSIGNACIO DE RECURSOS PUBLICS
+serviceci,909,BASE DE DADES D'EMPRESES
+serviceci,910,BI OBSERVATORI DEL TREBALL - PUBLICACIO
+serviceci,911,BSNUS - ACCES AL NUS
+serviceci,912,BUS DE L'ACA
+serviceci,913,CALCULADORA DE FINESTRES
+serviceci,914,CATSALUT-CATALEGS
+serviceci,915,CLASSIFICACIO D'EMPRESES - FUNCIONS COMUNES
+serviceci,916,CONNECTIVITAT PUNT A PUNT
+serviceci,917,CONSULTA ADMISSIO A CURSOS
+serviceci,918,CONTROL HORARI
+serviceci,919,DADJUS-EVIDENCIA - GESTIO D'USUARIS DE MICROSTRATEGY
+serviceci,920,DATAWAREHOUSE ACTUACIONS TRANSIT
+serviceci,921,DIFUSIO DELS PERMISOS D'INTERVENCIONS ARQUEOLOGIQUES (PINTER_DIF)
+serviceci,922,DIRECTORI TELEFONIC
+serviceci,923,ECAP - ASS - DERIVACIONS
+serviceci,924,ECAP - ASS - VIDEOCONSULTA
+serviceci,925,EDOCS - SISTEMA DE GESTIO DE DOCUMENTS ELECTRONICS DE DTES
+serviceci,926,EJCAT+ (SERVEIS DE TRAMITACIO)
+serviceci,927,EJCAT-SUP-SIG (SIGNATURA)
+serviceci,928,EJCAT-SUP-TRAPARA (PARALEL·LISME)
+serviceci,929,ENVIAMENT MASSIU DE CORREUS
+serviceci,930,EP - SIEP - EPVEU (TRUCADES DE VEU)
+serviceci,931,EP - SIEP-AGENDA (AGENDA D'EXECUCIO PENAL)
+serviceci,932,EP - SIEP-EPMSI (MISSATGERIA)
+serviceci,933,EP - SIEP-INPEP (INTRANET PERSONES EN EXECUCIO PENAL)
+serviceci,934,EP - SIEP: SISTEMA D'INFORMACIO DE L'EXECUCIO PENAL DE CATALUNYA (CLOUD)
+serviceci,935,EXPSIP
+serviceci,936,EXTERCAT
+serviceci,937,GAIA-CADI
+serviceci,938,GAUDI - GAUMIG
+serviceci,939,GECO+: SEU JUDICIAL ELECTRONICA
+serviceci,940,GESPRETEL - GESTIO DELS TELEFONS DEL PRESIDENT
+serviceci,941,GESTECO - GESTIO TASQUES EVOLUTIVES I CORRECTIVES ATIC
+serviceci,942,GESTIO ANC CANVIS MASSIUS NO TEXTUALS (CANVMASS)
+serviceci,943,GESTIO D'EXPEDIENTS DE L'ARXIU CENTRAL (GEACI)
+serviceci,944,GESTIO I DIFUSIO DE MUSEUS I COL·LECCIONS (ATHENEA)
+serviceci,945,GESTOR ESTADISTIC UNIFICAT
+serviceci,946,GICAR: GDI
+serviceci,947,GOVERNANÇA RADIOELECTRICA - CENTRE DE CONTROL
+serviceci,948,GSF - GESTIO SISTEMATITZADA DE FERMS
+serviceci,949,GSIT::INTERN: EINA DE CONFIGURACIO DE TRAMITS (EA ANTIGA)
+serviceci,950,INFRA - ORACLE - BBDD EXADATA
+serviceci,951,INT.PSH - REPOSITORI DOCUMENTAL TIC
+serviceci,952,INTEGRACIO GSIT (_INTGSIT)
+serviceci,953,INTERRUPCIO VOLUNTARIA DE L'EMBARAS
+serviceci,954,ISEO XVPCA - GESTIO SENSORS I MATERIAL DE LES ESTACIONS DE LA XVPCA
+serviceci,955,JIRA: GESTIO D'ACTIVITATS DE MANTENIMENT TIC
+serviceci,956,KHALIX SISAP
+serviceci,957,LA MEVA CARTERA
+serviceci,958,MOBILITAT DGP - COMPONENTS COMUNS
+serviceci,959,MODUL COMU DE LOGINACIO
+serviceci,960,MODUL: SLAVE DE CPD4 DEL FRAMEWORK SIC
+serviceci,961,MODULS COMUNS - RUTINES COMUNS
+serviceci,962,MONITOR D'ASSENYALAMENTS POLICIALS (MOSSOS-BDSN-SCHENGEN)
+serviceci,963,MONITORATGE (BSM) - SONDES
+serviceci,964,MSG: SML - GESTIO DEL SERVEI D'ENVIAMENT DE CORREUS ELECTRONICS (E13_SML)
+serviceci,965,MTS - GESTIO TIC
+serviceci,966,"MUCEDI - EDICIO, CARREGA I GENERACIO DEL MAPA URBANISTIC"
+serviceci,967,NAVISION
+serviceci,968,NOU SAMCAT
+serviceci,969,NPAC
+serviceci,970,NUMERACIO ESPECIAL
+serviceci,971,OBRES SELECCIONADES I COMENTADES DE LA SPL (RESSENYES PL)
+serviceci,972,ODISSEA: ODISSEA
+serviceci,973,PAUTIC (ITSM - REMEDY): REPLICA
+serviceci,974,PETICIONS ARXIU CENTRAL DE TSF
+serviceci,975,PICA: PRODUCTE PSIS - VALIDACIO I SIGNATURA REMOTA
+serviceci,976,PLATAFORMA DE FORMACIO E-LEARNING (EFORMACIO.ECO)
+serviceci,977,POE: PLANIFICACIO DE L'OFERTA EDUCATIVA
+serviceci,978,PORTAL DE LES COMISSIONS TERRITORIALS D'URBANISME
+serviceci,979,POSA'T A PROVA
+serviceci,980,PRESDIR - DIRECTORI DE CONTACTES DEPARTAMENT DE PRESIDENCIA
+serviceci,981,PUBLICACIO A INTERNET DE LES COL·LECCIONS DE CATALUNYA (_CERCACOLLECCIONS)
+serviceci,982,PUBLICACIO A INTERNET DEL DIRECTORI D'ARXIUS DE CATALUNYA (_CERCAARXIUS)
+serviceci,983,QLICKVIEW
+serviceci,984,REDCAP-RESEARCH ELECTRONIC DATA CAPTURE
+serviceci,985,REGISTRE DE CORRESPONDENCIA PART AMBIENTAL
+serviceci,986,REGISTRE DE VOLUNTATS ANTICIPADES
+serviceci,987,REGISTRE INTERN D'E/S DE DOCUMENTS
+serviceci,988,REVAP: REGISTRE DE VACUNACIONS EN CENTRES PRIVATS
+serviceci,989,RMDI - R. MALALTIES DE DECLARACIO INDIVIDUAL
+serviceci,990,ROESP: REGISTRE D'ESTABLIMENTS PLAGUICIDES
+serviceci,991,SAC - PORTAL DEL INFORMADOR
+serviceci,992,SAC - SAC ONLINE
+serviceci,993,SALES DE COMANDAMENT (FENIX)
+serviceci,994,SANQA - SANCIONADORS QUALITAT AMBIENTAL
+serviceci,995,SCRIPTS DE CARREGA DE TSF
+serviceci,996,SERVEIS WEB CONSULTA ENTITATS NUCLI
+serviceci,997,SERVIDOR LLICENCIES TERRITORI
+serviceci,998,SI FORMULARIS ADOBE DE TSF
+serviceci,999,SI POE: PLANIFICACIO DE L'OFERTA EDUCATIVA (POE)
+serviceci,1000,SI PUB: PUBLICACIO RESULTATS
+serviceci,1001,SI USAV: CANAL DE COMUNICACIO I DENUNCIA DE VIOLENCIES ALS CENTRES EDUCATIUS
+serviceci,1002,SIE-SIE
+serviceci,1003,SISTEMA DE GESTIO DE PERSONES GENI (SI GENI)
+serviceci,1004,SLI
+serviceci,1005,SMH - SALUT MENTAL HOSPITALARIA
+serviceci,1006,SUBVENCIONS JOVENTUT
+serviceci,1007,TALAIA - PLATAFORMA CENTRAL
+serviceci,1008,TELEFONIA MOBIL
+serviceci,1009,TRAMESA - GESTIO DE CORREU DEPARTAMENTAL
+serviceci,1010,USUARIS: IDI - IDENTITAT DIGITAL
+serviceci,1011,VAGA: GESTIO DE LA VAGA
+serviceci,1012,VIRTUALITZACIO
+serviceci,1013,WEB FIANCES INCASOL
+serviceci,1014,XTECBLOCS: PLATAFORMA DE BLOCS PER A PROFESSORS I CENTRES DOCENTS
+serviceci,1015,ACT_ELASTICSEARCH
+serviceci,1016,ADMINISTRACIO SERVEIS DE REPROGRAFIA
+serviceci,1017,AES: EXPEDIENTS SANCIONADORS
+serviceci,1018,AGAI: AGAI-ADM - APLICACIO GESTIO ACTIVITATS D'INNOVACIO - PERFIL ADMINISTRADOR
+serviceci,1019,ALTRES WEBS ACT
+serviceci,1020,ARGOS SAP ASSISTENCIAL - CTI BO
+serviceci,1021,ARQUITECTURA SERVEIS WEB
+serviceci,1022,ATENEU: ATENEU
+serviceci,1023,ATM_APLICACIONS GENERAL
+serviceci,1024,ATM_SGIT
+serviceci,1025,AVALUACIO D'EXPEDIENTS DE SUBVENCIONS D'EQUIPAMENTS
+serviceci,1026,BI AJUTS I SUBVENCIONS
+serviceci,1027,CALCUL D'INTERESSOS
+serviceci,1028,CENTRAL DE RESERVES (CERES)
+serviceci,1029,CERCADOR WEBS GENCAT
+serviceci,1030,CIRE - SAP
+serviceci,1031,CONNEXIO POWER BI-EXADATA
+serviceci,1032,CONVOCATORIES (INTERNET)
+serviceci,1033,DATAWAREHOUSE QUADRE DE COMANDAMENTS
+serviceci,1034,DATAWAREHOUSE TRAMITACIO
+serviceci,1035,ECAP - ADMINISTRATIU - SIAP
+serviceci,1036,ECAP - ASS - ECONSULTA
+serviceci,1037,EDITOR WEB GEOMETRIES SIG
+serviceci,1038,EJCAT+-INT-EVD+ (EVIDENCIES DIGITALS)
+serviceci,1039,EJCAT-INT-TDJ (TRIBUNAL DEL JURAT)
+serviceci,1040,EJCAT-SUP-GDE (GESTIO DE DILIGENCIES EXTERNES)
+serviceci,1041,EJCAT-SUP-RMA (RECURSOS MATERIALS)
+serviceci,1042,EOPI
+serviceci,1043,EP - SIEP-EPBOTIGA (COMPRES CIRE)
+serviceci,1044,EP - SIEP-GEPIP (GESTIO DE PERSONES I PROFESSIONALS)
+serviceci,1045,EPI - SISTEMA DE GESTIO D'EXPEDIENTS DE PRESTACIONS
+serviceci,1046,ESTIU: PDA
+serviceci,1047,EXPEDIENTS JURIDICS PART AMBIENTAL
+serviceci,1048,FRAMEWORKS EFORMULARIS: STD
+serviceci,1049,GAARE: GESTIO D'ALIMENTACIO ANIMAL I REGISTRE D'ESTABLIMENTS
+serviceci,1050,GAUDI - GESTIO TRIBUTARIA
+serviceci,1051,GAUDI - MIGRACIO
+serviceci,1052,GDFIA
+serviceci,1053,GEAA - GESTIO D'EXPEDIENTS D'AVALUACIO AMBIENTAL
+serviceci,1054,GECO+: MUNICAT: PORTAL CONTINGUTS GECO+
+serviceci,1055,GECO+: PORTAL CANAL SALUT
+serviceci,1056,GEDAC: GESTIO DE L'ESCOLARITZACIO DELS ALUMNES DE CATALUNYA
+serviceci,1057,GESTIO ANC IMATGES (GANCGIACNOTEXTUAL)
+serviceci,1058,GESTIO DE LA TRESORERIA CORPORATIVA (CASH POOLING)
+serviceci,1059,GESTIO DE LES INVESTIGACIONS DEL COS DE MOSSOS D’ESQUADRA (INVESTIGACIO)
+serviceci,1060,GESTIO DE LES TAULES D'AVALUACIO DOCUMENTAL (_TAAD)
+serviceci,1061,GESTIO DE TROFEUS
+serviceci,1062,GESTIO I CONTROL D'OBRES
+serviceci,1063,GESTIO MANTENIMENT APLICACIONS DE L'ATC (JIRA)
+serviceci,1064,GESTOR DE CUES DEL DTER
+serviceci,1065,GI: INSPECCIÓ - GESTIO DE INSPECCIO
+serviceci,1066,GICAR: VALID DE L’AOC
+serviceci,1067,GIDECAT
+serviceci,1068,GIS DEL SCT (GIS_SCT)
+serviceci,1069,GPU - GESTIO DE PERMISOS DELS USUARIS
+serviceci,1070,GSA: GSA_ACR - PROVES PER A L'OBTENCIO DEL TITOL DE FORMACIO PROFESSIONAL
+serviceci,1071,GSA: GSA_NUCLI - GESTIO DE LES SOL.LICITUDS D'ALUMNES/CIUTADANS
+serviceci,1072,GSIT::INTERN: CARPETA CIUTADANA - APLICACIO PRINCIPAL
+serviceci,1073,GTD
+serviceci,1074,HES - VISOR
+serviceci,1075,ICS - ECAP REMOT
+serviceci,1076,IDENTIFICACIO DE CONDUCTORS
+serviceci,1077,INFRA - STXWORD - SERVIDOR APLICACIO
+serviceci,1078,INT.GEN - GESTIO D'EXPEDIENTS DE NORMATIVA
+serviceci,1079,INT.IC - INTEGRACIO CONTINUA
+serviceci,1080,INTRANET DEL DEPARTAMENT DE TERRITORI
+serviceci,1081,INVENTARI DEL PATRIMONI ARQUITECTONIC
+serviceci,1082,ISISSCAT: CATALEGS
+serviceci,1083,ITINERARIS D'APRENENTATGE
+serviceci,1084,JIRA CSTD
+serviceci,1085,KUBERME
+serviceci,1086,LLISTES DE DISTRIBUCIO CARILLO
+serviceci,1087,MALATIES RELACIONADES AMB TREBALL
+serviceci,1088,MITE: MENJADOR I TRANSPORT ESCOLAR
+serviceci,1089,MONCAT
+serviceci,1090,MUNICAT: DELIMITACIONS MUNICIPALS
+serviceci,1091,NAVISION - FINANCES I RECURSOS HUMANS CTTI
+serviceci,1092,NZO: NUCLIS ZOOLOGICS
+serviceci,1093,OPENTEXT ESPRIU
+serviceci,1094,ORACLES SERVICE BUS
+serviceci,1095,OVTPUBLI: PUBLICACIONS ADREÇADES ALS CIUTADANS
+serviceci,1096,PARLA.CAT - SIMTEST
+serviceci,1097,PETICIONS DE LOTS (_PETLOTS)
+serviceci,1098,PICA: PRODUCTE ACTIC - ACREDITACIONS TIC
+serviceci,1099,PICA: PRODUCTE CONSULTA CSV
+serviceci,1100,PICA: PRODUCTE DGP_RESIDENCIA
+serviceci,1101,PICA: PRODUCTE DNI - DOCUMENT NACIONAL D'IDENTITAT
+serviceci,1102,PICA: PRODUCTE REGISTRE COOPERATIVES
+serviceci,1103,PICA: PRODUCTE SOC - SERVEI D'OCUPACIO DE CATALUNYA
+serviceci,1104,PICA: PRODUCTE TFM - TITOL FAMILIA MONOPARENTAL
+serviceci,1105,PICA: PRODUCTE TFN - TITOL FAMILIA NOMBROSA
+serviceci,1106,PICA: PRODUCTE TITULACIONS_ME
+serviceci,1107,PLATAFORMA D'AVALUACIO DE L'ACTIC
+serviceci,1108,PLATAFORMA D'INTEGRACIO I COL·LABORACIO TSF PICS
+serviceci,1109,PLATAFORMA DE SERVEIS ASSISTENCIALS
+serviceci,1110,PORTAL DE FEINA ACTIVA: MODUL CORE
+serviceci,1111,PORTAL TRIBUTARI - CERTIFICAT TRIBUTARI
+serviceci,1112,PQPI: CONSULTA DE L'OFERTA DELS PROGRAMES DE QUALIFICACIO PROFESSIONAL INICIAL
+serviceci,1113,PREVEN ICS
+serviceci,1114,PRT - PRESTACIONS COMPLEMENTARIES - PAO
+serviceci,1115,PUBLICACIO ALTERNATIVA DEL DOGC
+serviceci,1116,RECVTC - REGISTRE ELECTRONIC DE COMUNICACIONS DELS SERVEIS DELS VEHICLES DE LLOGUER AMB CONDUCTOR
+serviceci,1117,REGISTRE D'EMISSIONS I TRANSFERENCIA DE CONTAMINANTS DE CATALUNYA
+serviceci,1118,REGISTRE D'IMPLANTS QUIRURGICS DE CATALUNYA
+serviceci,1119,REGISTRE DE BCIN I CATALEG DEL PCC
+serviceci,1120,RURALDATA INFORMES
+serviceci,1121,SC - BORSA LABORALS (BLJ)
+serviceci,1122,SC - CONCURS DE CARRECS COMANDAMENT DE PRESONS (CCP)
+serviceci,1123,SC - GESTIO D'ASSIGNACIO DE PLACES D'OPOSICIO DE JUSTICIA
+serviceci,1124,SC - GESTIO DELS PAGAMENTS A SECRETARIS DE JUTJATS DE PAU
+serviceci,1125,SCT - GESTIO CUES
+serviceci,1126,SEGUIMENT ODS
+serviceci,1127,SERVEIS DISCRECIONALS DE TRANSPORT DE VIATGERS PER CARRETERA
+serviceci,1128,SERVEIS WEB CONSUMIDORS DGT
+serviceci,1129,SERVEIS WEB I CONSUMIDORS D'INTEGRACIO SIAV AMB ALTRES SISTEMES DE GESTIO OPERATIVA
+serviceci,1130,SERVEIS WEB I CONSUMIDORS REQUERIMENTS
+serviceci,1131,SERVEIS WEB PER LA INTEGRACIO DE L'EINA DE RECONEIXEMENT FACIAL
+serviceci,1132,SI CORALS: INSCRIPCIO DELS CENTRES A LES TROBADES DE CANT CORAL
+serviceci,1133,SI RECE: RESULTATS DE LES ELECCIONS ALS CONSELLS ESCOLARS
+serviceci,1134,SICAD - SISTEMA D'INFORMACIO DE CARREGUES ADMINISTRATIVES
+serviceci,1135,SICC: SISTEMA D'INFORMACIO GEOGRAFIC DE CARRETERES
+serviceci,1136,SICON - CIRCUIT DE CONVENIS
+serviceci,1137,SIEP - REMOT
+serviceci,1138,SIGAP - GESTIO D'ACTES PROTOCOL·LARIS
+serviceci,1139,SISTEMA D'ADQUISICIONS BIBLIOTECARIES
+serviceci,1140,SISTEMA D'INFORMACIO GEOGRAFICA (SIG)
+serviceci,1141,SISTEMA D'INFORMACIO REGISTRES I CENSOS - ALIMENTARIA
+serviceci,1142,"SISTEMA DE REGISTRE, INSPECCIO I SANCIONADORS D'ENTITATS, SERVEIS I ESTABLIMENTS SOCIALS"
+serviceci,1143,SISTEMES DE GESTIO PROFESSIONALS DE LA SALUT
+serviceci,1144,SOLUCIO GENCAT GECO - GESTOR CONTINGUTS I PORTALS: MODUL SUPORT A APLICACIONS
+serviceci,1145,SOLUCIO GENCAT GECO - GESTOR CONTINGUTS I PORTALS: MODUL SUPORT A INFRAESTRUCTURA
+serviceci,1146,SWARMME
+serviceci,1147,TEMIS2 - REGISTRE I REPARTIMENT
+serviceci,1148,TRAMITADOR GENERIC : SERVEIS
+serviceci,1149,VERIFICACIO I SUPERVISIO
+serviceci,1150,VMP
+serviceci,1151,ABD - AUDIT DE BASE DE DADES
+serviceci,1152,ACA CC / SAMCAT - TOPKAPI
+serviceci,1153,ACA DWH
+serviceci,1154,ACO: QÜESTIONARIS PER ALS CENTRES (AULES D'ACOLLIDA)
+serviceci,1155,ACTUALITZACIO FIRES
+serviceci,1156,AGENDA CULTURAL
+serviceci,1157,AGORA: AGORA-NODES
+serviceci,1158,AGORA: AGORA-PORTAL
+serviceci,1159,AJ-FJG-FITXES DELS JUTJATS DE GUARDIA
+serviceci,1160,AJMENJ-CLIENT: AJUTS MENJADOR
+serviceci,1161,ALBA - PLANIFICACIO ESTRATEGICA QUIRURGICA
+serviceci,1162,ALEXANDRIA: BIBLIOTECA DE RECURSOS DIGITALS
+serviceci,1163,ANALISI D'INFORMACIO DELS TRIBUTS GESTIONATS PER L'ATC (DWH) - OBBIE
+serviceci,1164,ANICOM - REGISTRE ANIMAL DE COMPANYIA
+serviceci,1165,ANONIMITZADOR AUTOMATIC DE SALUT
+serviceci,1166,ANTIVIRUS CORPORATIU
+serviceci,1167,AOC - BUSTIA ETICA
+serviceci,1168,APP DENUNCIES DE TRANSPORTS
+serviceci,1169,ARC - LABORATORI
+serviceci,1170,ARCONTE: EQUIPAMENT
+serviceci,1171,ASJUR - GESTIO D'EXPEDIENTS DE L'ASSESSORIA JURIDICA
+serviceci,1172,ATENEA - BACKOFFICE
+serviceci,1173,BI CATCONN. REPORTING
+serviceci,1174,BI DIRECCIO SERVEIS TERRITORI
+serviceci,1175,BKM - PREMSA DIGITALITZADA
+serviceci,1176,BOR: NOVACO_PUBLI - CONSULTA ADMESOS I EXCLOSOS DE LA BORSA DE TREBALL INTERI/SUBSTITUT DOCENT
+serviceci,1177,BOR: PDI - PROPOSTES DIRECTORS INTERINS
+serviceci,1178,BSORG - ALTRES ORGANISMES
+serviceci,1179,BUSTIA ETICA
+serviceci,1180,CAL - CALENDARI
+serviceci,1181,CALCULADORA DE VEHICLE EFICIENT
+serviceci,1182,CAT
+serviceci,1183,CATALEG DE CARRETERES
+serviceci,1184,CAW - CONSULTA ASSEGURATS WEB
+serviceci,1185,CBS - CATALEGS BASICS
+serviceci,1186,CONNEXIO AMB EL CDC
+serviceci,1187,CONSULTA DE IMPRESOS EN PDF
+serviceci,1188,CONTROL_ACCES_ECO
+serviceci,1189,CORREUS DESASSISTITS I PROGRAMATS (CORRDES)
+serviceci,1190,CSTD (JIRA ARQUITECTURA)
+serviceci,1191,CWS: CATALEG DE WEB SERVICES (E13_CWS)
+serviceci,1192,DATAWAREHOUSE SCT
+serviceci,1193,DECLARACIONS AEAT (IRP DECLARACIONS A L'AEAT)
+serviceci,1194,DG - AGENDA DELEGACIONS - AGENDEL
+serviceci,1195,DIPOSITS POLICIALS
+serviceci,1196,DIRECTORI DE RECERCA
+serviceci,1197,DM CD CLIO
+serviceci,1198,DM CD CSH GESTIO INTERNA DELS CENTRES DE SEGURETAT I CONDICIONS DE SALUT EN EL TREBALL
+serviceci,1199,DWHCORPORATIU: MAQ - MODUL D'ASSEGURAMENT DE LA QUALITAT DINTRE SIDIE.
+serviceci,1200,ECAP - ASS - LABORATORI
+serviceci,1201,ECAP - WEB - PROGRAMACIO PER MOTIUS
+serviceci,1202,EDITRAN
+serviceci,1203,EINA DE SEGUIMENT DE L'EXECUCIO DEL PLA DE SALUT
+serviceci,1204,EINES E-LEARNING
+serviceci,1205,EJCAT-INT-AUTOSTORE (DIGITALITZACIO)
+serviceci,1206,EJCAT-INT-EIC (ESBRINAMENTS)
+serviceci,1207,EJCAT-INT-RIR (REPARTIMENT)
+serviceci,1208,EJCAT-SUP-GIT (GESTIO D'INFRAESTRUCTURA TECNICA)
+serviceci,1209,EJCAT-SUP-SFC (IMPRESSIO REMOTA)
+serviceci,1210,ENS: ENSENYAMENTS (SI ENS)
+serviceci,1211,ENS: GECAT - INTERFICIES AMB GECAT (PROCESSOS GENERALS D'ENSENYAMENT)
+serviceci,1212,EP - ACCES-SIEP (INTRANET FUNCIONARIS D'EXECUCIO PENAL)
+serviceci,1213,EP - SIEP-EPEDC (ESPAI DE CENTRE)
+serviceci,1214,EP - SIEP-EPFOR (ESPAI FORMATIU)
+serviceci,1215,EP-SIEP-EPADM (ADMINISTRACIO D'EINES)
+serviceci,1216,EPERGAM: GESTIO DE BIBLIOTEQUES ALS CENTRES
+serviceci,1217,ESTADISTIQUES D'ACCES A LES APLICACIONS
+serviceci,1218,ESTIU: VAD - VALIDACIO ADJUDICACIONS
+serviceci,1219,FDC: FITXA DE CENTRE
+serviceci,1220,FORMACIO PROFESSORS D’AUTOESCOLES
+serviceci,1221,FPAS: FPAS - GESTIO FORMACIO PAS (GPF)
+serviceci,1222,"GCONCERT: TUC - CONSOLIDACIO DEL CONCERT, PLANTILLES I CARRECS"
+serviceci,1223,GECO+: PORTAL AUTORITAT CATALANA DE LA COMPETENCIA (ACCO.GENCAT.CAT)
+serviceci,1224,GECO+: PORTAL PUBLIC DEL SCT
+serviceci,1225,GECO+: WEB CORPORATIU EMPRESA
+serviceci,1226,GEOPORTAL DE CULTURA
+serviceci,1227,GESTIO ALERTES - SERVEIS WEB I CONSUMIDORS BDSN-SCHENGEN
+serviceci,1228,GESTIO ANC GESTIO DEL ANC@ULA (ANCAULA)
+serviceci,1229,GESTIO ANC MODUL DE CONSULTA DE SALA WEB (SALAANC)
+serviceci,1230,GESTIO CULTURAL (EUROMUS)
+serviceci,1231,GESTIO D'INGRESSOS DE DTES
+serviceci,1232,GESTIO D'USUARIS DEL GECAT
+serviceci,1233,GESTIO DE BIBLIOTEQUES (MILLENNIUM)
+serviceci,1234,"GESTIO DE DIETES, ASSISTENCIES I INDEMNITZACIONS"
+serviceci,1235,GESTIO DE L'ARXIU D'UNIVERSITATS I RECERCA
+serviceci,1236,GESTIO DE LA BORSA DE TREBALL LABORAL DEL DGAP
+serviceci,1237,GESTIO DEL AJUTS AL PROGRAMA DE FOMENT BARRIS
+serviceci,1238,GESTIO DEL DEUTE DE LA GENERALITAT DE CATALUNYA
+serviceci,1239,GESTIO DEL FONS SOCIAL EUROPEU - GFSE
+serviceci,1240,GESTIO DELS ELEMENTS DE TELEFONIA MOBIL I DE CONSUMS (TELEFONIA DADES)
+serviceci,1241,GESTIO INTEGRADA D'ACCIONS (GIA)
+serviceci,1242,GESTIO INTEGRADA DE PERSONAL
+serviceci,1243,GESTOR D'EXPEDIENTS DE COMPATIBILITAT
+serviceci,1244,GESTOR DOCUMENTAL DEL DEPARTAMENT DE CULTURA
+serviceci,1245,GICAR: APROVISIONAMENT
+serviceci,1246,GICAR: PORTAL D'AUTOGESTIO DE CONTRASENYES
+serviceci,1247,GICAR: WORKFLOW GDI
+serviceci,1248,GICEC: GESTIO DE QUALIFICACIONS D'OBRES AUDIOVISUALS
+serviceci,1249,GICEC: NOVA GESTIO REINTEGRABLES ICEC
+serviceci,1250,GIPE: GESTIO D'INSPECCIONS PESQUERES
+serviceci,1251,GIS CECAT
+serviceci,1252,GITES - GESTIO D'INGRESSOS TES PART AMBIENTAL
+serviceci,1253,"GPD - GESTIO I PARAMETRITZACIO DE DOCUMENTS, UTILITZAT PER RCO"
+serviceci,1254,GSA: GSA_EOI - PROVES D'OBTENCIO DEL CERTIFICAT DE LES ESCOLES OFICIALS D'IDIOMES
+serviceci,1255,"GSA: GSA_PACF - PROVES D'ACCES ALS CICLES FORMATIUS, ENSENYAMENTS D'ESPORTS I ARTISTICS"
+serviceci,1256,GSIT: CONFIGURAR TRAMITS A LA EA. CANAL API
+serviceci,1257,GSIT: CQS - BUSTIA DE CONTACTE
+serviceci,1258,GSIT: FRAMEWORK DE FORMULARIS
+serviceci,1259,GSO - GESTIO DE SOL·LICITUDS
+serviceci,1260,GTF - GESTIO DE TRANSFERENCIA DE FITXERS
+serviceci,1261,GTI: GESTIO DE LES TITULACIONS I LES ESPECIALITATS
+serviceci,1262,GWC - GESTIO WEB SERVICES CMBD
+serviceci,1263,HES - CERCADOR DE DIAGNOSTICS
+serviceci,1264,IASALUT
+serviceci,1265,ICAM - MODUL HISTORIA CLINICA
+serviceci,1266,ICT: BACK-ENDS I SO SPD
+serviceci,1267,INFRA - MONGO - OPS MANAGER
+serviceci,1268,INSGRI - GESTIO REQUERIMENTS INSPECCIO DE TRANSPORTS
+serviceci,1269,INT.D.MOB - MOBILITAT (TRISKEL)
+serviceci,1270,INT.IFB - PREINSCRIPCIO A FORMACIO DE BOMBERS
+serviceci,1271,INT.JIRA - SEGUIMENT DE PROJECTES - INTERIOR
+serviceci,1272,INT.PER - GESTIO DEL PERSONAL DE BOMBERS
+serviceci,1273,"INT.SPP - SELECCIO DE PERSONAL, CONCURSOS D'ACCES I PROMOCIO"
+serviceci,1274,INT.SUBVERSION - SISTEMA DE CONTROL DE VERSIONS
+serviceci,1275,INTEGRACIO SAP ICS FINANCER AMB EL GECAT (PRESSUPOSTARI)
+serviceci,1276,INTRANET
+serviceci,1277,INTRANET CTTI
+serviceci,1278,INTRANET DEL CENTRE DE TELECOMUNICACIONS I TECNOLOGIES DE LA INFORMACIO
+serviceci,1279,INTRANET DGP
+serviceci,1280,INVESTIGADOR (SISTEMA DE CERCA I RELACIO DE LES ENTITAS DEL NUCLI D'INFORMACIO POLICIAL)
+serviceci,1281,IOC: GESTIO ACADEMICA
+serviceci,1282,IPECEF-INTEGRADOR DE PROCESSOS D'ECONOMIA DELS SISTEMES ECONOMICS FINANCERS
+serviceci,1283,ISGREC - SISTEMA INDICADORS SG REGIM ECONOMIC I CONTRACTACIO
+serviceci,1284,ITP - TRANSMISSIONS PATRIMONIALS (600)
+serviceci,1285,JADE - SISTEMA DE RELACIO AMB ABSS RESPECTE A DEPENDENCIA
+serviceci,1286,JIRA - CONFLUENCE
+serviceci,1287,KHALIX
+serviceci,1288,KIT EMPRESES PUBLIQUES I INCORPORACIO DADES AL BI
+serviceci,1289,LINKAT: CORPORATIVA
+serviceci,1290,LLICENCIES
+serviceci,1291,MAPBI - ANALISI D'INFORMACIO DEL MAP
+serviceci,1292,MAQUINARI
+serviceci,1293,MATRIOSCAT - LLIBRERIA CONTINGUTS GOVERN - BACKOFFICE
+serviceci,1294,MAXIMO PRESS - SISTEMA DE GESTIO DEL PRESSUPOST
+serviceci,1295,MCONNECTA
+serviceci,1296,MONITORATGE PATRO EJCAT
+serviceci,1297,MONITORATGE PATRO IS3
+serviceci,1298,MONITORATGE PATRO SIRE
+serviceci,1299,NPAC_CON-CONTROLS
+serviceci,1300,OPO: GESTIO DE TRIBUNALS PER OPOSICIONS
+serviceci,1301,PARLA.CAT - RECONEIXEMENT DE VEU
+serviceci,1302,PASSAREL·LA DE COMUNICACIONS DE SEGURETAT I EMERGENCIES (IPISE)
+serviceci,1303,PAUTIC (ITSM - REMEDY): HELIX DASHBOARDS
+serviceci,1304,PICA: BEQUES
+serviceci,1305,PICA: PRODUCTE ATC - AGENCIA TRIBUTARIA CATALANA
+serviceci,1306,PICA: PRODUCTE CADASTRE
+serviceci,1307,PICA: PRODUCTE DGP_RESIDENCIA_ESTRANGERS
+serviceci,1308,PICA: PRODUCTE DGT
+serviceci,1309,PICA: PRODUCTE DICIREG
+serviceci,1310,PICA: PRODUCTE DOCV - DOCUMENTS VISATS
+serviceci,1311,PICA: PRODUCTE ESTRANGERIA
+serviceci,1312,PICA: PRODUCTE GRAU DISCAPACITAT
+serviceci,1313,PICA: PRODUCTE IGAE
+serviceci,1314,PICA: PRODUCTE INE
+serviceci,1315,PICA: PRODUCTE INEM - CONSULTA DE DADES DEL SEPE
+serviceci,1316,PICA: PRODUCTE PADRO
+serviceci,1317,PICA: PRODUCTE PENSIONS
+serviceci,1318,PICA: PRODUCTE PODERS_NOTARIALS
+serviceci,1319,PICA: PRODUCTE RCA CATSALUT
+serviceci,1320,PICA: PRODUCTE RCP - REGISTRE CENTRAL DE PENALS
+serviceci,1321,PICA: PRODUCTE REGISTRE CIVIL
+serviceci,1322,PICA: PRODUCTE REGISTRE MERCANTIL
+serviceci,1323,PICA: PRODUCTE REGISTRE PROPIETAT
+serviceci,1324,PICA: PRODUCTE REGRE - REGISTRE REPRESENTANTS
+serviceci,1325,PICA: PRODUCTE RELI - REGISTRE LICITADORS
+serviceci,1326,PICA: PRODUCTE RGC
+serviceci,1327,PICA: PRODUCTE ROPEC
+serviceci,1328,PICA: PRODUCTE RPE
+serviceci,1329,PICA: PRODUCTE SARCAT
+serviceci,1330,PICA: PRODUCTE TGSS - TRESORERIA GENERAL SEGURETAT SOCIAL
+serviceci,1331,PICA: PRODUCTE VIDA_LABORAL
+serviceci,1332,PLATAFORMA DE DADES REU
+serviceci,1333,PORTAL ADMIN (PRADM)
+serviceci,1334,PORTAL ARXIU
+serviceci,1335,PORTAL DE CENTRES I INTRANET: EDUCERCA
+serviceci,1336,PORTAL DE L'EMPRENEDOR
+serviceci,1337,PORTAL DE PREMSA: APLICACIO
+serviceci,1338,PRAM - PRESTACIO D'AJUDA PER MORIR
+serviceci,1339,PREMET - SISTEMA GEOGRAFIC DE PREDICCIO METEOROLOGICA
+serviceci,1340,PREVEN-CITAPREVIA
+serviceci,1341,PRRV: PLANS DE REESTRUCTURACIO DE VINYA
+serviceci,1342,QSCART
+serviceci,1343,RCCR - CANCER COLON I RECTE
+serviceci,1344,REA-EMPRESES ACREDITADES EN LA CONSTRUCCIO (REE)
+serviceci,1345,RECURSOS DE REPOSICIO
+serviceci,1346,REGCESS - REGISTRE DE CENTRES
+serviceci,1347,REGISTRE D'ARTROPLASTIES DE CATALUNYA
+serviceci,1348,REGISTRE DE PUBLICITAT DE MEDICAMENTS
+serviceci,1349,REGISTRE DE REDUCCIO DE DANYS
+serviceci,1350,REGISTRE DE VISITES (IDREADER) DEL DEPARTAMENT D'EMPRESA I CONEIXEMENT
+serviceci,1351,REGISTRE DESFIBRIL·LADORS AUTOMATICS
+serviceci,1352,REGISTRE ELECTRONIC D'EMPRESES LICITADORES - GESTIO
+serviceci,1353,REGISTRE ELECTRONIC EMPRESES LICITADORES - TRAMITACIO JCCA
+serviceci,1354,REGISTRE PACIENTS I TRACTAMENTS MHDA
+serviceci,1355,REGISTRES DE SP A RSA
+serviceci,1356,REPTIC
+serviceci,1357,RFA
+serviceci,1358,RSALES: GESTIO DE RESERVA DE SALES ENSENYAMENT
+serviceci,1359,SAGE50
+serviceci,1360,SANFER - SANCIONS DE TRANSPORT FERROVIARI
+serviceci,1361,SC -BORSA D'INTERINS DE PRESONS
+serviceci,1362,SERVEIS WEB ANALISI TACOGRAF
+serviceci,1363,SERVEIS WEB CONSULTA DADES ACCIDENTS (BACK-OFFICE)
+serviceci,1364,SERVEIS WEB I CONSUMIDORS EPRIS
+serviceci,1365,SFE - SISTEMA DE FACTURACIO ELECTRONICA
+serviceci,1366,SGS: SISTEMA DE GESTIO DE SUBMINISTRAMENTS
+serviceci,1367,SI CDOCENT: GENERACIO DEL CARNET DOCENT PER AL PROFESSORAT
+serviceci,1368,SI FDC: FITXA DE CENTRE
+serviceci,1369,SI GEPSE: GESTIO DE LA PLANIFICACIO I SEGUIMENT D'EQUIPAMENTS TIC
+serviceci,1370,SI GTAF: GESTIO TELEMATICA D'ACTIVITATS DE FORMACIO
+serviceci,1371,SI MTC: PETICIONS DE MATERIAL TIC DELS CENTRES DOCENTS I SERVEIS EDUCATIUS
+serviceci,1372,"SI PREINSCRIPCIO: PREINSCRIPCIO, ADMISSIO I VACANTS"
+serviceci,1373,SI PUNTEDU: QUESTIONARI SOBRE LA SITUACIO DE LA BIBLIOTECA ESCOLAR PUNTEDU
+serviceci,1374,SI SGS: SISTEMA DE GESTIO DE SUBMINISTRAMENTS
+serviceci,1375,SI XTECBLOCS: PLATAFORMA DE BLOCS PER A PROFESSORS I CENTRES DOCENTS
+serviceci,1376,SIAV-CRM (SISTEMA D'ATENCIO A LES VICTIMES)
+serviceci,1377,SICEN: SISTEMA D'INFORMACIO DE CENTRE
+serviceci,1378,SIDAT
+serviceci,1379,SIE - ARX - ARXIU D'AUDITORIES
+serviceci,1380,SIGEC: GESTIO DE CONTACTES DE CULTURA
+serviceci,1381,SIGESCAT3 - SISTEMA D'INFORMACIO GEOGRAFICA D'EMERGENCIES I SEGURETAT DE CATALUNYA
+serviceci,1382,SIGME-MAPES DELINQÜENCIALS
+serviceci,1383,SIMULADOR DE MESURES DE REHABILITACIO ENERGETICA D'EDIFICIS
+serviceci,1384,SIP-FOTO (GESTIO DE FOTOGRAFIES DELS DETINGUTS AIXI COM ALBUMS FOTOGRAFICS)
+serviceci,1385,SISTEMA CRM ACT - MARKETING
+serviceci,1386,SISTEMA D'INDICADORS D'OCUPACIO PUBLICA
+serviceci,1387,SISTEMA D'INFORMACIO DE GESTIO D'ACTES PROTOCOLARIS
+serviceci,1388,SISTEMA D'INFORMACIO PROMOCIO VIDA SALUDABLE
+serviceci,1389,SISTEMA DE TRACTAMENT DE DADES EXTERNES ATC (BIGSTDE)
+serviceci,1390,SISTEMES DE GESTIO DE PLANIFICACIO EN SALUT
+serviceci,1391,SOL·LICITUDS DE SUBVENCIO D'EQUIPAMENTS ESPORTIUS
+serviceci,1392,SRC - INSTAL·LACIO I ENTORNS
+serviceci,1393,SUBVENCIONS DEL DEPARTAMENT DE CULTURA
+serviceci,1394,SUPORT FUNCIONAL DEL SIP PER L'ACPC
+serviceci,1395,TAIS - ADMINISTRACIO
+serviceci,1396,TAIS - INFORMES
+serviceci,1397,TCCSP - GESTIO D'EXPEDIENTS
+serviceci,1398,TEMIS2 - ARXIU CENTRAL
+serviceci,1399,TEMIS2 - AUDIENCIES
+serviceci,1400,TEMIS2 - JUTJATS MENORS
+serviceci,1401,TESTIDEA
+serviceci,1402,THEMIS - DECRETS
+serviceci,1403,TITOLS: RTT - REGISTRE I TRAMITACIO DE TITOLS D'ENSENYAMENT
+serviceci,1404,TRASLLATS: BARXTRASLLATS - BAREMACIO DE MERITS DEL PROFESSORAT PER AL CONCURS DE TRASLLATS
+serviceci,1405,VAGA: RRHH2 - ADMINISTRACIO I GESTIO DE LA VAGA
+serviceci,1406,VIDEOCONFERENCIA
+serviceci,1407,WEB CAMBRES INCASOL
+serviceci,1408,WEB D'ENTITATS I ESTABLIMENTS
+serviceci,1409,WEB D'ESTADISTIQUES I SINISTRALITAT DEL TREBALL
+serviceci,1410,WEB DE L'ESPAI D'ANALISI
+serviceci,1411,WEB DE LA FILMOTECA DE CATALUNYA (ACTUAL)
+serviceci,1412,WEB DIPLOCAT
+serviceci,1413,WEBSERVICE AUTENTICACIO USUARIS
+serviceci,1414,XECAT - PTGIC: PLATAFORMA GESTIO I COMUNICACIO
+serviceci,1415,ZCLICC: ZONA CLIC CLOUD
+ASORG,0,AM16_23
+ASORG,1,AM18_23
+ASORG,2,CPD4
+ASORG,3,AM10_23
+ASORG,4,CPD2
+ASORG,5,AM15_23
+ASORG,6,AM07_23
+ASORG,7,AM06_23
+ASORG,8,GESNUS
+ASORG,9,AM19_23
+ASORG,10,AM12_23
+ASORG,11,AM08_23
+ASORG,12,AM16_19
+ASORG,13,AM14_23
+ASORG,14,AM01_23
+ASORG,15,AM11_23
+ASORG,16,AM18_19
+ASORG,17,AM20_23
+ASORG,18,AM03_23
+ASORG,19,ESB2
+ASORG,20,AM13_23
+ASORG,21,AM05_23
+ASORG,22,AM15_19
+ASORG,23,AM10_19
+ASORG,24,CPD-NUCLI-LOT2
+ASORG,25,AM23_23
+ASORG,26,ESB1
+ASORG,27,AM09_23
+ASORG,28,CPD1
+ASORG,29,AM17_23
+ASORG,30,APP54
+ASORG,31,PLC1
+ASORG,32,AM06_19
+ASORG,33,LT2C
+ASORG,34,AM20_19
+ASORG,35,GESNUS-N3SEUS
+ASORG,36,SC1
+ASORG,37,AM08_19
+ASORG,38,AM07_19
+ASORG,39,ESB4
+ASORG,40,CF19_FIXA
+ASORG,41,CPD3
+ASORG,42,AM02_23
+ASORG,43,X35
+ASORG,44,LT1-CORREU
+ASORG,45,AM12_19
+ASORG,46,AM13_19
+ASORG,47,AM01_19
+ASORG,48,AM11_19
+ASORG,49,AM14_19
+ASORG,50,AM22_23
+ASORG,51,AM03_19
+ASORG,52,AM21_23
+ASORG,53,AM05_19
+ASORG,54,ESB3
+ASORG,55,AM19_19
+ASORG,56,X05
+ASORG,57,AM17_19
+ASORG,58,AM04_23
+ASORG,59,X39
+ASORG,60,ASSIGNACIÓ_GTCT
+ASORG,61,AM09_19
+ASORG,62,AM02_19
+ASORG,63,XOC
+ASORG,64,ASSIGNACIÓ_CTTI
+ASORG,65,A10
+ASORG,66,X21
+ASORG,67,ASSIGNACIÓ _AGAUR
+ASORG,68,LT1-ESPAI
+ASORG,69,ASSIGNACIÓ_SLT
+ASORG,70,C1
+ASORG,71,ASSIGNACIÓ_AHC
+ASORG,72,APP01
+ASORG,73,X02
+ASORG,74,X09
+ASORG,75,APP16
+ASORG,76,CU_FIXA
+ASORG,77,LT1-INFRAESTRUCTURES
+ASORG,78,CDC-MONITORATGE
+ASORG,79,X29
+ASORG,80,AM04_19
+ASORG,81,X01
+ASORG,82,X08
+ASORG,83,X38
+ASORG,84,X18
+ASORG,85,LT2A
+ASORG,86,ASSIGNACIO_CFCC
+ASORG,87,X13
+ASORG,88,X65
+ASORG,89,ASSIGNACIÓ_PROVES
+ASORG,90,X58
+ASORG,91,ASSIGNACIÓ _INCASOL
+ASORG,92,X03
+ASORG,93,X24
+ASORG,94,ASSIGNACIÓ_ACC
+ASORG,95,CM19_MOB
+ASORG,96,SC2
+ASORG,97,ESA_CS_EINES
+ASORG,98,OGOS
+ASORG,99,APP45
+ASORG,100,CDC-CONTROL
+ASORG,101,PSF2
+ASORG,102,X07
+ASORG,103,CM19_NE
+ASORG,104,SOC
+ASORG,105,X06
+ASORG,106,ASSIGNACIÓ_ARP
+ASORG,107,ASSIGNACIÓ_DGP
+ASORG,108,CENTRE DE CONTROL
+ASORG,109,GOV-C6
+ASORG,110,LT2B
+ASORG,111,X45
+ASGRP,0,AM16_23-N2-CANVIS
+ASGRP,1,AM18_23-N2-CANVIS
+ASGRP,2,AM10_23-N2-CANVIS
+ASGRP,3,AM15_23-N2-CANVIS
+ASGRP,4,CPD4-N2-CANVIS
+ASGRP,5,AM07_23-N2-CANVIS
+ASGRP,6,AM06_23-N2-CANVIS
+ASGRP,7,GESNUS-N2-NUS
+ASGRP,8,AM19_23-N2-CANVIS
+ASGRP,9,AM12_23-N2-CANVIS
+ASGRP,10,CPD2-N2-CANVIS
+ASGRP,11,AM08_23-N2-CANVIS
+ASGRP,12,AM14_23-N2-CANVIS
+ASGRP,13,AM01_23-N2-CANVIS
+ASGRP,14,AM11_23-N2-CANVIS
+ASGRP,15,AM16_19-N3-ARP
+ASGRP,16,AM18_19-N2
+ASGRP,17,AM20_23-N2-CANVIS
+ASGRP,18,AM03_23-N2-CANVIS
+ASGRP,19,AM13_23-N2-CANVIS
+ASGRP,20,ESB2-N2-CANVIS
+ASGRP,21,CPD4-N3-CHGOFFICE
+ASGRP,22,AM05_23-N2-CANVIS
+ASGRP,23,AM15_19-N2
+ASGRP,24,AM10_19-N2
+ASGRP,25,AM23_23-N2-CANVIS
+ASGRP,26,AM09_23-N2-CANVIS
+ASGRP,27,AM17_23-N2-CANVIS
+ASGRP,28,CPD2-N3-PHC
+ASGRP,29,APP54_VIEWNEXT-N2
+ASGRP,30,PLC1-N2-CANVIS
+ASGRP,31,CPD1-N2-CANVIS
+ASGRP,32,NUCLI2-N3-EXPLPLOSY
+ASGRP,33,AM08_19-N2
+ASGRP,34,SC1-TELEFONICA-N2-CANVIS
+ASGRP,35,AM07_19-N2
+ASGRP,36,CF19_FIXA-N2
+ASGRP,37,CPD3-N2-CANVIS
+ASGRP,38,AM02_23-N2-CANVIS
+ASGRP,39,LT2C-N3-CHGOFFICE
+ASGRP,40,X35_E-RVC_T-SYSTEMS-N2
+ASGRP,41,AM06_19-N2
+ASGRP,42,ESB4-N2-CANVIS
+ASGRP,43,AM12_19-N2
+ASGRP,44,AM20_19-N2
+ASGRP,45,GESNUS-N2-N3SEUS
+ASGRP,46,LT1-CORREU-N3
+ASGRP,47,ESB1-N2-CANVIS
+ASGRP,48,AM22_23-N2-CANVIS
+ASGRP,49,AM21_23-N2-CANVIS
+ASGRP,50,AM19_19-N2
+ASGRP,51,AM01_19-N3-DESPL
+ASGRP,52,ESB3-N2-CANVIS
+ASGRP,53,AM14_19-N2
+ASGRP,54,AM17_19-N2
+ASGRP,55,AM04_23-N2-CANVIS
+ASGRP,56,X39_RED.ES_LAN-N2
+ASGRP,57,AM13_19-N2
+ASGRP,58,GTCT_N3_PROSP
+ASGRP,59,ESB1-N4-SISTEMES
+ASGRP,60,ESB2-N4-CHGOFFICE
+ASGRP,61,AM05_19-N2
+ASGRP,62,AM13_19-N3-SAP_ASSISTENCIAL
+ASGRP,63,AM16_19-N2
+ASGRP,64,AM03_19-N2
+ASGRP,65,GESNUS-N3-N3SEUS
+ASGRP,66,CPD1-N2
+ASGRP,67,AM06_19-N3
+ASGRP,68,AM09_19-N2
+ASGRP,69,X05_SLT_ATOS-N2
+ASGRP,70,CPD2-N3-CR_OS
+ASGRP,71,ESB1-N4-PLATAFORMES
+ASGRP,72,XOC-N2
+ASGRP,73,AM11_19-N3-EDUCACIO
+ASGRP,74,CTTI_N3_PEDROSA
+ASGRP,75,AM11_19-N3-TASF
+ASGRP,76,NUCLI2-N3-OSG
+ASGRP,77,AM16_19-N3-TES
+ASGRP,78,X05_SLT_ATOS-N3-TRNS
+ASGRP,79,ESB1-N4-COMUNICACIONS
+ASGRP,80,X21_SOSTIC_SIRT-N2
+ASGRP,81,AGAUR_COORDINADORS_CANVIS
+ASGRP,82,AM05_19-N3-DESPL_RHD
+ASGRP,83,NUCLI2-N3-COMM
+ASGRP,84,LT1-ESPAI-N2
+ASGRP,85,AM01_19-N2
+ASGRP,86,AM14_19-N3-TASF
+ASGRP,87,AM20_19-N3-ICAM
+ASGRP,88,AM03_19-N3-ARXIU
+ASGRP,89,ESB4-N4-CHGOFFICE
+ASGRP,90,AHC_COORDINADORS_CANVIS
+ASGRP,91,AM16_19-N3-CLT
+ASGRP,92,SLT_OFICINA CATSALUT
+ASGRP,93,LT2C-N4-CHGOFFICE
+ASGRP,94,AM02_19-N2
+ASGRP,95,AM20_19-N3-RSA
+ASGRP,96,APP01-N2
+ASGRP,97,NUCLI2-N3-MFOS
+ASGRP,98,C1-N3-CGP
+ASGRP,99,AM03_19-N3-URBANISME
+ASGRP,100,CPD2-N3-CR_SAP
+ASGRP,101,X02_PUN_TRAGSA-N2
+ASGRP,102,X09_SLT_UDIAT-N2
+ASGRP,103,AM02_19-N3-DESPL_SCEM
+ASGRP,104,AM11_19-N2
+ASGRP,105,LT1-COL·LABORACIO-N3
+ASGRP,106,AM16_19-N3-EMC
+ASGRP,107,APP16_UTE_IBM_VIEWNEXT_LOT_B_LOT_E-N2
+ASGRP,108,CU_FIXA-N2-CANVIS
+ASGRP,109,CPD2-N2
+ASGRP,110,CPD2-N3-NC
+ASGRP,111,A10-N3-TES
+ASGRP,112,AM10_19-N2-OT_GICAR
+ASGRP,113,A10-N2
+ASGRP,114,LT1-INFRAESTRUCTURES-N3
+ASGRP,115,CDC-N2-MONITORATGE
+ASGRP,116,A10-N3-SFC
+ASGRP,117,CPD2-N3-CR_EBH
+ASGRP,118,AM02_19-N3-DESPL_ONSITE
+ASGRP,119,X29_MESURA_TOBEIT-N2
+ASGRP,120,AM09_19-N3-SLT
+ASGRP,121,CPD2-N3-GESTIO_CONFIG
+ASGRP,122,NUCLI2-N3-INFRAESTRUCTURES
+ASGRP,123,AM09_19-N3-CLT
+ASGRP,124,AM11_23-N2
+ASGRP,125,ESB3-N4-ADM LAN
+ASGRP,126,LT2C-N2
+ASGRP,127,X01_BSM_HP-N2
+ASGRP,128,X08_SLT_IN2-N2
+ASGRP,129,X38_ARCGIS_NEXUS-N2
+ASGRP,130,AM14_19-N3-SALUT
+ASGRP,131,C1-OT-SDWAN-N2
+ASGRP,132,X05_SLT_ATOS-N3-SIRE
+ASGRP,133,AM04_19-N3
+ASGRP,134,X18_GOTA_WERFEN-N2
+ASGRP,135,NUCLI2-N3-STORAGE
+ASGRP,136,NUCLI2-N3-WEB
+ASGRP,137,AM11_19-N3-PRESIDENCIA
+ASGRP,138,CFCC_COORDINADORS_CANVIS
+ASGRP,139,ESB1-N5-CLOUD
+ASGRP,140,NUCLI2-N3-DBA
+ASGRP,141,NUCLI2-N3-MFDBDC
+ASGRP,142,NUCLI2-N3-PLATAFORMES
+ASGRP,143,X13_SLT_ACC-N2
+ASGRP,144,X65_NTTDATA_GEA-N2-CANVIS
+ASGRP,145,AM11_19-N3-CULTURA
+ASGRP,146,AM16_19-N3-SOC
+ASGRP,147,CPD4-N3-CRITIC-MDDL
+ASGRP,148,X58_MINSAIT_CLT-N2-CANVIS
+ASGRP,149,AM11_19-N3-EC
+ASGRP,150,ESB2-N5-LAN
+ASGRP,151,INCASOL-N2-CANVIS
+ASGRP,152,PROVES_STRESS
+ASGRP,153,SLT_BI_RCDS
+ASGRP,154,X03_ARCONTE_GSV-N2
+ASGRP,155,ACC_MSACCES
+ASGRP,156,AM03_19-N3-REMEDY
+ASGRP,157,AM05_19-N3-DESPL-RHC
+ASGRP,158,CM19_MOB_N2
+ASGRP,159,LT1-CORREU-N2
+ASGRP,160,ESB1-N5- DESPLEGAMENTS LAN
+ASGRP,161,SC2-TELEFONICA-N2-CANVIS
+ASGRP,162,AM16_19-N3-TAIS
+ASGRP,163,AM16_19-N3-TG
+ASGRP,164,ESA_CS_EINES-N2
+ASGRP,165,ESB2-N4-LAN
+ASGRP,166,LT2A-N4-SISTEMES
+ASGRP,167,AM09_19-N3-PDA
+ASGRP,168,AM10_19-N3-CARVER
+ASGRP,169,AM20_19-N3-LMS
+ASGRP,170,APP45_N2
+ASGRP,171,CPD3-N1-NOC
+ASGRP,172,LT2A-N3-SUPORT PRESENCIAL
+ASGRP,173,SC1-TELEFONICA-N2
+ASGRP,174,X24_PALEX-N2
+ASGRP,175,X24_PALEX-N3-DIGIPATICS-TIC
+ASGRP,176,AM16_19-N3-TSF
+ASGRP,177,CPD4-N2-SCS
+ASGRP,178,AM03_19-N3-AKISTIC
+ASGRP,179,AM04_19-N2
+ASGRP,180,AM18_19-N3-BD
+ASGRP,181,AM18_23-N2
+ASGRP,182,CDC-N3-CANVIS
+ASGRP,183,CPD2-N3-NC_BD
+ASGRP,184,OGOS-N2
+ASGRP,185,OGOS-N3-GESTIÓ_MONITORATGE
+ASGRP,186,PSF2-N2-CANVIS
+ASGRP,187,X07_SLT_EVERIS-N2
+ASGRP,188,AM09_19-N3-PRE
+ASGRP,189,AM12_19-N3-REACAT
+ASGRP,190,AM13_19-N3-IS3
+ASGRP,191,AM16_19-N3-VEH
+ASGRP,192,CPD2-N3-SUB-SITEP
+ASGRP,193,CPD4-N3-CRITIC-MSOPS
+ASGRP,194,ESB4-N5-LAN
+ASGRP,195,LT2A-N3-PLATAFORMA
+ASGRP,196,SOC_VERSUP
+ASGRP,197,X06_SLT_TSYSTEMS-N2
+ASGRP,198,A10-N3-AAM
+ASGRP,199,AM02_19-N3-DESPL_SCT
+ASGRP,200,AM08_23-N2
+ASGRP,201,AM10_19-N3-CLOUD
+ASGRP,202,APROVADORS_AMBIT_AM02-N2
+ASGRP,203,ARP_MSACCES
+ASGRP,204,C1-OT-SDWAN-N3
+ASGRP,205,CDC-N2
+ASGRP,206,CM19_NE-N2
+ASGRP,207,CM19_NE-N3-CGP
+ASGRP,208,DGP_UDAP-N2
+ASGRP,209,ESB3-N2-CONEIXEMENT
+ASGRP,210,ESB3-N4-PLATAFORMA
+ASGRP,211,GOV-C6-N2
+ASGRP,212,LT2B-N4-SEGURETAT
+ASGRP,213,LT2C-N4-PLATAFORMA
+ASGRP,214,NUCLI2-N2
+ASGRP,215,PROVES_APLICACIONS
+ASGRP,216,SLT_OFICINA_TESEO
+ASGRP,217,X45_UTE_IBMVIEWNEXT_RDC-N2-CANVIS
+categorization_tier_1,0,DESPLEGAMENT
+categorization_tier_1,1,INFRAESTRUCTURA
+categorization_tier_1,2,INFRAESTRUCTURA MULTIAMBIT
+categorization_tier_1,3,DESPLEGAMENT MULTIAMBIT
+categorization_tier_2,0,CODI
+categorization_tier_2,1,SCRIPT
+categorization_tier_2,2,CODI - SCRIPT
+categorization_tier_2,3,ON PREMISE
+categorization_tier_2,4,COMUNICACIONS
+categorization_tier_2,5,PROGRAMARI
+categorization_tier_2,6,SCRIPT - MODIFICACIO INDIVIDUAL DE DADES
+categorization_tier_2,7,LLOC DE TREBALL
+categorization_tier_2,8,SCRIPT - MODIFICACIO ESQUEMA BASE DE DADES
+categorization_tier_2,9,CLOUD PRIVAT
+categorization_tier_2,10,SCRIPT - MODIFICACIO MASSIVA DE DADES
+categorization_tier_2,11,CONTINGUT
+categorization_tier_2,12,CLOUD PUBLIC
+categorization_tier_2,13,SCRIPT - CONSULTA
+categorization_tier_2,14,MAQUINARI
+categorization_tier_3,0,CORRECTIU
+categorization_tier_3,1,EVOLUTIU
+categorization_tier_3,2,ADAPTATIU
+categorization_tier_3,3,CONTINUITAT
+categorization_tier_3,4,PEGATS
+categorization_tier_3,5,VERSIO
+categorization_tier_3,6,PREVENTIU
+categorization_tier_3,7,OBSOLESCENCIA
+categorization_tier_3,8,VULNERABILITAT
+product_cat_tier_1,0,APLICACIONS
+product_cat_tier_1,1,LLOC DE TREBALL
+product_cat_tier_1,2,NUS
+product_cat_tier_1,3,TELECOMUNICACIONS
+product_cat_tier_1,4,LAN
+product_cat_tier_1,5,INFRAESTRUCTURA
+product_cat_tier_1,6,PLATAFORMES ENTORN DE TREBALL
+product_cat_tier_1,7,SERVEIS DE GESTIO
+product_cat_tier_1,8,LLICENCIES
+product_cat_tier_2,0,AM16-CPD2
+product_cat_tier_2,1,AM18_19-CPD4
+product_cat_tier_2,2,AM18-CPD4
+product_cat_tier_2,3,"SUPORT PRESENCIAL, PROVISIO, PLATAFORMA I IMPRESSIO"
+product_cat_tier_2,4,AM16_19-CPD2
+product_cat_tier_2,5,AM10-CPD1
+product_cat_tier_2,6,AM16-CPD2-CLOUD
+product_cat_tier_2,7,AM20-CPD4
+product_cat_tier_2,8,AM15-CPD4-CLOUD
+product_cat_tier_2,9,AM15-CPD4
+product_cat_tier_2,10,AM19-CPD4
+product_cat_tier_2,11,AM01-CPD4
+product_cat_tier_2,12,AM12-CPD2
+product_cat_tier_2,13,CPD2
+product_cat_tier_2,14,AM08-CPD2
+product_cat_tier_2,15,AM15_19-CPD4
+product_cat_tier_2,16,AM13-CPD2
+product_cat_tier_2,17,AM16-CPD3
+product_cat_tier_2,18,AM23-CPD4
+product_cat_tier_2,19,AM03-CPD1
+product_cat_tier_2,20,ESPAI DE TREBALL
+product_cat_tier_2,21,CPD4
+product_cat_tier_2,22,AM06-CPD2
+product_cat_tier_2,23,AM14-CPD4
+product_cat_tier_2,24,AM11-CPD1
+product_cat_tier_2,25,-
+product_cat_tier_2,26,AM18-CPD4-CLOUD
+product_cat_tier_2,27,AM11-CPD2
+product_cat_tier_2,28,AM12_19-CPD2
+product_cat_tier_2,29,AM20_19-CPD4
+product_cat_tier_2,30,AM10_19-CPD1
+product_cat_tier_2,31,AM06-CPD1
+product_cat_tier_2,32,N3 SEUS
+product_cat_tier_2,33,SERVEIS PER TI
+product_cat_tier_2,34,AM19_19-CPD4
+product_cat_tier_2,35,AM01_19-CPD4
+product_cat_tier_2,36,AM10-CPD2
+product_cat_tier_2,37,AM05_19-CPD2
+product_cat_tier_2,38,AM07-CPD4
+product_cat_tier_2,39,CONNECTIVITAT DE DADES
+product_cat_tier_2,40,AM09-CPD4
+product_cat_tier_2,41,AM02-NUCLI2
+product_cat_tier_2,42,INTEGRAL DE VEU
+product_cat_tier_2,43,AM13-CPD2-CLOUD
+product_cat_tier_2,44,AM19-CPD4-CLOUD
+product_cat_tier_2,45,AM08_19-CPD2
+product_cat_tier_2,46,DGP
+product_cat_tier_2,47,AM13_19-CPD2
+product_cat_tier_2,48,INTERNET D'USUARIS
+product_cat_tier_2,49,AM14-CPD2
+product_cat_tier_2,50,AM12-CPD1-CLOUD
+product_cat_tier_2,51,AM06_19-CPD2
+product_cat_tier_2,52,HOSTING EINES DE GESTIO
+product_cat_tier_2,53,AM10_19-CPD2
+product_cat_tier_2,54,AM17-CPD4
+product_cat_tier_2,55,AM21-NUCLI2
+product_cat_tier_2,56,X09-CPD4
+product_cat_tier_2,57,AM17-CPD2
+product_cat_tier_2,58,X35-CPD2-CLOUD
+product_cat_tier_2,59,NUCLI2
+product_cat_tier_2,60,AM14-CPD1-CLOUD
+product_cat_tier_2,61,AM14_19-CPD4
+product_cat_tier_2,62,AM04_19-CPD2
+product_cat_tier_2,63,AM11_19-CPD2
+product_cat_tier_2,64,AM05-CPD1
+product_cat_tier_2,65,AM03_19-CPD2
+product_cat_tier_2,66,AM17-CPD3-CLOUD
+product_cat_tier_2,67,X05-CPD4
+product_cat_tier_2,68,AM03-CPD3
+product_cat_tier_2,69,AM16-CPD4
+product_cat_tier_2,70,SERVEIS PER LLDT
+product_cat_tier_2,71,AM07-CPD3
+product_cat_tier_2,72,AM10-CPD3
+product_cat_tier_2,73,AM17-CPD1
+product_cat_tier_2,74,AM03_19-CPD1
+product_cat_tier_2,75,AM14-CPD4-CLOUD
+product_cat_tier_2,76,APP54-CPD1-CLOUD
+product_cat_tier_2,77,AM22-CPD4
+product_cat_tier_2,78,AM07_19-CPD4
+product_cat_tier_2,79,AM10_19-CPD4
+product_cat_tier_2,80,AM05-CPD2
+product_cat_tier_2,81,AM02_19-NUCLI2
+product_cat_tier_2,82,AM07-CPD1
+product_cat_tier_2,83,AM09_19-CPD4
+product_cat_tier_2,84,TERCERES EMPRESES
+product_cat_tier_2,85,AM07-CPD4-CLOUD
+product_cat_tier_2,86,AM08
+product_cat_tier_2,87,AM07_19-CPD3
+product_cat_tier_2,88,AM20-CPD4-CLOUD
+product_cat_tier_2,89,AM07-CPD3-CLOUD
+product_cat_tier_2,90,AM17_19-CPD2
+product_cat_tier_2,91,AM16_19-CPD2-CLOUD
+product_cat_tier_2,92,AM15-CLOUD
+product_cat_tier_2,93,AM11_19-CPD1
+product_cat_tier_2,94,AM06-CPD1-CLOUD
+product_cat_tier_2,95,AM12-CLOUD
+product_cat_tier_2,96,AM06_19-CPD1
+product_cat_tier_2,97,X11
+product_cat_tier_2,98,AM01-CPD4-CLOUD
+product_cat_tier_2,99,AM10-CPD1-NUCLI2
+product_cat_tier_2,100,AM16-CPD1-CLOUD
+product_cat_tier_2,101,AM04-CPD2
+product_cat_tier_2,102,AM08-CPD1
+product_cat_tier_2,103,CONNECTIVITAT DE DADES N3
+product_cat_tier_2,104,AM05_19-CPD1
+product_cat_tier_2,105,AM15_19-CPD2
+product_cat_tier_2,106,AM22-CPD1
+product_cat_tier_2,107,AM12-CPD4
+product_cat_tier_2,108,AM10-CLOUD
+product_cat_tier_2,109,AM17_19-CPD2-CLOUD
+product_cat_tier_2,110,AM15_19-CPD1
+product_cat_tier_2,111,AM03-CPD4
+product_cat_tier_2,112,AM06-CLOUD
+product_cat_tier_2,113,AM07_19-CPD2
+product_cat_tier_2,114,AM07-CLOUD
+product_cat_tier_2,115,AM15-CPD2
+product_cat_tier_2,116,AM17_19-CPD3
+product_cat_tier_2,117,AM09-CPD2
+product_cat_tier_2,118,AM11-CPD3
+product_cat_tier_2,119,AM16_19-CPD3
+product_cat_tier_2,120,AM17-CPD2-CLOUD
+product_cat_tier_2,121,CPD1
+product_cat_tier_2,122,AM06-CPD2-CLOUD
+product_cat_tier_2,123,CPD3
+product_cat_tier_2,124,AM10_19-CLOUD
+product_cat_tier_2,125,AM07_19-CPD1
+product_cat_tier_2,126,AM13_19-CLOUD
+product_cat_tier_2,127,AM14_19-CPD2
+product_cat_tier_2,128,AM16-CLOUD
+product_cat_tier_2,129,AM22-CLOUD
+product_cat_tier_2,130,AM01-CLOUD
+product_cat_tier_2,131,AM03-CPD3-CLOUD
+product_cat_tier_2,132,AM03-CLOUD
+product_cat_tier_2,133,AM17-CPD3
+product_cat_tier_2,134,VPN USUARIS GENERALITAT
+product_cat_tier_2,135,AM07_19-CLOUD
+product_cat_tier_2,136,AM09-CPD1
+product_cat_tier_2,137,X09-CPD2
+product_cat_tier_2,138,AM06_19-CPD1-CLOUD
+product_cat_tier_2,139,AM05_19-CPD1-NUCLI2
+product_cat_tier_2,140,AM09-CPD1-CLOUD
+product_cat_tier_2,141,X13-CPD4
+product_cat_tier_2,142,ACCES A INTERNET LOCAL
+product_cat_tier_2,143,AM07-CPD2
+product_cat_tier_2,144,AM10-NUCLI2
+product_cat_tier_2,145,X02-CPD2
+product_cat_tier_2,146,AM16-NUCLI2
+product_cat_tier_2,147,AM05-CPD1-NUCLI2
+product_cat_tier_2,148,AM09_19-CPD2-CLOUD
+product_cat_tier_2,149,AM17_19-CPD3-CLOUD
+product_cat_tier_2,150,X29-CPD3
+product_cat_tier_2,151,X29-CPD4
+product_cat_tier_2,152,AM09_19-CPD2
+product_cat_tier_2,153,AM09_19-CPD1
+product_cat_tier_2,154,X15-CPD2
+product_cat_tier_2,155,AM03-CPD2
+product_cat_tier_2,156,AM17_19-CPD1
+product_cat_tier_2,157,AM08_19-CPD1
+product_cat_tier_2,158,AM10
+product_cat_tier_2,159,PUBLICACIO DOMINIS
+product_cat_tier_2,160,AM05-NUCLI2
+product_cat_tier_2,161,AM10_19-NUCLI2
+product_cat_tier_2,162,AM12_19-CPD4
+product_cat_tier_2,163,AM17_19-CPD4
+product_cat_tier_2,164,AM08_19
+product_cat_tier_2,165,AM10-CPD1-CLOUD
+product_cat_tier_2,166,AM20-CPD2
+product_cat_tier_2,167,APP17-CPD1-CLOUD
+product_cat_tier_2,168,AM03_19
+product_cat_tier_2,169,AM08-CPD4
+product_cat_tier_2,170,AM11-CPD2-CLOUD
+product_cat_tier_2,171,APP16-CPD3-CLOUD
+product_cat_tier_2,172,X43-CPD4
+product_cat_tier_2,173,AM06-CPD3
+product_cat_tier_2,174,AM09
+product_cat_tier_2,175,AM03_19-CPD3-CLOUD
+product_cat_tier_2,176,AM04-CPD1
+product_cat_tier_2,177,AMPLE DE BANDA INTERNET
+product_cat_tier_2,178,AM08-CPD1-CLOUD
+product_cat_tier_2,179,AM15-CPD1
+product_cat_tier_2,180,AM03_19-CPD3
+product_cat_tier_2,181,ANELLA SANITARIA
+product_cat_tier_2,182,AM07_19-CPD4-CLOUD
+product_cat_tier_2,183,AM09-CPD2-CLOUD
+product_cat_tier_2,184,AM16_19-CPD4
+product_cat_tier_2,185,X65-CPD4
+product_cat_tier_2,186,A3-CPD2
+product_cat_tier_2,187,AM05_19-CPD4
+product_cat_tier_2,188,AM13_19-CPD2-CLOUD
+product_cat_tier_2,189,SINGULAR
+product_cat_tier_2,190,AM16_19-CPD1-CLOUD
+product_cat_tier_2,191,AM20_19-CPD2
+product_cat_tier_2,192,NO_GESTIONAT_REMEDY
+product_cat_tier_2,193,AM04-NUCLI2
+product_cat_tier_2,194,VIRTUALITZACIO
+product_cat_tier_2,195,AM07_19-CPD3-CLOUD
+product_cat_tier_2,196,AM11_19-CPD4
+product_cat_tier_2,197,AM13-CLOUD
+product_cat_tier_2,198,CPD4-CLOUD
+product_cat_tier_2,199,A9-CPD2
+product_cat_tier_2,200,AM10_19-CPD3
+product_cat_tier_2,201,X03-CPD4
+product_cat_tier_2,202,X18
+product_cat_tier_2,203,AM05-CPD4
+product_cat_tier_2,204,AM12-CPD4-CLOUD
+product_cat_tier_2,205,AM06_19-CLOUD
+product_cat_tier_2,206,AM06_19-CPD2-CLOUD
+product_cat_tier_2,207,AM10-CPD4
+product_cat_tier_2,208,AM11_19-CPD2-CLOUD
+product_cat_tier_2,209,AM13-CPD4-CLOUD
+product_cat_tier_2,210,X24-CPD2
+product_cat_tier_2,211,AM10_19-CPD1-CLOUD
+product_cat_tier_2,212,AM11_19-CPD3
+product_cat_tier_2,213,X58-CPD3-CLOUD
+product_cat_tier_2,214,AM10_19-CPD1-NUCLI2
+product_cat_tier_2,215,AM12_19-CLOUD
+product_cat_tier_2,216,AM17_19-CPD4-CLOUD
+product_cat_tier_2,217,AM22-CPD3
+product_cat_tier_2,218,AM22-CPD4-CLOUD
+product_cat_tier_2,219,B1
+product_cat_tier_2,220,CPD
+product_cat_tier_2,221,AM10_19-CPD4-CLOUD
+product_cat_tier_2,222,AM11-CLOUD
+product_cat_tier_2,223,AM15_19-CPD4-CLOUD
+product_cat_tier_2,224,EQUIPAMENT
+product_cat_tier_2,225,X32-CPD4
+product_cat_tier_2,226,AM02-CPD2
+product_cat_tier_2,227,AM05-CPD1-CLOUD
+product_cat_tier_2,228,AM08-CLOUD
+product_cat_tier_2,229,AM08_19-CPD1-CLOUD
+product_cat_tier_2,230,AM09-NUCLI2
+product_cat_tier_2,231,AM20_19-CPD4-CLOUD
+product_cat_tier_2,232,AM22-CPD2
+product_cat_tier_2,233,JUS
+product_cat_tier_2,234,PROVEÏDORS
+product_cat_tier_2,235,X08-CPD4
+product_cat_tier_2,236,X67-CPD4
+product_cat_tier_2,237,AM03_19-CPD4
+product_cat_tier_2,238,AM12-CPD2-CLOUD
+product_cat_tier_2,239,AM13_19-CPD4
+product_cat_tier_2,240,AM14_19-CLOUD
+product_cat_tier_2,241,AM15-CPD3
+product_cat_tier_2,242,AM15-NUCLI2
+product_cat_tier_2,243,AM16_19-CLOUD
+product_cat_tier_2,244,AM21-CPD4-CLOUD
+product_cat_tier_2,245,CATNIX
+product_cat_tier_2,246,X19
+product_cat_tier_2,247,AM03-CPD1-CLOUD
+product_cat_tier_2,248,AM04-CPD3
+product_cat_tier_2,249,AM04_19-CPD1
+product_cat_tier_2,250,AM14-CPD2-CLOUD
+product_cat_tier_2,251,APP22
+product_cat_tier_2,252,APP45-CPD1-CLOUD
+product_cat_tier_2,253,NUS DE VEU
+product_cat_tier_2,254,SERVEIS PER MOBILS
+product_cat_tier_2,255,ADREÇAMENT IP SEUS
+product_cat_tier_2,256,AM01_19-CPD4-CLOUD
+product_cat_tier_2,257,AM04_19-NUCLI2
+product_cat_tier_2,258,AM07
+product_cat_tier_2,259,AM08-CPD3
+product_cat_tier_2,260,AM09-CLOUD
+product_cat_tier_2,261,AM22-CPD2-CLOUD
+product_cat_tier_2,262,ENVIAMENT MASSIU SMS
+product_cat_tier_2,263,HOST
+product_cat_tier_2,264,A8-CPD2
+product_cat_tier_2,265,AM03_19-CPD4-CLOUD
+product_cat_tier_2,266,AM08_19-CPD4
+product_cat_tier_2,267,AM14-CLOUD
+product_cat_tier_2,268,A3-CPD4
+product_cat_tier_2,269,AM03-CPD4-CLOUD
+product_cat_tier_2,270,AM04_19
+product_cat_tier_2,271,AM06_19-CPD3
+product_cat_tier_2,272,AM09-CPD3
+product_cat_tier_2,273,AM10-CPD2-CLOUD
+product_cat_tier_2,274,CLOUD
+product_cat_tier_2,275,CONNECTIVITAT DE DADES ESPECIFICA
+product_cat_tier_2,276,CONNECTIVITAT ESPECIFICA
+product_cat_tier_2,277,CONNECTIVITAT PUNT A PUNT
+product_cat_tier_2,278,ICS_MTS
+product_cat_tier_2,279,NUMERACIO ESPECIAL
+product_cat_tier_2,280,TELEFONIA MOBIL
+product_cat_tier_2,281,X38-NUCLI2
+product_cat_tier_2,282,A2-CPD2
+product_cat_tier_2,283,A5-CPD4
+product_cat_tier_2,284,A8-CPD4
+product_cat_tier_2,285,ADMINISTRATIVA CRITICA
+product_cat_tier_2,286,AM03_19-CPD2-CLOUD
+product_cat_tier_2,287,AM08_19-CPD3
+product_cat_tier_2,288,AM09_19-CPD1-CLOUD
+product_cat_tier_2,289,AM10-CPD4-CLOUD
+product_cat_tier_2,290,AM14
+product_cat_tier_2,291,AM15_19-CPD3
+product_cat_tier_2,292,AM17_19-CLOUD
+product_cat_tier_2,293,AM19_19-CPD4-CLOUD
+product_cat_tier_2,294,CENTRE EDUCATIU
+product_cat_tier_2,295,ICS
+product_cat_tier_2,296,A11-CPD2
+product_cat_tier_2,297,ACCES AL NUS
+product_cat_tier_2,298,ALTRES ORGANISMES
+product_cat_tier_2,299,AM03
+product_cat_tier_2,300,AM03-CPD2-CLOUD
+product_cat_tier_2,301,AM03_19-CLOUD
+product_cat_tier_2,302,AM04
+product_cat_tier_2,303,AM05_19-CPD1-CLOUD
+product_cat_tier_2,304,AM05_19-CPD3
+product_cat_tier_2,305,AM09-CPD3-CLOUD
+product_cat_tier_2,306,AM10-CPD3-CLOUD
+product_cat_tier_2,307,AM10_19-CPD2-CLOUD
+product_cat_tier_2,308,AM11-CPD4-CLOUD
+product_cat_tier_2,309,AM15_19-NUCLI2
+product_cat_tier_2,310,AM16
+product_cat_tier_2,311,AM16_19
+product_cat_tier_2,312,AM17
+product_cat_tier_2,313,AOC
+product_cat_tier_2,314,APP04-CPD2-CLOUD
+product_cat_tier_2,315,APP17-CPD4-CLOUD
+product_cat_tier_2,316,ENS_CEB
+product_cat_tier_2,317,ESTANDARD+ G
+product_cat_tier_2,318,MAQUINARI
+product_cat_tier_2,319,NUS
+product_cat_tier_2,320,PETITA
+product_cat_tier_2,321,SAU
+product_cat_tier_2,322,VIDEOCONFERENCIA
+product_cat_tier_2,323,X17-CPD4
+product_cat_tier_2,324,X28-CPD2-CLOUD
+product_cat_tier_2,325,X45-CPD4
+product_cat_tier_3,0,-
+product_cat_tier_3,1,ARP_ATIC
+product_cat_tier_3,2,ATC_APP_AREA_TECNICA
+product_cat_tier_3,3,ICS_ARGOS
+product_cat_tier_3,4,TES_ORG_TIC
+product_cat_tier_3,5,SLT_TRANSACCIONAL
+product_cat_tier_3,6,TSF_GF1
+product_cat_tier_3,7,ICS_CC
+product_cat_tier_3,8,CORREU
+product_cat_tier_3,9,SOC
+product_cat_tier_3,10,PLATAFORMA
+product_cat_tier_3,11,GTCT_N3_PROSP
+product_cat_tier_3,12,ARP_UNITAT_SIG
+product_cat_tier_3,13,ACA_CPD
+product_cat_tier_3,14,TSF_GE2
+product_cat_tier_3,15,TSF_GD0
+product_cat_tier_3,16,TSF_GPS9
+product_cat_tier_3,17,TES_URBANISME
+product_cat_tier_3,18,JUS_SISPI_CANVIS
+product_cat_tier_3,19,TSF_GF3
+product_cat_tier_3,20,TSF_GF4
+product_cat_tier_3,21,TSF_GGT1
+product_cat_tier_3,22,TSF_GPS14
+product_cat_tier_3,23,NUS_N3_100M_E
+product_cat_tier_3,24,COL·LABORACIO
+product_cat_tier_3,25,SLT_OFICINA CATSALUT
+product_cat_tier_3,26,SISTEMA D'ARXIUS
+product_cat_tier_3,27,ACA-TRIBUT
+product_cat_tier_3,28,GOV-D20
+product_cat_tier_3,29,TSF_GPS3
+product_cat_tier_3,30,TSF_GA5
+product_cat_tier_3,31,TSF_GPS11
+product_cat_tier_3,32,TSF_GX
+product_cat_tier_3,33,GOV-D17
+product_cat_tier_3,34,TSF_CONTA
+product_cat_tier_3,35,TSF_GJ1
+product_cat_tier_3,36,TSF_GGT3
+product_cat_tier_3,37,TSF_GJ5
+product_cat_tier_3,38,TSF_GI1
+product_cat_tier_3,39,ACA-CC
+product_cat_tier_3,40,TSF_GAJ1
+product_cat_tier_3,41,NUS_N2_001G_E
+product_cat_tier_3,42,TSF_GPS0
+product_cat_tier_3,43,TSF_GA1
+product_cat_tier_3,44,TSF_GPS1
+product_cat_tier_3,45,TSF_GAT1
+product_cat_tier_3,46,ACA-CPD
+product_cat_tier_3,47,DIRECTORI ACTIU
+product_cat_tier_3,48,PROGRAMARI
+product_cat_tier_3,49,WEB
+product_cat_tier_3,50,TSF_GD1
+product_cat_tier_3,51,MOLT ALTA CAPACITAT (1 GBPS) - ESTANDARD CORPORATIU
+product_cat_tier_3,52,NUS_N3_100M_C
+product_cat_tier_3,53,SLT_BI_RCDS
+product_cat_tier_3,54,ARP_MSACCES
+product_cat_tier_3,55,CLT_ATIC
+product_cat_tier_3,56,EXTERN
+product_cat_tier_3,57,TSF_GJ2
+product_cat_tier_3,58,VDI
+product_cat_tier_3,59,ACA-CC-MNT
+product_cat_tier_3,60,ACA-GDNA
+product_cat_tier_3,61,SUPORT SERVEIS CPD
+product_cat_tier_3,62,FISIC
+product_cat_tier_3,63,TES_GE
+product_cat_tier_3,64,TSF_GPS18
+product_cat_tier_3,65,ACA-STCCA
+product_cat_tier_3,66,EMC_ORGANITZACIO
+product_cat_tier_3,67,SLT_OFICINA_TESEO
+product_cat_tier_3,68,ALTA CAPACITAT (100 MBPS) - ESTANDARD CORPORATIU
+product_cat_tier_3,69,TSF_GD7
+product_cat_tier_3,70,TSF_GE1
+product_cat_tier_3,71,TSF_GR2
+product_cat_tier_3,72,FAX IP - CORREU
+product_cat_tier_3,73,PRODUCCIO
+product_cat_tier_3,74,TSF_GA3
+product_cat_tier_3,75,TSF_GA6
+product_cat_tier_3,76,TSF_GGT2
+product_cat_tier_3,77,TSF_GR1
+product_cat_tier_3,78,TSF_GRI1
+product_cat_tier_3,79,ACC_SPAC
+product_cat_tier_3,80,ALTRES
+product_cat_tier_3,81,NUS_N3_500M_C
+product_cat_tier_3,82,NUS_N3_500M_E
+product_cat_tier_3,83,TSF_GIR1
+product_cat_tier_3,84,TSF_GRI2
+product_cat_tier_3,85,VAPP
+product_cat_tier_3,86,GESTIO DE SEGURETAT
+product_cat_tier_3,87,GOV-C6
+product_cat_tier_3,88,LT2B
+product_cat_tier_3,89,NUS_N2_100M_C
+product_cat_tier_3,90,NUS_N3_001G_C
+product_cat_tier_3,91,NUS_N3_001G_E
+product_cat_tier_3,92,SCE_INT_N3
+product_cat_tier_3,93,SOC_VERSUP
+product_cat_tier_3,94,AC_100M_CORP_ES
+product_cat_tier_3,95,ALTA CAPACITAT (100 MBPS) - CRITIC CORPORATIU
+product_cat_tier_3,96,C/S
+product_cat_tier_3,97,CIRCUIT
+product_cat_tier_3,98,CONNECTIVITAT CPD
+product_cat_tier_3,99,CONNECTIVITAT LLDT
+product_cat_tier_3,100,DGP_UDAP
+product_cat_tier_3,101,DOMINIS INTERNET
+product_cat_tier_3,102,EQUIPAMENT ARCONTE
+product_cat_tier_3,103,GOV-D13
+product_cat_tier_3,104,INTEGRACIO
+product_cat_tier_3,105,MIXTE
+product_cat_tier_3,106,MOLT ALTA CAPACITAT (1 GBPS) - CRITIC CORPORATIU
+product_cat_tier_3,107,NUS_N2_001G_C
+product_cat_tier_3,108,SCE_INT_CLOUD
+product_cat_tier_3,109,SLT_PRAM
+product_cat_tier_3,110,SLT_REGISTRES_SANITARIS_CATSALUT
+product_cat_tier_3,111,TSF_GPS21
