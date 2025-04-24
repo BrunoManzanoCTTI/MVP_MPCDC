@@ -1,14 +1,14 @@
 /* Global Styles */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2980b9;
+    --primary-color: #c60b1e; /* Changed to Generalitat de Catalunya red */
+    --secondary-color: #a00918; /* Darker red */
     --accent-color: #e74c3c;
     --light-color: #ecf0f1;
     --dark-color: #2c3e50;
     --text-color: #333;
     --sidebar-width: 350px;
     --warning-color: #f39c12;
-    --header-height: 64px;
+    --header-height: 80px; /* Increased header height */
     --footer-height: 60px;
     --danger-color: #e74c3c;
     --success-color: #2ecc71;
@@ -36,7 +36,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1920px; /* Further increased max-width for a wider layout */
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -52,8 +52,9 @@ header {
 }
 
 header h1 {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 32px; /* Increased font size */
+    font-weight: 700; /* Changed font weight to bold */
+    font-family: 'Montserrat', sans-serif; /* Added Montserrat font */
 }
 
 /* Notification Styles */
@@ -96,7 +97,7 @@ main .container {
 }
 
 .main-content {
-    flex: 1;
+    flex: 2; /* Main content takes up 2/3 of space */
     background-color: white;
     border-radius: 8px;
     padding: 25px;
@@ -132,10 +133,8 @@ main .container {
 
 /* Sidebar Styles */
 .sidebar {
-    width: var(--sidebar-width);
-    min-width: var(--sidebar-width);
-    position: sticky;
-    top: 0;
+    flex: 1; /* Sidebar takes up 1/3 of space */
+    /* Removed fixed width/min-width and sticky positioning for flex layout */
     align-self: flex-start;
     height: calc(100vh - var(--header-height) - var(--footer-height) - 60px); /* 60px for padding */
 }
@@ -222,6 +221,60 @@ main .container {
 .message-content small {
     opacity: 0.8;
     font-style: italic;
+}
+
+/* Loading Animation Styles */
+.message.bot.loading {
+    opacity: 0.7; /* Semi-transparent */
+}
+
+.message.bot.loading .message-content {
+    display: flex;
+    align-items: center;
+    /* Removed justify-content: center; to allow left alignment */
+    padding: 0; /* Remove padding from content div for dots */
+    min-height: 20px; /* Ensure minimum height for dots */
+    gap: 4px; /* Add small gap between text and dots */
+}
+
+.message.bot.loading .message-content .thinking-text {
+    opacity: 0.2; /* Start with slightly visible opacity */
+    animation: fade-in-out 2.2s infinite ease-in-out both; /* Further increased duration */
+    animation-delay: 0s; /* Start animation immediately */
+}
+
+.message.bot.loading .message-content .dot {
+    display: inline-block;
+    width: 6px; /* Slightly smaller dots */
+    height: 6px;
+    background-color: var(--text-color); /* Dot color */
+    border-radius: 50%;
+    /* Removed margin as gap is used */
+    opacity: 0.2; /* Start with slightly visible opacity */
+    animation: fade-in-out 2.2s infinite ease-in-out both; /* Further increased duration */
+}
+
+.message.bot.loading .message-content .dot:nth-child(1) {
+    animation-delay: 0.18s; /* Further adjusted staggered delay */
+}
+
+.message.bot.loading .message-content .dot:nth-child(2) {
+    animation-delay: 0.36s; /* Further adjusted staggered delay */
+}
+
+.message.bot.loading .message-content .dot:nth-child(3) {
+    animation-delay: 0.54s; /* Further adjusted staggered delay */
+}
+
+
+/* Keyframes for the fade in/out animation */
+@keyframes fade-in-out {
+    0%, 100% {
+        opacity: 0.2; /* Minimum opacity */
+    }
+    50% {
+        opacity: 1; /* Maximum opacity */
+    }
 }
 
 .chatbot-input {
@@ -334,6 +387,25 @@ footer {
     margin-top: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
+
+/* New styles for the two-column layout */
+.classification-layout {
+    display: flex;
+    gap: 30px; /* Space between description and form */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.classification-description {
+    flex: 0.6; /* Description takes up less space */
+    min-width: 300px; /* Minimum width before wrapping */
+}
+
+.classification-form-container {
+    flex: 1.4; /* Form container takes up more space relative to description */
+    min-width: 400px; /* Minimum width for the form */
+    max-width: 800px; /* Keep max-width to prevent form from becoming too wide */
+}
+
 
 .form-group {
     margin-bottom: 20px;
@@ -506,13 +578,22 @@ footer {
 }
 
 .scroll-to-form {
-    color: var(--primary-color);
-    text-decoration: underline;
+    display: inline-block; /* Make it behave like a block for padding */
+    background-color: var(--primary-color); /* Use primary color for background */
+    color: white; /* White text */
+    padding: 4px 8px; /* Add some padding */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 12px; /* Make it mini */
     cursor: pointer;
+    transition: background-color 0.2s;
+    margin-left: 5px; /* Add a little space after the text */
 }
 
 .scroll-to-form:hover {
-    color: var(--secondary-color);
+    background-color: var(--secondary-color); /* Darker background on hover */
+    color: white; /* Keep text white on hover */
+    text-decoration: none; /* Ensure no underline on hover */
 }
 
 /* Responsive Styles */

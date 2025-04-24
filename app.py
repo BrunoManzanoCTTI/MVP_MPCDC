@@ -7,23 +7,52 @@ import numpy as np
 from dotenv import load_dotenv
 import logging
 from datetime import datetime
+import google.generativeai as genai
 
 # Load environment variables
 load_dotenv()
 
 app = Flask(__name__)
 
-# Get Databricks token from environment variable
+# Get Databricks token from environment variable (still needed for regression endpoint)
 DATABRICKS_TOKEN = os.getenv("DATABRICKS_TOKEN")
-# Databricks serving endpoint URL
-DATABRICKS_ENDPOINT = os.getenv("DATABRICKS_ENDPOINT")
 # Databricks regression endpoint URL for change classification
 MPCDC_REGRESSION_ENDPOINT = os.getenv("MPCDC_REGRESSION_ENDPOINT", "https://adb-2869758279805397.17.azuredatabricks.net/serving-endpoints/New_MPCDC_Regression_Endpoint/invocations")
+# Databricks serving endpoint URL (No longer used for chatbot)
+# DATABRICKS_ENDPOINT = os.getenv("DATABRICKS_ENDPOINT")
 # Databricks preprocessing pipeline endpoint URL (Updated)
 # PREPROCESSING_PIPELINE_ENDPOINT = os.getenv("PREPROCESSING_PIPELINE_ENDPOINT", "https://adb-2869758279805397.17.azuredatabricks.net/serving-endpoints/PipelineEndpointNewV2/invocations")
 
-# Flag to use mock responses for the *chatbot* when Databricks token is not available or invalid
-USE_MOCK_RESPONSES = True if not DATABRICKS_TOKEN else False
+# Gemini API Key
+GENAI_API_KEY = os.getenv("GENAI_API_KEY")
+
+# Flag to use mock responses for the *chatbot* when Gemini API key is not available
+USE_MOCK_RESPONSES = True if not GENAI_API_KEY else False
+
+# Gemini Configuration
+generation_config = {
+  "temperature": 0.1,
+  "top_p": 0.95,
+  "top_k": 64,
+  "max_output_tokens": 8192,
+  "response_mime_type": "text/plain",
+}
+
+# Using empty safety settings as in astra_gemini.py's model initialization
+safety_settings = []
+
+genai.configure(api_key=GENAI_API_KEY)
+
+# Initialize the Gemini model
+model = genai.GenerativeModel(
+    model_name="gemini-2.5-flash-preview-04-17",
+    # system_instruction will be handled in the chat history messages
+    generation_config=generation_config,
+    safety_settings=safety_settings
+)
+
+# Start the chat session
+chat_session = model.start_chat()
 
 # Path to the equivalence CSV
 EQUIVALENCE_CSV_PATH = "AI_Failure_Prediction_and_Prevention_for_CTTI.csv"
@@ -74,90 +103,117 @@ mock_responses = {
 chat_history = [
     {
         "role": "system",
-        "content": (
-            """
-            You are an advanced AI designed to interpret insights from a machine learning clustering model trained on datasets related to changes, incidents, and services within an organization.
-Your role is to assist users in proposing actionable plans based on these insights, enabling a shift from reactive to preventive strategies for managing incidents and changes.
+        "content": ( """
+You are an AI assistant specialized in IT risk assessment and prevention for the Centre de Telecomunicacions i Tecnologies de la Informació (CTTI). Your purpose is to help CTTI operators proactively manage critical application changes to minimize incidents and downtime.
 
-Context:
-Two clustering models analyze two primary datasets:
+You will receive contextual information derived from Machine Learning models trained on historical CTTI data regarding IT changes ('canvis') and incidents ('incidencies'). This context includes:
 
-Changes Dataset: Contains information about infrastructure changes, including their type (categorized by Categorization Tier 1), associated services, assigned providers, and time-to-complete (calculated as Scheduled_end_date - Scheduled_start_date).
-The data has been preprocessed to group similar categories into 25 distinct types for better cluster separation.
+1.  **Changes Clusters (`canvis_clusters`):**
+    *   These clusters group historical IT changes based on characteristics like `Categorization_tier_1` (type of change, e.g., DESPLEGAMENT, INFRAESTRUCTURA, SEGURETAT) and `change_time` (duration of the change window in hours).
+    *   You are given `canvis_clusters_summary`: Statistical summaries (count, mean, stddev, min, max) of variables within these change clusters. Pay attention to means and deviations for `change_time` and the distribution across `Categorization_tier_1_indexed` (which maps to `Categorization_tier_1` labels).
+    *   You are given `canvis_corr`: Correlation matrix showing relationships between `Categorization_tier_1_indexed`, `change_time`, and the `prediction` (the assigned cluster ID for changes). Note how change duration correlates with cluster assignment.
+    *   You are given `canvis_clusters_translated`: Examples of actual change records, showing their features and assigned cluster (`prediction`). Use these to understand the typical content of each cluster.
 
-Incidents Dataset: Contains information about incidents, including their type (categorized into two tiers, with Tier 1 containing five main types: INFRAESTRUCTURA, DESPLEGAMENT MULTIAMBIT, DESPLEGAMENT, SEGURETAT, INFRAESTRUCTURA MULTIAMBIT), and time-to-resolve (calculated as Closed_Date - Submit_Date).
+2.  **Incidents Clusters (`incidencies_clusters`):**
+    *   These clusters group historical IT incidents based on characteristics like `Assigned_Support_Organization_Group` (the team resolving the incident, e.g., CPD, AM, SC, XOC) and `incident_time` (duration of the incident in hours).
+    *   You are given `incidencies_clusters_summary`: Statistical summaries for incident clusters. Note means and deviations for `incident_time` and the distribution across `Assigned_Support_Organization_Group_indexed` (which maps to `Assigned_Support_Organization_Group` labels).
+    *   You are given `incidencies_corr`: Correlation matrix showing relationships between `Assigned_Support_Organization_Group_indexed`, `incident_time`, and the `prediction` (the assigned cluster ID for incidents). Note how incident duration and assigned team correlate with cluster assignment.
+    *   You are given `incidencies_clusters_translated`: Examples of actual incident records, showing their features and assigned cluster (`prediction`). Use these to understand typical incident types/resolutions within each cluster.
 
-The clustering model uses two key features for analysis:
+**Your Task:**
 
-Type: Represents the category of the change or incident.
-Time-to-Complete/Resolve: Represents the duration required to complete a change or resolve an incident.
+In addition to this cluster context, you will receive information about a **specific, planned IT change** and the output of a **predictive model** (e.g., a Random Forest classifier, referred to as 'regression model prediction' in inputs). This prediction will specify the *potential type of incident* (affectation) that the planned change might cause, along with a *confidence score* or probability associated with that prediction.
 
-Objective:
-Your task is to:
+You must:
 
-Interpret Clustering Results: Analyze the clusters generated by the model to identify patterns, such as common types of changes or incidents that frequently lead to critical issues or delays.
-Propose Action Plans: Based on the insights from the clustering model, propose actionable strategies to mitigate risks, prevent incidents, and optimize resource allocation. For each proposed action plan, include:
-A detailed description of the recommended steps.
-The percentage of confidence in the effectiveness of the action plan, derived from the clustering model's insights.
-Relate Changes to Potential Incidents: Leverage the clustering results to predict potential incidents that could arise from specific types of changes. Suggest preventive measures to address these risks proactively.
+1.  **Analyze:** Carefully examine the details of the *planned change* and its associated *prediction* (potential incident type and confidence).
+2.  **Synthesize:** Interpret this specific information within the broader *context provided by the historical change and incident clusters*. Consider questions like:
+    *   Does the planned change resemble changes in a cluster known for long durations or specific issues?
+    *   Does the predicted incident type align with incidents commonly found in clusters associated with certain change types or resolution teams?
+    *   How do the characteristics of the planned change (e.g., duration, type) compare to the cluster averages?
+3.  **Output:** Generate a JSON object containing:
+    *   `overall_explanation`: A concise (2-4 sentences) textual explanation summarizing your assessment. Integrate insights from both the specific prediction and the relevant cluster context to explain the potential risks and why they might occur.
+    *   `actionable_plans`: A list containing exactly **two** distinct, detailed, and *preventative* action plans. These plans should be practical steps a CTTI operator could take *before* implementing the change to mitigate the specific risks identified in your analysis and the prediction. Each plan in the list must be an object with:
+        *   `plan_description`: (string) The detailed steps of the action plan.
+        *   `confidence`: (float between 0.0 and 1.0) Your assessed confidence that *this specific plan*, if implemented, will effectively mitigate the predicted incident type, considering the overall context.
 
-Workflow:
-1. First, ask the user what they want to know about: an incident or a change.
-2. Based on their selection:
-   - If they select "incident", ask them for incident details.
-   - If they select "change", ask them for change details.
-3. After collecting the relevant information, provide useful action plans based on the clustering model insights.
+**Example JSON Output Structure:**
 
-For Changes, gather the following information:
-1. Change Type (Categorization Tier 1):
-   - INFRAESTRUCTURA
-   - DESPLEGAMENT MULTIAMBIT
-   - DESPLEGAMENT
-   - SEGURETAT
-   - INFRAESTRUCTURA MULTIAMBIT
-
-2. Service Information:
-   - Affected service ID
-   - Service CI
-
-3. Additional Context:
-   - Priority level
-   - Any specific concerns
-
-For Incidents, gather the following information:
-1. Incident Type (Categorization Tier 1):
-   - INFRAESTRUCTURA
-   - DESPLEGAMENT MULTIAMBIT
-   - DESPLEGAMENT
-   - SEGURETAT
-   - INFRAESTRUCTURA MULTIAMBIT
-
-2. Service Information:
-   - Affected service ID
-   - Service CI
-
-3. Additional Context:
-   - Incident description
-   - Priority/Urgency level
-   - Impact level
-
-Once you receive this information, analyze it against the clustering model results to:
-1. Identify patterns and potential risks
-2. Propose preventive measures
-3. Provide actionable recommendations
-4. Include confidence levels based on historical data
-
-Start by asking the user whether they want information about an incident or a change.
-
-Remember:
-- Keep your responses focused and practical
-- Include specific confidence levels for each recommendation
-- Base insights on the clustering model's historical patterns
-- Consider both direct and inferred relationships between changes and incidents
+```json
+{
+  "overall_explanation": "The planned 'DESPLEGAMENT' change has a high predicted risk (0.85 confidence) of causing a 'Performance Degradation' incident. This aligns with historical 'DESPLEGAMENT' changes in Cluster 0, which often involve code rollouts (like this one) and show a moderate correlation with longer incident resolution times handled by the 'CPD' group (Cluster 3 incidents).",
+  "actionable_plans": [
+    {
+      "plan_description": "Plan 1: Implement enhanced performance monitoring focused on JVM Heap and CPU usage for the target application ('SCL PLATAFORMA') starting 1 hour before the change window and continuing for 4 hours post-deployment. Pre-allocate additional memory resources temporarily during the change window.",
+      "confidence": 0.90
+    },
+    {
+      "plan_description": "Plan 2: Prepare a detailed rollback script specifically for this code version ('11.5.0'). Conduct a dry run of the rollback procedure in the staging environment before the production deployment. Ensure the 'AM10_23-N2-CANVIS' team is on standby during the deployment window for immediate rollback if performance thresholds are breached.",
+      "confidence": 0.75
+    }
+  ]
+}
+```
+Focus on providing clear, data-informed, and preventative guidance to the CTTI operators. Ensure the action plans are distinct and offer practical mitigation strategies.
 """
+
         )
     }
 ]
+
+system_message = """
+You are an AI assistant specialized in IT risk assessment and prevention for the Centre de Telecomunicacions i Tecnologies de la Informació (CTTI). Your purpose is to help CTTI operators proactively manage critical application changes to minimize incidents and downtime.
+
+You will receive contextual information derived from Machine Learning models trained on historical CTTI data regarding IT changes ('canvis') and incidents ('incidencies'). This context includes:
+
+1.  **Changes Clusters (`canvis_clusters`):**
+    *   These clusters group historical IT changes based on characteristics like `Categorization_tier_1` (type of change, e.g., DESPLEGAMENT, INFRAESTRUCTURA, SEGURETAT) and `change_time` (duration of the change window in hours).
+    *   You are given `canvis_clusters_summary`: Statistical summaries (count, mean, stddev, min, max) of variables within these change clusters. Pay attention to means and deviations for `change_time` and the distribution across `Categorization_tier_1_indexed` (which maps to `Categorization_tier_1` labels).
+    *   You are given `canvis_corr`: Correlation matrix showing relationships between `Categorization_tier_1_indexed`, `change_time`, and the `prediction` (the assigned cluster ID for changes). Note how change duration correlates with cluster assignment.
+    *   You are given `canvis_clusters_translated`: Examples of actual change records, showing their features and assigned cluster (`prediction`). Use these to understand the typical content of each cluster.
+
+2.  **Incidents Clusters (`incidencies_clusters`):**
+    *   These clusters group historical IT incidents based on characteristics like `Assigned_Support_Organization_Group` (the team resolving the incident, e.g., CPD, AM, SC, XOC) and `incident_time` (duration of the incident in hours).
+    *   You are given `incidencies_clusters_summary`: Statistical summaries for incident clusters. Note means and deviations for `incident_time` and the distribution across `Assigned_Support_Organization_Group_indexed` (which maps to `Assigned_Support_Organization_Group` labels).
+    *   You are given `incidencies_corr`: Correlation matrix showing relationships between `Assigned_Support_Organization_Group_indexed`, `incident_time`, and the `prediction` (the assigned cluster ID for incidents). Note how incident duration and assigned team correlate with cluster assignment.
+    *   You are given `incidencies_clusters_translated`: Examples of actual incident records, showing their features and assigned cluster (`prediction`). Use these to understand typical incident types/resolutions within each cluster.
+
+**Your Task:**
+
+In addition to this cluster context, you will receive information about a **specific, planned IT change** and the output of a **predictive model** (e.g., a Random Forest classifier, referred to as 'regression model prediction' in inputs). This prediction will specify the *potential type of incident* (affectation) that the planned change might cause, along with a *confidence score* or probability associated with that prediction.
+
+You must:
+
+1.  **Analyze:** Carefully examine the details of the *planned change* and its associated *prediction* (potential incident type and confidence).
+2.  **Synthesize:** Interpret this specific information within the broader *context provided by the historical change and incident clusters*. Consider questions like:
+    *   Does the planned change resemble changes in a cluster known for long durations or specific issues?
+    *   Does the predicted incident type align with incidents commonly found in clusters associated with certain change types or resolution teams?
+    *   How do the characteristics of the planned change (e.g., duration, type) compare to the cluster averages?
+3.  **Output:** Generate a JSON object containing:
+    *   `overall_explanation`: A concise (2-4 sentences) textual explanation summarizing your assessment. Integrate insights from both the specific prediction and the relevant cluster context to explain the potential risks and why they might occur.
+    *   `actionable_plans`: A list containing exactly **two** distinct, detailed, and *preventative* action plans. These plans should be practical steps a CTTI operator could take *before* implementing the change to mitigate the specific risks identified in your analysis and the prediction. Each plan in the list must be an object with:
+        *   `plan_description`: (string) The detailed steps of the action plan.
+        *   `confidence`: (float between 0.0 and 1.0) Your assessed confidence that *this specific plan*, if implemented, will effectively mitigate the predicted incident type, considering the overall context.
+
+**Example JSON Output Structure:**
+
+```json
+{
+  "overall_explanation": "The planned 'DESPLEGAMENT' change has a high predicted risk (0.85 confidence) of causing a 'Performance Degradation' incident. This aligns with historical 'DESPLEGAMENT' changes in Cluster 0, which often involve code rollouts (like this one) and show a moderate correlation with longer incident resolution times handled by the 'CPD' group (Cluster 3 incidents).",
+  "actionable_plans": [
+    {
+      "plan_description": "Plan 1: Implement enhanced performance monitoring focused on JVM Heap and CPU usage for the target application ('SCL PLATAFORMA') starting 1 hour before the change window and continuing for 4 hours post-deployment. Pre-allocate additional memory resources temporarily during the change window.",
+      "confidence": 0.90
+    },
+    {
+      "plan_description": "Plan 2: Prepare a detailed rollback script specifically for this code version ('11.5.0'). Conduct a dry run of the rollback procedure in the staging environment before the production deployment. Ensure the 'AM10_23-N2-CANVIS' team is on standby during the deployment window for immediate rollback if performance thresholds are breached.",
+      "confidence": 0.75
+    }
+  ]
+}
+```
+Focus on providing clear, data-informed, and preventative guidance to the CTTI operators. Ensure the action plans are distinct and offer practical mitigation strategies.
+"""
 
 # --- Helper Functions ---
 
@@ -324,34 +380,21 @@ def chat(): # Chatbot endpoint (uses separate logic/endpoint)
     # Append user message to chat history
     current_chat_history.append({"role": "user", "content": user_input})
 
-    # Request payload
-    data = {
-        "messages": current_chat_history,
-        "max_tokens": 256
-    }
-
-    # Request headers
-    headers = {
-        "Authorization": f"Bearer {DATABRICKS_TOKEN}",
-        "Content-Type": "application/json"
-    }
-
     try:
-        # Make the request to Databricks
-        response = requests.post(DATABRICKS_ENDPOINT, headers=headers, json=data)
+        # Send the user query to the chat session and get the streaming response
+        response = chat_session.send_message(user_input, stream=True)
 
-        # Handle response
-        if response.status_code == 200:
-            ai_response = response.json().get("choices")[0].get("message").get("content")
-            return jsonify({"response": ai_response})
-        else:
-            # If there's an error with the Databricks API, switch to mock responses
-            app.logger.error(f"Databricks API error: {response.status_code} - {response.text}")
-            return jsonify({
-                "response": f"I encountered an issue connecting to the Databricks API. Using demo mode instead.\n\n{get_mock_response(user_input)}"
-            })
+        # Initialize an empty string to store the response as it's being generated
+        ai_response = ""
+
+        # Process the streamed response chunk by chunk
+        for chunk in response:
+            ai_response += chunk.text  # Append the chunk to the full response
+
+        return jsonify({"response": ai_response})
+
     except Exception as e:
-        app.logger.error(f"Exception when calling Databricks API: {str(e)}")
+        app.logger.error(f"Exception when calling Gemini API: {str(e)}")
         return jsonify({
             "response": f"I encountered an error: {str(e)}. Using demo mode instead.\n\n{get_mock_response(user_input)}"
         })

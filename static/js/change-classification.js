@@ -78,6 +78,22 @@ document.addEventListener('DOMContentLoaded', function() {
             // Create the result card using the new data structure
             const resultCard = createResultCard(data);
             resultsContent.appendChild(resultCard);
+
+            // Send the predicted label to the chatbot
+            if (window.sendChatbotMessage) {
+                const chatbotMessage = `Based on the change details provided, the predicted impact is: ${data.predicted_label}. Can you provide more insights on this?`;
+                window.sendChatbotMessage(chatbotMessage);
+
+                // Enable chatbot input and button
+                const userInput = document.getElementById('userInput');
+                const sendButton = document.getElementById('sendButton');
+                if (userInput) userInput.disabled = false;
+                if (sendButton) sendButton.disabled = false;
+
+            } else {
+                console.error("Chatbot sendMessage function not available.");
+            }
+
         } else {
             // Handle cases where status is success but prediction is missing, or other unexpected success formats
             const errorCard = document.createElement('div');
@@ -152,18 +168,41 @@ document.addEventListener('DOMContentLoaded', function() {
         const formData = new FormData(changeForm);
         const changeData = {};
         
-        // Convert FormData to a plain object
+        // Get date values for calculation
+        const scheduledStartDate = formData.get('scheduled_start_date');
+        const scheduledEndDate = formData.get('scheduled_end_date');
+
+        // Convert FormData to a plain object, excluding the original date fields
         for (const [key, value] of formData.entries()) {
-            // Convert change_request_status to integer if present
-            if (key === 'change_request_status') {
-                changeData[key] = parseInt(value, 10) || 0; // Default to 0 if parsing fails
+            // Exclude original date fields
+            if (key !== 'scheduled_start_date' && key !== 'scheduled_end_date' && key !== 'submit_date') {
+                 // Convert change_request_status to integer if present
+                if (key === 'change_request_status') {
+                    changeData[key] = parseInt(value, 10) || 0; // Default to 0 if parsing fails
+                } else {
+                    changeData[key] = value;
+                }
             }
-            // For date fields, the value from datetime-local input is already in ISO-like format (YYYY-MM-DDTHH:MM)
-            // which should be parseable by Python's datetime.fromisoformat (if seconds are not strictly required or handled)
-            // No custom formatting needed here anymore.
-            else {
-                 changeData[key] = value;
+        }
+
+        // Calculate change duration in minutes if both dates are provided
+        if (scheduledStartDate && scheduledEndDate) {
+            try {
+                const start = new Date(scheduledStartDate);
+                const end = new Date(scheduledEndDate);
+                // Calculate difference in milliseconds, then convert to minutes
+                const durationMs = end.getTime() - start.getTime();
+                // Ensure duration is not negative
+                const durationMinutes = Math.max(0, durationMs / (1000 * 60));
+                changeData['change_duration'] = durationMinutes;
+            } catch (e) {
+                console.error("Error calculating date duration:", e);
+                // Optionally add an error message to the user or set duration to a default/null
+                changeData['change_duration'] = null; // Or 0, depending on desired behavior
             }
+        } else {
+             // Handle cases where dates are missing, set duration to null or 0
+             changeData['change_duration'] = null; // Or 0
         }
         
         try {

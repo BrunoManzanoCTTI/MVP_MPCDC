@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="container">
-            <h1>MPCDC - Machine Learning Clustering Model</h1>
+            <h1>AI-Powered Failure Prevention for CTTI</h1>
         </div>
     </header>
 
@@ -24,38 +24,22 @@
             
             <div class="content-wrapper">
                 <section class="main-content">
-                    <h2>Project Description</h2>
-                    <p>Welcome to the Machine Learning Clustering Model for Predictive Change and Incident Management.</p>
+                    <h2>Welcome!</h2>
+                    <!-- <p>Welcome to the Machine Learning Clustering Model for Predictive Change and Incident Management.</p> -->
                     
                     <div class="project-description">
-                        <h3>About the Project</h3>
-                        <p>This project leverages advanced machine learning clustering techniques to analyze patterns in infrastructure changes and incidents, enabling a shift from reactive to preventive strategies for managing IT operations.</p>
-                        
-                        <h3>Key Features</h3>
-                        <ul>
-                            <li><strong>Cluster Analysis:</strong> Identifies patterns in changes and incidents based on type and time-to-complete/resolve.</li>
-                            <li><strong>Predictive Insights:</strong> Predicts potential incidents that could arise from specific types of changes.</li>
-                            <li><strong>Action Plans:</strong> Proposes actionable strategies with confidence levels to mitigate risks and optimize resource allocation.</li>
-                        </ul>
-                        
-                        <h3>Datasets</h3>
-                        <p>The model analyzes two primary datasets:</p>
-                        <ul>
-                            <li><strong>Changes Dataset:</strong> Contains information about infrastructure changes, including type, associated services, assigned providers, and time-to-complete.</li>
-                            <li><strong>Incidents Dataset:</strong> Contains information about incidents, including type, criticality, and time-to-resolve.</li>
-                        </ul>
-                        
-                        <h3>How It Works</h3>
-                        <p>The clustering model identifies patterns in changes and incidents, such as common types that frequently lead to critical issues or delays. Based on these insights, it proposes actionable strategies to mitigate risks, prevent incidents, and optimize resource allocation.</p>
-                        
-                        <h3>Benefits</h3>
-                        <ul>
-                            <li>Shift from reactive to preventive incident management</li>
-                            <li>Optimize resource allocation</li>
-                            <li>Reduce downtime and service disruptions</li>
-                            <li>Save time, money, and resources</li>
-                        </ul>
-                        
+                        <h3>Introduction</h3>
+                        <p>In the Centre de Telecomunicacions i Tecnologies de la Informació (CTTI) managing of critical government applications involves frequent changes and responses to emerging errors and incidents. However, CTTI's current reactive approach fixes incidents post-occurrence, leading to server downtime, operational inefficiencies, and resource waste. This project seeks a paradigm shift from reactive to <strong>preventive management</strong> by exploiting data relating CTTI operator changes with applications incidents.</p>
+
+                        <h3>Machine Learning Models</h3>
+                        <p><strong>Machine learning models</strong> are trained with this data: two <strong>clustering algorithms</strong> provide contextual information about structured patterns in changes and incidents, while a <strong>random forest classifier</strong> relates changes directly to the type of incident (affectation) they may produce, serving as a predictive label. This multi-modal analysis helps us obtain rich context about changes, incidents, and their interrelations.</p>
+
+                        <h3>AI Integration</h3>
+                        <p>This context is then leveraged by a <strong>natural language processing AI</strong> using <strong>cache-augmented generation (CAG)</strong>. A <strong>large language model (LLM)</strong> like Gemini 2.5 Flash interprets the situation surrounding a potential change and proposes three detailed action plans with their respective <strong>confidence intervals</strong>, enabling CTTI operators to make more data-informed decisions.</p>
+
+                        <h3>Web Application</h3>
+                        <p>To make this workflow readily accessible, a <strong>web application</strong> facilitates these features. Within this application, an operator can input details of a planned change, receive the <strong>predicted potential incident type</strong> along with its <strong>confidence intervals</strong> derived from the classifier probabilities, and interact with the <strong>LLM agent</strong> to obtain nuanced interpretations of the risk and clever, preventative action plans.</p>
+
                         <h3>Clustering Model Visualization</h3>
                         <div class="cluster-images">
                             <div class="cluster-image-container">
@@ -70,117 +54,127 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="change-classification-section" id="changeClassificationSection">
                         <h3>Change Classification</h3>
-                        <p>Submit detailed information about a change to analyze its potential impact and risk level.</p>
                         
-                        <form id="changeClassificationForm" class="change-form">
-                            <div class="form-group">
-                                <label for="infrastructure_change_id">Change ID*</label>
-                                <input type="text" id="infrastructure_change_id" name="infrastructure_change_id" required>
+                        <div class="classification-layout">
+                            <div class="classification-description">
+                                <p>This tool allows you to classify a potential infrastructure change based on its characteristics. By providing details such as Service ID, Service CI, Categorization Tiers, and Product Categories, the system will use the trained machine learning model to predict the likely outcome type (e.g., SENSE TALL DE SERVEI, TALL DE SERVEI, DEGRADACIO).</p>
+                                <p>This classification can help assess the potential risk associated with the change and inform preventive measures.</p>
+                                <!-- Add more descriptive text here if needed -->
                             </div>
                             
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="submit_date">Submit Date</label>
-                                    <input type="datetime-local" id="submit_date" name="submit_date">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="scheduled_start_date">Scheduled Start Date</label>
-                                    <input type="datetime-local" id="scheduled_start_date" name="scheduled_start_date">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="scheduled_end_date">Scheduled End Date</label>
-                                    <input type="datetime-local" id="scheduled_end_date" name="scheduled_end_date">
-                                </div>
+                            <div class="classification-form-container">
+                                <form id="changeClassificationForm" class="change-form">
+                                    <div class="form-group">
+                                        <label for="infrastructure_change_id">Change ID*</label>
+                                        <input type="text" id="infrastructure_change_id" name="infrastructure_change_id" required>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <!-- Hidden Date Fields -->
+                                    <div class="form-group" hidden>
+                                        <label for="submit_date">Submit Date</label>
+                                        <input type="datetime-local" id="submit_date" name="submit_date">
+                                    </div>
+                                        
+                                    <div class="form-group">
+                                        <label for="scheduled_start_date">Scheduled Start Date</label>
+                                        <input type="datetime-local" id="scheduled_start_date" name="scheduled_start_date">
+                                    </div>
+                                        
+                                    <div class="form-group">
+                                        <label for="scheduled_end_date">Scheduled End Date</label>
+                                        <input type="datetime-local" id="scheduled_end_date" name="scheduled_end_date">
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="f01_chr_serviceid">Service ID*</label>
+                                            <input type="text" id="f01_chr_serviceid" name="f01_chr_serviceid" required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="serviceci">Service CI*</label>
+                                            <input type="text" id="serviceci" name="serviceci" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="ASORG">AS Organization</label>
+                                            <input type="text" id="ASORG" name="ASORG">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="ASGRP">AS Group</label>
+                                            <input type="text" id="ASGRP" name="ASGRP">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="categorization_tier_1">Categorization Tier 1</label>
+                                            <select id="categorization_tier_1" name="categorization_tier_1">
+                                                <option value="">Select...</option>
+                                                <option value="INFRAESTRUCTURA">INFRAESTRUCTURA</option>
+                                                <option value="DESPLEGAMENT MULTIAMBIT">DESPLEGAMENT MULTIAMBIT</option>
+                                                <option value="DESPLEGAMENT">DESPLEGAMENT</option>
+                                                <option value="SEGURETAT">SEGURETAT</option>
+                                                <option value="INFRAESTRUCTURA MULTIAMBIT">INFRAESTRUCTURA MULTIAMBIT</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="categorization_tier_2">Categorization Tier 2</label>
+                                            <input type="text" id="categorization_tier_2" name="categorization_tier_2">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="categorization_tier_3">Categorization Tier 3</label>
+                                            <input type="text" id="categorization_tier_3" name="categorization_tier_3">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="product_cat_tier_1">Product Category Tier 1</label>
+                                            <input type="text" id="product_cat_tier_1" name="product_cat_tier_1">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="product_cat_tier_2">Product Category Tier 2</label>
+                                            <input type="text" id="product_cat_tier_2" name="product_cat_tier_2">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="product_cat_tier_3">Product Category Tier 3</label>
+                                            <input type="text" id="product_cat_tier_3" name="product_cat_tier_3">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="change_request_status">Change Request Status</label>
+                                            <input type="number" id="change_request_status" name="change_request_status" min="0" value="0">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="Num_Incidencies">Related Incident ID</label>
+                                            <input type="text" id="Num_Incidencies" name="Num_Incidencies" placeholder="e.g., INC000009582237">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-actions">
+                                        <button type="submit" id="submitChangeBtn" class="btn-primary">
+                                            <i class="fas fa-analytics"></i> Analyze Change
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
-                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="f01_chr_serviceid">Service ID*</label>
-                                    <input type="text" id="f01_chr_serviceid" name="f01_chr_serviceid" required>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="serviceci">Service CI*</label>
-                                    <input type="text" id="serviceci" name="serviceci" required>
-                                </div>
-                            </div>
-                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="ASORG">AS Organization</label>
-                                    <input type="text" id="ASORG" name="ASORG">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="ASGRP">AS Group</label>
-                                    <input type="text" id="ASGRP" name="ASGRP">
-                                </div>
-                            </div>
-                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="categorization_tier_1">Categorization Tier 1</label>
-                                    <select id="categorization_tier_1" name="categorization_tier_1">
-                                        <option value="">Select...</option>
-                                        <option value="INFRAESTRUCTURA">INFRAESTRUCTURA</option>
-                                        <option value="DESPLEGAMENT MULTIAMBIT">DESPLEGAMENT MULTIAMBIT</option>
-                                        <option value="DESPLEGAMENT">DESPLEGAMENT</option>
-                                        <option value="SEGURETAT">SEGURETAT</option>
-                                        <option value="INFRAESTRUCTURA MULTIAMBIT">INFRAESTRUCTURA MULTIAMBIT</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="categorization_tier_2">Categorization Tier 2</label>
-                                    <input type="text" id="categorization_tier_2" name="categorization_tier_2">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="categorization_tier_3">Categorization Tier 3</label>
-                                    <input type="text" id="categorization_tier_3" name="categorization_tier_3">
-                                </div>
-                            </div>
-                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="product_cat_tier_1">Product Category Tier 1</label>
-                                    <input type="text" id="product_cat_tier_1" name="product_cat_tier_1">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="product_cat_tier_2">Product Category Tier 2</label>
-                                    <input type="text" id="product_cat_tier_2" name="product_cat_tier_2">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="product_cat_tier_3">Product Category Tier 3</label>
-                                    <input type="text" id="product_cat_tier_3" name="product_cat_tier_3">
-                                </div>
-                            </div>
-                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="change_request_status">Change Request Status</label>
-                                    <input type="number" id="change_request_status" name="change_request_status" min="0" value="0">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="Num_Incidencies">Related Incident ID</label>
-                                    <input type="text" id="Num_Incidencies" name="Num_Incidencies" placeholder="e.g., INC000009582237">
-                                </div>
-                            </div>
-                            
-                            <div class="form-actions">
-                                <button type="submit" id="submitChangeBtn" class="btn-primary">
-                                    <i class="fas fa-analytics"></i> Analyze Change
-                                </button>
-                            </div>
-                        </form>
+                        </div>
                         
                         <div id="classificationResults" class="classification-results hidden">
                             <h4>Classification Results</h4>
@@ -199,7 +193,7 @@
                         <div class="chatbot-messages" id="chatMessages">
                             <div class="message bot">
                                 <div class="message-content">
-                                    Hello! I'm your ML Insights Assistant. Please provide information about the change you'd like to analyze. You can also use the form below to submit detailed change information for classification.
+                                    Hello! I'm your ML Insights Assistant. Please use the form below <a href="#changeClassificationSection" class="scroll-to-form">Scroll to form</a> to submit detailed change information for classification.
                                     {% if use_mock %}
                                     <br><br><small><i>Note: I'm currently running in demo mode with predefined responses.</i></small>
                                     {% endif %}
@@ -207,8 +201,8 @@
                             </div>
                         </div>
                         <div class="chatbot-input">
-                            <input type="text" id="userInput" placeholder="Type your message here...">
-                            <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
+                            <input type="text" id="userInput" placeholder="Type your message here..." disabled>
+                            <button id="sendButton" disabled><i class="fas fa-paper-plane"></i></button>
                         </div>
                     </div>
                 </aside>
@@ -222,6 +216,7 @@
         </div>
     </footer>
 
+    <script src="{{ url_for('static', filename='js/marked.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
     <script src="{{ url_for('static', filename='js/change-classification.js') }}"></script>
 </body>

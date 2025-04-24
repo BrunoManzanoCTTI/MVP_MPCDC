@@ -10,7 +10,21 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const messageContent = document.createElement('div');
         messageContent.className = 'message-content';
-        messageContent.textContent = message;
+        
+        if (isUser) {
+            // For user messages, use textContent to prevent XSS
+            messageContent.textContent = message;
+        } else {
+            // For bot messages, parse Markdown and use innerHTML
+            // Ensure marked.js is loaded in index.html
+            if (typeof marked !== 'undefined') {
+                messageContent.innerHTML = marked.parse(message);
+            } else {
+                // Fallback if marked.js is not loaded
+                messageContent.textContent = message;
+                console.error("marked.js not loaded. Cannot render Markdown.");
+            }
+        }
         
         messageDiv.appendChild(messageContent);
         chatMessages.appendChild(messageDiv);
@@ -29,7 +43,19 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const loadingContent = document.createElement('div');
         loadingContent.className = 'message-content';
-        loadingContent.textContent = 'Thinking...';
+        
+        // Add "Thinking..." text
+        const thinkingText = document.createElement('span');
+        thinkingText.textContent = 'Thinking';
+        thinkingText.className = 'thinking-text';
+        loadingContent.appendChild(thinkingText);
+
+        // Create dots for animation
+        for (let i = 0; i < 3; i++) {
+            const dot = document.createElement('span');
+            dot.className = 'dot';
+            loadingContent.appendChild(dot);
+        }
         
         loadingDiv.appendChild(loadingContent);
         chatMessages.appendChild(loadingDiv);
@@ -75,6 +101,9 @@ document.addEventListener('DOMContentLoaded', function() {
             addMessage(`Error: ${error.message}`, false);
         }
     }
+
+    // Expose sendMessage function globally
+    window.sendChatbotMessage = sendMessage;
 
     // Event listener for send button
     sendButton.addEventListener('click', function() {
