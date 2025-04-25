@@ -429,10 +429,21 @@ footer {
     color: var(--dark-color);
 }
 
-.form-group input,
+.form-group input:not(#change_request_status),
 .form-group select,
 .form-group textarea {
     width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.form-group input#change_request_status {
+    width: auto; /* Allow the width to be determined by content or other factors */
+    min-width: 100px; /* Set a minimum width */
+    max-width: 200px; /* Set a maximum width */
     padding: 10px 12px;
     border: 1px solid #ddd;
     border-radius: 5px;
