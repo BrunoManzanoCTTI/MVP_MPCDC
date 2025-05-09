@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Send the predicted label to the chatbot
             if (window.sendChatbotMessage) {
-                const chatbotMessage = `Based on the change details provided, the predicted impact is: ${data.predicted_label}. Can you provide more insights on this?`;
+                const chatbotMessage = `Based on the change details provided, the predicted Priority is: ${data.predicted_label}. Can you provide more insights on this?`;
                 window.sendChatbotMessage(chatbotMessage);
 
                 // Enable chatbot input and button
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let cardContent = `<h5>Change Classification Result</h5>`;
 
         if (data.predicted_label !== undefined) {
-            cardContent += `<p><strong>Predicted Type:</strong> ${data.predicted_label}</p>`;
+            cardContent += `<p><strong>Predicted Priority:</strong> ${data.predicted_label}</p>`;
         }
 
         if (data.raw_prediction !== undefined) {
@@ -168,43 +168,53 @@ document.addEventListener('DOMContentLoaded', function() {
         const formData = new FormData(changeForm);
         const changeData = {};
         
-        // Get date values for calculation
-        const scheduledStartDate = formData.get('scheduled_start_date');
-        const scheduledEndDate = formData.get('scheduled_end_date');
-
-        // Convert FormData to a plain object, excluding the original date fields
+        // Convert FormData to a plain object
         for (const [key, value] of formData.entries()) {
-            // Exclude original date fields
-            if (key !== 'scheduled_start_date' && key !== 'scheduled_end_date' && key !== 'submit_date') {
-                 // Convert change_request_status to integer if present
-                if (key === 'change_request_status') {
-                    changeData[key] = parseInt(value, 10) || 0; // Default to 0 if parsing fails
-                } else {
+            // Convert change_request_status to integer if present
+            if (key === 'change_request_status') {
+                changeData[key] = parseInt(value, 10) || 0; // Default to 0 if parsing fails
+            } else if (key === 'submit_date' || key === 'scheduled_start_date' || key === 'scheduled_end_date') {
+                // Ensure date fields are included if they have values
+                if (value) {
                     changeData[key] = value;
+                } else {
+                    // Send null if date is not provided, as per model requirements
+                    changeData[key] = null; 
                 }
+            } else {
+                changeData[key] = value;
             }
-        }
-
-        // Calculate change duration in minutes if both dates are provided
-        if (scheduledStartDate && scheduledEndDate) {
-            try {
-                const start = new Date(scheduledStartDate);
-                const end = new Date(scheduledEndDate);
-                // Calculate difference in milliseconds, then convert to minutes
-                const durationMs = end.getTime() - start.getTime();
-                // Ensure duration is not negative
-                const durationMinutes = Math.max(0, durationMs / (1000 * 60));
-                changeData['change_duration'] = durationMinutes;
-            } catch (e) {
-                console.error("Error calculating date duration:", e);
-                // Optionally add an error message to the user or set duration to a default/null
-                changeData['change_duration'] = null; // Or 0, depending on desired behavior
-            }
-        } else {
-             // Handle cases where dates are missing, set duration to null or 0
-             changeData['change_duration'] = null; // Or 0
         }
         
+        // Ensure all model features are present in changeData, setting to null if not provided by the form
+        // This helps ensure the payload to the backend is consistent.
+        const modelFeatures = [
+            "submit_date", "scheduled_start_date", "scheduled_end_date", "f01_chr_serviceid",
+            "serviceci", "ASORG", "ASGRP", "categorization_tier_1", "categorization_tier_2",
+            "categorization_tier_3", "product_cat_tier_1", "product_cat_tier_2", "product_cat_tier_3",
+            "change_request_status", "f01_chr_tipoafectacion"
+            // "infrastructure_change_id" is also collected but primarily for identification/logging, not a direct model input feature.
+        ];
+
+        modelFeatures.forEach(feature => {
+            if (!(feature in changeData)) {
+                // If a feature expected by the model wasn't in the form or was empty, ensure it's set to null.
+                // This handles cases like optional fields not being filled out.
+                changeData[feature] = null; 
+            } else if (changeData[feature] === "") {
+                // Explicitly set empty strings to null for consistency, if backend expects null for empty optionals
+                changeData[feature] = null;
+            }
+        });
+        
+        // infrastructure_change_id is handled by the loop above if present in FormData
+        // If it's required but could be missing from the form, ensure it's handled:
+        if (!('infrastructure_change_id' in changeData) || changeData['infrastructure_change_id'] === "") {
+            // Decide if it should be null or if an error should be thrown if it's mandatory and missing
+            // For now, let's assume it might be sent as empty and the backend handles it or it's truly optional for the API call itself.
+            // If it's strictly required by the API and not just for model features, validation might be needed here or on the backend.
+        }
+
         try {
             showLoading();
             

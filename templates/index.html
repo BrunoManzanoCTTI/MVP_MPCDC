@@ -60,7 +60,7 @@
                         
                         <div class="classification-layout">
                             <div class="classification-description">
-                                <p>This tool allows you to classify a potential infrastructure change based on its characteristics. By providing details such as Service ID, Service CI, Categorization Tiers, and Product Categories, the system will use the trained machine learning model to predict the likely outcome type (e.g., SENSE TALL DE SERVEI, TALL DE SERVEI, DEGRADACIO).</p>
+                                <p>This tool allows you to classify a potential infrastructure change based on its characteristics. By providing details such as Service ID, Service CI, Categorization Tiers, and Product Categories, the system will use the trained machine learning model to predict the likely <strong>Priority</strong> (e.g., P1, P2, P3, P4).</p>
                                 <p>This classification can help assess the potential risk associated with the change and inform preventive measures.</p>
                                 <!-- Add more descriptive text here if needed -->
                             </div>
@@ -73,11 +73,10 @@
                                     </div>
                                     
                                     <div class="form-row">
-                                        <!-- Hidden Date Fields -->
-                                    <div class="form-group" hidden>
-                                        <label for="submit_date">Submit Date</label>
-                                        <input type="datetime-local" id="submit_date" name="submit_date">
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="submit_date">Submit Date*</label>
+                                            <input type="datetime-local" id="submit_date" name="submit_date" required>
+                                        </div>
                                         
                                     <div class="form-group">
                                         <label for="scheduled_start_date">Scheduled Start Date</label>
@@ -160,10 +159,15 @@
                                             <label for="change_request_status">Change Request Status</label>
                                             <input type="number" id="change_request_status" name="change_request_status" min="0" value="0">
                                         </div>
-                                        
-                                        <div class="form-group" hidden>
-                                            <label for="Num_Incidencies">Related Incident ID</label>
-                                            <input type="text" id="Num_Incidencies" name="Num_Incidencies" placeholder="e.g., INC000009582237">
+
+                                        <div class="form-group">
+                                            <label for="f01_chr_tipoafectacion">Type of Affectation (Tipus Afectació)*</label>
+                                            <select id="f01_chr_tipoafectacion" name="f01_chr_tipoafectacion" required>
+                                                <option value="">Select...</option>
+                                                <option value="SENSE TALL DE SERVEI">SENSE TALL DE SERVEI</option>
+                                                <option value="DEGRADACIO">DEGRADACIO</option>
+                                                <option value="TALL DE SERVEI">TALL DE SERVEI</option>
+                                            </select>
                                         </div>
                                     </div>
                                     

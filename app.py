@@ -57,24 +57,37 @@ chat_session = model.start_chat()
 # Path to the equivalence CSV
 EQUIVALENCE_CSV_PATH = "AI_Failure_Prediction_and_Prevention_for_CTTI.csv"
 
-# Define the order of features expected by the regression model endpoint
-# Matches the VectorAssembler inputCols: categorical indices + numerical
-FEATURE_ORDER = [
-    "f01_chr_serviceid_index", "serviceci_index", "ASORG_index", "ASGRP_index",
-    "categorization_tier_1_index", "categorization_tier_2_index", "categorization_tier_3_index",
-    "product_cat_tier_1_index", "product_cat_tier_2_index", "product_cat_tier_3_index",
-    "change_request_status", "change_duration"
+# Define the feature columns that the new model expects as input (before indexing)
+# These are the raw names from your form/data.
+MODEL_INPUT_FEATURES = [
+    "submit_date", "scheduled_start_date", "scheduled_end_date", "f01_chr_serviceid",
+    "serviceci", "ASORG", "ASGRP", "categorization_tier_1", "categorization_tier_2",
+    "categorization_tier_3", "product_cat_tier_1", "product_cat_tier_2", "product_cat_tier_3",
+    "change_request_status", "f01_chr_tipoafectacion"
 ]
 
-CATEGORICAL_COLUMNS = [col.replace('_index', '') for col in FEATURE_ORDER if col.endswith('_index')]
-NUMERICAL_COLUMNS = [col for col in FEATURE_ORDER if not col.endswith('_index')]
+# Define the order of features expected by the Databricks model endpoint.
+# These are the *indexed* versions of the MODEL_INPUT_FEATURES.
+FEATURE_ORDER = [col + "_index" for col in MODEL_INPUT_FEATURES]
 
-# Mapping for the final prediction output (f01_chr_tipoafectacion)
+# CATEGORICAL_COLUMNS are the raw feature names used to look up values in `raw_data`
+# and then in `EQUIVALENCE_MAP`. For the new model, all input features are treated as categorical first.
+CATEGORICAL_COLUMNS = MODEL_INPUT_FEATURES
+
+# NUMERICAL_COLUMNS is now empty as the new model string-indexes all its input features.
+NUMERICAL_COLUMNS = []
+
+# Mapping for the final prediction output (Priority)
+# !!! IMPORTANT: You MUST verify and update this mapping !!!
+# This should map the numerical output of your model's label_indexer for "Priority"
+# back to the actual Priority strings (e.g., P1, P2, P3, P4).
+# The example below is a GUESS.
 PREDICTION_TYPE_MAPPING = {
-    0.0: "SENSE TALL DE SERVEI",
-    1.0: "TALL DE SERVEI",
-    2.0: "DEGRADACIO"
-    # Add other mappings if the model can output more values
+    0.0: "P1",  # Example: Index 0 maps to P1
+    1.0: "P2",  # Example: Index 1 maps to P2
+    2.0: "P3",  # Example: Index 2 maps to P3
+    3.0: "P4"   # Example: Index 3 maps to P4
+    # Add/correct other mappings as per your model's "Priority" label indexing.
 }
 
 
@@ -243,75 +256,79 @@ if not EQUIVALENCE_MAP:
     # exit(1)
 
 
-def calculate_change_duration(start_str, end_str):
-    """Calculates change duration in hours from ISO format strings."""
-    if not start_str or not end_str:
-        app.logger.warning("Missing start or end date for duration calculation. Returning 0.")
-        return 0.0
-    try:
-        start_dt = datetime.fromisoformat(start_str)
-        end_dt = datetime.fromisoformat(end_str)
-        duration = (end_dt - start_dt).total_seconds() / 3600 # Duration in hours
-        if duration < 0:
-             app.logger.warning(f"Calculated negative duration ({duration} hrs) for {start_str} -> {end_str}. Using 0.")
-             return 0.0
-        return duration
-    except (ValueError, TypeError) as e:
-        app.logger.warning(f"Could not parse dates '{start_str}', '{end_str}' to calculate duration: {e}. Returning 0.")
-        return 0.0 # Default duration if dates are invalid/missing
-
 def create_feature_vector(raw_data):
-    """Converts raw data labels to indices and assembles the feature vector using the global EQUIVALENCE_MAP."""
+    """
+    Converts raw data labels (for all MODEL_INPUT_FEATURES) to their corresponding indices
+    using the global EQUIVALENCE_MAP and assembles the feature vector in the order
+    defined by FEATURE_ORDER.
+    """
+    if not EQUIVALENCE_MAP:
+        app.logger.error("Equivalence map is not loaded. Cannot create feature vector.")
+        return None
+
     if not EQUIVALENCE_MAP:
         app.logger.error("Equivalence map is not loaded. Cannot create feature vector.")
         return None
 
     feature_vector_dict = {}
 
-    # 1. Process Categorical Columns
-    for col in CATEGORICAL_COLUMNS:
-        label = raw_data.get(col)
-        index_col_name = col + "_index"
-        if label is not None:
-            index = EQUIVALENCE_MAP.get((col, label))
+    # Process all MODEL_INPUT_FEATURES as categorical, converting them to their indexed versions.
+    # The FEATURE_ORDER list already contains the target *_index names.
+    for raw_feature_name in MODEL_INPUT_FEATURES:
+        indexed_feature_name = raw_feature_name + "_index"
+        label_value = raw_data.get(raw_feature_name)
+
+        # Handle datetime-local format from frontend for date fields if necessary
+        # The EQUIVALENCE_MAP should contain these exact string values as keys.
+        # Example: '2024-07-02T14:00' for a datetime-local input.
+        # If your model was trained with dates in a different format (e.g., '12/12/2024 15:53:06'),
+        # the EQUIVALENCE_MAP must map the form's datetime-local string to the index
+        # that corresponds to the training data's format/value.
+        # Or, you'd need a conversion step here BEFORE lookup if the map uses the training format.
+        # For simplicity, assuming EQUIVALENCE_MAP handles the form's direct string values for dates.
+
+        if label_value is not None and label_value != "": # Treat empty strings from form as missing
+            # For date fields, ensure the string format matches what's in EQUIVALENCE_MAP
+            # For 'change_request_status', it's sent as a string from JS if not parsed to int there,
+            # ensure EQUIVALENCE_MAP has string keys like "11" for this column.
+            # If it was parsed to int in JS (e.g. 11), then map should have (col, 11) as key.
+            # Current JS sends it as string if not 'change_request_status', which is parsed to int.
+            # Let's assume for 'change_request_status', the label_value will be an int/float from raw_data
+            # if it was parsed, or string if not. The EQUIVALENCE_MAP must match this.
+            # Given the model structure (all StringIndexed), all inputs are effectively treated as strings
+            # before indexing. So, ensure label_value is string for lookup.
+            
+            current_label_for_lookup = str(label_value)
+
+            index = EQUIVALENCE_MAP.get((raw_feature_name, current_label_for_lookup))
             if index is not None:
-                feature_vector_dict[index_col_name] = float(index) # Ensure index is float/numeric
+                feature_vector_dict[indexed_feature_name] = float(index) # Ensure index is float
             else:
-                app.logger.warning(f"Label '{label}' for column '{col}' not found in equivalence map. Defaulting index to 0.0.")
-                feature_vector_dict[index_col_name] = 0.0
+                # Log a warning and default to 0.0 if a specific label for a feature isn't in the map.
+                # This is crucial for debugging missing entries in your equivalence CSV.
+                app.logger.warning(f"Label '{current_label_for_lookup}' for column '{raw_feature_name}' not found in equivalence map. Defaulting index to 0.0 for {indexed_feature_name}.")
+                feature_vector_dict[indexed_feature_name] = 0.0 # Default for unmapped labels
         else:
-            app.logger.warning(f"Missing value for categorical column '{col}'. Defaulting index to 0.0.")
-            feature_vector_dict[index_col_name] = 0.0
+            # If the feature is missing in raw_data or is an empty string, default its index to 0.0.
+            # Your model's StringIndexer (handleInvalid="skip" or "keep") determines how it handles
+            # unseen values or this default 0.0 if it's not a valid index from training.
+            # "skip" would mean rows with this 0.0 (if it's not a valid category index) might be filtered.
+            app.logger.warning(f"Missing or empty value for categorical column '{raw_feature_name}'. Defaulting index to 0.0 for {indexed_feature_name}.")
+            feature_vector_dict[indexed_feature_name] = 0.0
 
-    # 2. Process Numerical Columns
-    # change_request_status
-    status = raw_data.get("change_request_status")
-    if status is not None:
-        try:
-            feature_vector_dict["change_request_status"] = float(status)
-        except (ValueError, TypeError):
-             app.logger.warning(f"Invalid value for change_request_status '{status}'. Defaulting to 0.0.")
-             feature_vector_dict["change_request_status"] = 0.0
-    else:
-        app.logger.warning("Missing value for 'change_request_status'. Defaulting to 0.0.")
-        feature_vector_dict["change_request_status"] = 0.0
-
-    # change_duration - Calculate from dates
-    start_date = raw_data.get("scheduled_start_date")
-    end_date = raw_data.get("scheduled_end_date")
-    feature_vector_dict["change_duration"] = calculate_change_duration(start_date, end_date)
-
-    # 3. Assemble vector in the correct order
+    # Assemble the final feature vector in the exact order specified by FEATURE_ORDER
     final_feature_vector = []
-    for feature_name in FEATURE_ORDER:
-        value = feature_vector_dict.get(feature_name)
+    for ordered_feature_name in FEATURE_ORDER: # FEATURE_ORDER contains the *_index names
+        value = feature_vector_dict.get(ordered_feature_name)
         if value is None:
-            app.logger.error(f"Internal error: Feature '{feature_name}' was not calculated. Defaulting to 0.0.")
+            # This case should ideally not be hit if the loop above correctly processes all MODEL_INPUT_FEATURES
+            # and FEATURE_ORDER is derived correctly from it.
+            app.logger.error(f"Critical internal error: Indexed feature '{ordered_feature_name}' was not calculated. Defaulting to 0.0. This indicates a mismatch between MODEL_INPUT_FEATURES and FEATURE_ORDER logic.")
             final_feature_vector.append(0.0)
         else:
             final_feature_vector.append(value)
 
-    app.logger.info(f"Assembled feature vector: {final_feature_vector}")
+    app.logger.info(f"Assembled feature vector for new model: {final_feature_vector}")
     return final_feature_vector
 
 
