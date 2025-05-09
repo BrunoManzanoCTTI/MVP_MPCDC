@@ -94,7 +94,52 @@ document.addEventListener('DOMContentLoaded', function() {
             if (data.error) {
                 addMessage(`Error: ${data.error}`, false);
             } else {
-                addMessage(data.response, false);
+                // Attempt to parse the response as JSON, with more robust extraction
+                let llmResponse;
+                let rawResponseText = data.response;
+
+                try {
+                    // First, try direct parsing
+                    llmResponse = JSON.parse(rawResponseText);
+                } catch (e) {
+                    // If direct parsing fails, try to extract JSON from within markdown code blocks
+                    console.warn("Direct JSON.parse failed. Attempting to extract JSON from markdown code block.", e);
+                    const jsonRegex = /```json\s*([\s\S]*?)\s*```/; // Regex to find ```json ... ```
+                    const match = rawResponseText.match(jsonRegex);
+                    if (match && match[1]) {
+                        try {
+                            llmResponse = JSON.parse(match[1]);
+                            console.info("Successfully extracted and parsed JSON from markdown code block.");
+                        } catch (e2) {
+                            console.error("Failed to parse extracted JSON:", e2);
+                            llmResponse = null; // Ensure llmResponse is null if extraction parsing fails
+                        }
+                    } else {
+                        llmResponse = null; // Ensure llmResponse is null if no JSON block found
+                    }
+                }
+
+                if (llmResponse && llmResponse.overall_explanation) {
+                    addMessage(llmResponse.overall_explanation, false); // Display explanation in chat
+
+                    // Log the actionable_plans to inspect their structure
+                    console.log("Parsed actionable_plans from LLM:", llmResponse.actionable_plans);
+
+                    if (llmResponse.actionable_plans && window.displayActionablePlans) {
+                        window.displayActionablePlans(llmResponse.actionable_plans);
+                    } else {
+                        // If plans are expected but missing in valid JSON, inform the user or log
+                        console.warn("Actionable plans missing or displayActionablePlans function not available.");
+                        addMessage("AI provided an explanation, but no actionable plans were found or could be displayed.", false);
+                    }
+                } else {
+                    // If llmResponse is null or doesn't have the expected structure
+                    console.error("Failed to parse LLM response as valid JSON or JSON structure is incorrect.");
+                    console.error("Raw LLM response received:", rawResponseText);
+                    // Display a user-friendly message and the raw response for debugging.
+                    // The addMessage function will use marked.parse, so if the raw response is Markdown, it will render.
+                    addMessage("The AI's response could not be fully processed into the expected format. Displaying raw response:\n\n" + rawResponseText, false);
+                }
             }
         } catch (error) {
             removeLoading();

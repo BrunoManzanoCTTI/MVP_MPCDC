@@ -215,7 +215,26 @@ main .container {
 }
 
 .message-content {
-    word-wrap: break-word;
+    word-wrap: break-word; /* For general text */
+}
+
+/* Styles for preformatted text and code blocks within bot messages */
+.message.bot .message-content pre {
+    white-space: pre-wrap;   /* Wrap long lines of preformatted text */
+    word-wrap: break-word;   /* Break long words if necessary */
+    overflow-x: auto;        /* Add horizontal scroll for very long unbreakable lines if needed */
+    background-color: #f0f0f0; /* Slightly different background for code blocks */
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.message.bot .message-content code {
+    font-family: monospace;
+    background-color: #f0f0f0; /* Consistent with pre */
+    padding: 2px 4px;
+    border-radius: 3px;
+    word-wrap: break-word; /* Ensure inline code also wraps */
 }
 
 .message-content small {
@@ -606,6 +625,42 @@ footer {
     color: white; /* Keep text white on hover */
     text-decoration: none; /* Ensure no underline on hover */
 }
+
+/* Actionable Plans Styling */
+.actionable-plans-content h5 {
+    color: var(--secondary-color); /* Similar to other subheadings */
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--light-color);
+}
+
+.actionable-plans-list {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 0;
+}
+
+.actionable-plan-item {
+    background-color: #f9f9f9; /* Light background for each item */
+    border: 1px solid #eee;
+    border-left: 3px solid var(--accent-color); /* Accent color border */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.actionable-plan-item p {
+    margin-bottom: 5px;
+}
+
+.actionable-plan-item .plan-confidence {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.actionable-plan-item .plan-confidence strong {
+    color: var(--dark-color);
+}
+
 
 /* Responsive Styles */
 @media (max-width: 900px) {

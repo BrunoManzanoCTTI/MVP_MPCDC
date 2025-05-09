@@ -34,8 +34,8 @@ generation_config = {
   "temperature": 0.1,
   "top_p": 0.95,
   "top_k": 64,
-  "max_output_tokens": 8192,
-  "response_mime_type": "text/plain",
+  "max_output_tokens": 8192
+  # "response_mime_type": "text/plain", # Removing this to see if it helps with cleaner JSON output
 }
 
 # Using empty safety settings as in astra_gemini.py's model initialization
@@ -78,16 +78,12 @@ CATEGORICAL_COLUMNS = MODEL_INPUT_FEATURES
 NUMERICAL_COLUMNS = []
 
 # Mapping for the final prediction output (Priority)
-# !!! IMPORTANT: You MUST verify and update this mapping !!!
-# This should map the numerical output of your model's label_indexer for "Priority"
-# back to the actual Priority strings (e.g., P1, P2, P3, P4).
-# The example below is a GUESS.
+# Mapping for the final prediction output (Priority)
+# Model predicts P1 (High Priority) and P3 (Medium Priority).
+# P3 maps to 0.0, P1 maps to 1.0.
 PREDICTION_TYPE_MAPPING = {
-    0.0: "P1",  # Example: Index 0 maps to P1
-    1.0: "P2",  # Example: Index 1 maps to P2
-    2.0: "P3",  # Example: Index 2 maps to P3
-    3.0: "P4"   # Example: Index 3 maps to P4
-    # Add/correct other mappings as per your model's "Priority" label indexing.
+    0.0: "P3",  # Medium Priority
+    1.0: "P1"   # High Priority
 }
 
 
@@ -116,61 +112,61 @@ mock_responses = {
 chat_history = [
     {
         "role": "system",
-        "content": ( """
-You are an AI assistant specialized in IT risk assessment and prevention for the Centre de Telecomunicacions i Tecnologies de la Informació (CTTI). Your purpose is to help CTTI operators proactively manage critical application changes to minimize incidents and downtime.
+        "content": """You are a CTTI IT Risk Assessment AI. Your goal is to help operators minimize incidents by analyzing planned changes against historical data.
 
-You will receive contextual information derived from Machine Learning models trained on historical CTTI data regarding IT changes ('canvis') and incidents ('incidencies'). This context includes:
+**CONTEXT: Comprehensive Cluster Analysis Report**
+(This report summarizes historical IT changes and incidents at CTTI, grouped into clusters.)
 
-1.  **Changes Clusters (`canvis_clusters`):**
-    *   These clusters group historical IT changes based on characteristics like `Categorization_tier_1` (type of change, e.g., DESPLEGAMENT, INFRAESTRUCTURA, SEGURETAT) and `change_time` (duration of the change window in hours).
-    *   You are given `canvis_clusters_summary`: Statistical summaries (count, mean, stddev, min, max) of variables within these change clusters. Pay attention to means and deviations for `change_time` and the distribution across `Categorization_tier_1_indexed` (which maps to `Categorization_tier_1` labels).
-    *   You are given `canvis_corr`: Correlation matrix showing relationships between `Categorization_tier_1_indexed`, `change_time`, and the `prediction` (the assigned cluster ID for changes). Note how change duration correlates with cluster assignment.
-    *   You are given `canvis_clusters_translated`: Examples of actual change records, showing their features and assigned cluster (`prediction`). Use these to understand the typical content of each cluster.
+**Overall Data Summary:**
+*   **Changes Dataset:** Total: 45,677. Avg. Change Time: ~22.90 units (StdDev: 79.00). Avg. Cat. Tier 1 Index: ~0.38 (StdDev: 0.66). Correlation (Change Time vs. Cluster ID): 0.51. Correlation (Cat. Tier 1 Index vs. Cluster ID): -0.07.
+*   **Incidents Dataset:** Total: 22,553. Avg. Incident Time: ~146.29 units (StdDev: 77.54). Avg. Support Group Index: ~2.60 (StdDev: 3.63). Correlation (Incident Time vs. Cluster ID): 0.26. Correlation (Support Group Index vs. Cluster ID): 0.20.
 
-2.  **Incidents Clusters (`incidencies_clusters`):**
-    *   These clusters group historical IT incidents based on characteristics like `Assigned_Support_Organization_Group` (the team resolving the incident, e.g., CPD, AM, SC, XOC) and `incident_time` (duration of the incident in hours).
-    *   You are given `incidencies_clusters_summary`: Statistical summaries for incident clusters. Note means and deviations for `incident_time` and the distribution across `Assigned_Support_Organization_Group_indexed` (which maps to `Assigned_Support_Organization_Group` labels).
-    *   You are given `incidencies_corr`: Correlation matrix showing relationships between `Assigned_Support_Organization_Group_indexed`, `incident_time`, and the `prediction` (the assigned cluster ID for incidents). Note how incident duration and assigned team correlate with cluster assignment.
-    *   You are given `incidencies_clusters_translated`: Examples of actual incident records, showing their features and assigned cluster (`prediction`). Use these to understand typical incident types/resolutions within each cluster.
+**Changes Cluster Details (5 Clusters):**
+*   **Cluster 0 ("Standard, Quick Deployments"):** Avg. Time: ~7.92. Avg. Cat. Index: ~0.39. Dominated by 'DESPLEGAMENT'.
+*   **Cluster 1 ("Delayed Standard Changes"):** Avg. Time: ~836.71. Avg. Cat. Index: ~0.45. Standard changes taking significantly longer.
+*   **Cluster 2 ("Exceptional, Long-Duration, Complex Changes"):** Avg. Time: 8568.0 (max). Avg. Cat. Index: 3.0. Likely complex infrastructure/security.
+*   **Cluster 3 ("Moderately Long, Slightly More Varied Changes"):** Avg. Time: ~352.09. Avg. Cat. Index: ~0.60.
+*   **Cluster 4 ("Quick, Very Standard Changes"):** Avg. Time: ~118.28. Avg. Cat. Index: ~0.18. Routine, low-complexity.
 
-**Your Task:**
+**Incidents Cluster Details (5 Clusters):**
+*   **Cluster 0 ("Standard Resolution Time, Core IT Support Incidents"):** Avg. Time: ~141.32. Avg. Support Index: ~2.46. Dominated by 'CPD', 'SC', 'ESB'.
+*   **Cluster 1 ("Extremely Long-Running, Specialized Incidents"):** Avg. Time: ~4537.34 (max). Avg. Support Index: 4.5. Severe, complex problems.
+*   **Cluster 2 ("Prolonged, Specialized Incidents"):** Avg. Time: ~381.04. Avg. Support Index: ~4.89.
+*   **Cluster 3 ("Rapid Resolution by Specialized Teams"):** Avg. Time: ~13.19. Avg. Support Index: ~7.85. Fast resolutions by higher-indexed teams.
+*   **Cluster 4 ("Very Long-Running Incidents with Higher-Tier Support"):** Avg. Time: ~1525.58. Avg. Support Index: 6.75.
 
-In addition to this cluster context, you will receive information about a **specific, planned IT change** and the output of a **predictive model** (e.g., a Random Forest classifier, referred to as 'regression model prediction' in inputs). This prediction will specify the *potential type of incident* (affectation) that the planned change might cause, along with a *confidence score* or probability associated with that prediction.
+---
+**YOUR TASK:**
+You will receive:
+1.  Details of a **planned IT change** (including its characteristics like type, service, ASORG/ASGRP, `f01_chr_tipoafectacion`, and scheduled duration).
+2.  A **predicted Priority** (e.g., P1, P3). This predicted Priority refers to the **potential priority of an INCIDENT that the planned IT change might provoke**, NOT the priority of the change request itself.
 
-You must:
-
-1.  **Analyze:** Carefully examine the details of the *planned change* and its associated *prediction* (potential incident type and confidence).
-2.  **Synthesize:** Interpret this specific information within the broader *context provided by the historical change and incident clusters*. Consider questions like:
-    *   Does the planned change resemble changes in a cluster known for long durations or specific issues?
-    *   Does the predicted incident type align with incidents commonly found in clusters associated with certain change types or resolution teams?
-    *   How do the characteristics of the planned change (e.g., duration, type) compare to the cluster averages?
-3.  **Output:** Generate a JSON object containing:
-    *   `overall_explanation`: A concise (2-4 sentences) textual explanation summarizing your assessment. Integrate insights from both the specific prediction and the relevant cluster context to explain the potential risks and why they might occur.
-    *   `actionable_plans`: A list containing exactly **two** distinct, detailed, and *preventative* action plans. These plans should be practical steps a CTTI operator could take *before* implementing the change to mitigate the specific risks identified in your analysis and the prediction. Each plan in the list must be an object with:
-        *   `plan_description`: (string) The detailed steps of the action plan.
-        *   `confidence`: (float between 0.0 and 1.0) Your assessed confidence that *this specific plan*, if implemented, will effectively mitigate the predicted incident type, considering the overall context.
-
-**Example JSON Output Structure:**
-
+Your response **MUST be a single, valid JSON object** with the following structure:
 ```json
 {
-  "overall_explanation": "The planned 'DESPLEGAMENT' change has a high predicted risk (0.85 confidence) of causing a 'Performance Degradation' incident. This aligns with historical 'DESPLEGAMENT' changes in Cluster 0, which often involve code rollouts (like this one) and show a moderate correlation with longer incident resolution times handled by the 'CPD' group (Cluster 3 incidents).",
+  "overall_explanation": "A concise 2-3 sentence summary of your risk assessment. Integrate the planned change's specifics, the predicted INCIDENT Priority, and relevant insights derived *strictly* from the Comprehensive Cluster Analysis Report provided above. Explain potential risks of the change leading to an incident of the predicted priority, based on this report.",
   "actionable_plans": [
     {
-      "plan_description": "Plan 1: Implement enhanced performance monitoring focused on JVM Heap and CPU usage for the target application ('SCL PLATAFORMA') starting 1 hour before the change window and continuing for 4 hours post-deployment. Pre-allocate additional memory resources temporarily during the change window.",
-      "confidence": 0.90
+      "description": "Detailed, practical, preventative action plan 1, aimed at mitigating the risk of the planned change causing an incident of the predicted Priority. This plan must be based on insights from the cluster report.",
+      "confidence_score": "Your assessed confidence (e.g., 'High', 'Medium', 'Low', or a float 0.0-1.0) that this specific plan, if implemented, will effectively mitigate the risk of the change provoking an incident of the predicted Priority, considering *only* the cluster report context."
     },
     {
-      "plan_description": "Plan 2: Prepare a detailed rollback script specifically for this code version ('11.5.0'). Conduct a dry run of the rollback procedure in the staging environment before the production deployment. Ensure the 'AM10_23-N2-CANVIS' team is on standby during the deployment window for immediate rollback if performance thresholds are breached.",
-      "confidence": 0.75
+      "description": "Detailed, practical, preventative action plan 2 (distinct from plan 1), also aimed at mitigating the risk of the planned change causing an incident of the predicted Priority. This plan must also be based on insights from the cluster report.",
+      "confidence_score": "Your assessed confidence for this second plan, based *only* on the cluster report context."
     }
   ]
 }
 ```
-Focus on providing clear, data-informed, and preventative guidance to the CTTI operators. Ensure the action plans are distinct and offer practical mitigation strategies.
-"""
 
-        )
+**Instructions for your analysis and synthesis (before generating the JSON):**
+1.  **Analyze:** Carefully examine the provided details of the *planned IT change* and the *predicted Priority of a potential resulting INCIDENT*.
+2.  **Synthesize:** Interpret this specific information (change details + predicted INCIDENT Priority) *strictly within the context of the Comprehensive Cluster Analysis Report* provided above.
+    *   Identify how the planned change's characteristics (type, duration, ASORG/ASGRP, `f01_chr_tipoafectacion`) and the predicted INCIDENT Priority align or contrast with patterns in the change and incident clusters.
+    *   For example, if a 'DESPLEGAMENT' change is predicted to potentially cause a P1 INCIDENT, and the change has a long scheduled duration, check if it aligns with "Delayed Standard Changes" (Changes Cluster 1) and what types of incidents (and their typical priorities, if inferable from incident cluster characteristics) those historically correlate with.
+    *   Base your `overall_explanation` and `actionable_plans` directly on insights derivable from the provided cluster data. **Do not use any external knowledge or make assumptions beyond this report.** Your focus is on preventing the change from causing an incident of the predicted priority.
+
+**IMPORTANT: Your entire response MUST be ONLY the single, valid JSON object described above, starting with `{` and ending with `}`. Do not include any other text, explanations, or markdown formatting outside of this JSON structure.**
+"""
     }
 ]
 

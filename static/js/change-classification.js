@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Function to display results
-    function displayResults(data) {
+    function displayResults(data, changeDetails) { // Added changeDetails parameter
         removeLoading();
         
         // Clear previous results
@@ -79,9 +79,22 @@ document.addEventListener('DOMContentLoaded', function() {
             const resultCard = createResultCard(data);
             resultsContent.appendChild(resultCard);
 
-            // Send the predicted label to the chatbot
+            // Send the predicted label and change details to the chatbot
             if (window.sendChatbotMessage) {
-                const chatbotMessage = `Based on the change details provided, the predicted Priority is: ${data.predicted_label}. Can you provide more insights on this?`;
+                let detailsString = "Planned Change Details:\n";
+                if (changeDetails) {
+                    for (const key in changeDetails) {
+                        // Only include fields that are relevant and have values
+                        if (changeDetails[key] !== null && changeDetails[key] !== "" && key !== 'features') { 
+                            // Exclude 'features' array if it was part of changeDetails for some reason
+                            detailsString += `- ${key}: ${changeDetails[key]}\n`;
+                        }
+                    }
+                } else {
+                    detailsString += "- (No specific change details were passed to include here, check JavaScript logic)\n";
+                }
+
+                const chatbotMessage = `The following change has a predicted Priority of: ${data.predicted_label}.\n\n${detailsString}\nPlease analyze this change in the context of the provided cluster report and generate your structured JSON output (overall_explanation and two actionable_plans with confidence scores).`;
                 window.sendChatbotMessage(chatbotMessage);
 
                 // Enable chatbot input and button
@@ -229,8 +242,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const results = await response.json();
             
-            // Display the results
-            displayResults(results);
+            // Display the results, passing changeData as well
+            displayResults(results, changeData); 
             
         } catch (error) {
             removeLoading();
@@ -245,6 +258,56 @@ document.addEventListener('DOMContentLoaded', function() {
             classificationResults.classList.remove('hidden');
         }
     });
+
+    // Function to display actionable plans on the main page
+    window.displayActionablePlans = function(plans) {
+        const plansContainer = document.getElementById('actionablePlansContent');
+        if (!plansContainer) {
+            console.error("Actionable plans container not found.");
+            return;
+        }
+        plansContainer.innerHTML = ''; // Clear previous plans
+
+        if (plans && plans.length > 0) {
+            const plansTitle = document.createElement('h5');
+            plansTitle.textContent = 'Recommended Actionable Plans:';
+            plansContainer.appendChild(plansTitle);
+
+            const ul = document.createElement('ul');
+            ul.className = 'actionable-plans-list'; // Add a class for styling
+
+            plans.forEach(plan => {
+                console.log("Processing plan object in displayActionablePlans:", JSON.stringify(plan)); // Log each plan object
+                console.log("Processing plan object in displayActionablePlans:", JSON.stringify(plan)); // Log each plan object
+                const li = document.createElement('li');
+                li.className = 'actionable-plan-item'; // Add a class for styling
+
+                const planDesc = document.createElement('p');
+                // Correctly access plan.plan_description based on the actual key from LLM/console
+                console.log("Value of plan.plan_description BEFORE marked.parseInline:", plan.plan_description); 
+                planDesc.innerHTML = marked.parseInline(plan.plan_description || "No description provided."); 
+
+                const planConfidence = document.createElement('p');
+                planConfidence.className = 'plan-confidence';
+                // Ensure consistency with confidence_score key from LLM output
+                planConfidence.innerHTML = `<strong>Confidence:</strong> ${plan.confidence_score || 'N/A'}`;
+                
+                li.appendChild(planDesc);
+                li.appendChild(planConfidence);
+                ul.appendChild(li);
+            });
+            plansContainer.appendChild(ul);
+            // Ensure the main classification results section is visible if it was hidden
+            if (classificationResults.classList.contains('hidden')) {
+                classificationResults.classList.remove('hidden');
+            }
+            // Scroll to the plans if they are added after the initial results
+            plansContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+            // Optionally, display a message if no plans are available
+            // plansContainer.innerHTML = '<p>No specific actionable plans provided by the AI.</p>';
+        }
+    };
     
     // Add a link in the initial chatbot message to scroll to the form
     const initialMessage = document.querySelector('.chatbot-messages .message.bot:first-child .message-content');
