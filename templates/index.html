@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,50 +18,50 @@
         <div class="container">
             {% if use_mock %}
             <div class="notification">
-                <i class="fas fa-info-circle"></i> Running in demo mode. Set a valid Databricks token in the .env file to enable full functionality.
+                <i class="fas fa-info-circle"></i> S'està executant en mode de demostració. Estableix un testimoni de Databricks vàlid al fitxer .env per habilitar la funcionalitat completa.
             </div>
             {% endif %}
             
             <div class="content-wrapper">
                 <section class="main-content">
-                    <h2>Welcome!</h2>
+                    <h2>Benvingut!</h2>
                     <!-- <p>Welcome to the Machine Learning Clustering Model for Predictive Change and Incident Management.</p> -->
                     
                     <div class="project-description">
-                        <h3>Introduction</h3>
-                        <p>In the Centre de Telecomunicacions i Tecnologies de la Informació (CTTI) managing of critical government applications involves frequent changes and responses to emerging errors and incidents. However, CTTI's current reactive approach fixes incidents post-occurrence, leading to server downtime, operational inefficiencies, and resource waste. This project seeks a paradigm shift from reactive to <strong>preventive management</strong> by exploiting data relating CTTI operator changes with applications incidents.</p>
+                        <h3>Introducció</h3>
+                        <p>Al Centre de Telecomunicacions i Tecnologies de la Informació (CTTI), la gestió d'aplicacions crítiques implica canvis freqüents i respostes a errors i incidents emergents. No obstant això, l'enfocament actual del CTTI soluciona els incidents un cop ocorreguts, la qual cosa comporta temps d'inactivitat del servidor, ineficiències operatives i malbaratament de recursos. Aquest projecte busca un canvi de paradigma de la gestió reactiva a la <strong>preventiva</strong>, explotant dades que relacionen els canvis dels operadors del CTTI amb els incidents de les aplicacions.</p>
 
-                        <h3>Machine Learning Models</h3>
-                        <p><strong>Machine learning models</strong> are trained with this data: two <strong>clustering algorithms</strong> provide contextual information about structured patterns in changes and incidents, while a <strong>random forest classifier</strong> relates changes directly to the type of incident (affectation) they may produce, serving as a predictive label. This multi-modal analysis helps us obtain rich context about changes, incidents, and their interrelations.</p>
+                        <h3>Models de Machine Learning</h3>
+                        <p>Es entrenen <strong>models de machine learning</strong> amb aquestes dades: dos <strong>algorismes de clustering</strong> proporcionen informació contextual sobre patrons estructurats en canvis i incidents, mentre que un <strong>classificador de bosc aleatori</strong> relaciona els canvis directament amb el tipus d'incident (afectació) que poden produir, servint com a etiqueta predictiva. Aquesta anàlisi multimodal ens ajuda a obtenir un context ric sobre els canvis, els incidents i les seves interrelacions.</p>
 
-                        <h3>AI Integration</h3>
-                        <p>This context is then leveraged by a <strong>natural language processing AI</strong> using <strong>cache-augmented generation (CAG)</strong>. A <strong>large language model (LLM)</strong> like Gemini 2.5 Flash interprets the situation surrounding a potential change and proposes three detailed action plans with their respective <strong>confidence intervals</strong>, enabling CTTI operators to make more data-informed decisions.</p>
+                        <h3>Integració d'IA</h3>
+                        <p>Aquest context és aprofitat per una <strong>IA de processament de llenguatge natural</strong> que utilitza la <strong>generació augmentada per memòria cau (CAG)</strong>. Un <strong>model de llenguatge gran (LLM)</strong> com Gemini 2.5 Flash interpreta la situació al voltant d'un canvi potencial i proposa tres plans d'acció detallats amb els seus respectius <strong>intervals de confiança</strong>, permetent als operadors del CTTI prendre decisions més informades basades en dades.</p>
 
-                        <h3>Web Application</h3>
-                        <p>To make this workflow readily accessible, a <strong>web application</strong> facilitates these features. Within this application, an operator can input details of a planned change, receive the <strong>predicted potential incident type</strong> along with its <strong>confidence intervals</strong> derived from the classifier probabilities, and interact with the <strong>LLM agent</strong> to obtain nuanced interpretations of the risk and clever, preventative action plans.</p>
+                        <h3>Aplicació Web</h3>
+                        <p>Per fer aquest flux de treball fàcilment accessible, una <strong>aplicació web</strong> facilita aquestes característiques. Dins d'aquesta aplicació, un operador pot introduir detalls d'un canvi planificat, rebre el <strong>tipus d'incident potencial predit</strong> juntament amb els seus <strong>intervals de confiança</strong> derivats de les probabilitats del classificador, i interactuar amb l'<strong>agent LLM</strong> per obtenir interpretacions matisades del risc i plans d'acció preventius intel·ligents.</p>
 
-                        <h3>Clustering Model Visualization</h3>
+                        <h3>Visualització del Model de Clustering</h3>
                         <div class="cluster-images">
                             <div class="cluster-image-container">
-                                <h4>Changes Clustering</h4>
-                                <img src="{{ url_for('static', filename='images/cluster_changes.png') }}" alt="Changes Clustering Model" class="cluster-img">
-                                <p>Visualization of the clustering model for infrastructure changes, showing patterns based on type and time-to-complete.</p>
+                                <h4>Clustering de Canvis</h4>
+                                <img src="{{ url_for('static', filename='images/cluster_changes.png') }}" alt="Model de Clustering de Canvis" class="cluster-img">
+                                <p>Visualització del model de clustering per a canvis d'infraestructura, mostrant patrons basats en el tipus i el temps de finalització.</p>
                             </div>
                             <div class="cluster-image-container">
-                                <h4>Incidents Clustering</h4>
-                                <img src="{{ url_for('static', filename='images/cluster_incidents.png') }}" alt="Incidents Clustering Model" class="cluster-img">
-                                <p>Visualization of the clustering model for incidents, showing patterns based on type and time-to-resolve.</p>
+                                <h4>Clustering d'Incidents</h4>
+                                <img src="{{ url_for('static', filename='images/cluster_incidents.png') }}" alt="Model de Clustering d'Incidents" class="cluster-img">
+                                <p>Visualització del model de clustering per a incidents, mostrant patrons basats en el tipus i el temps de resolució.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="change-classification-section" id="changeClassificationSection">
-                        <h3>Change Classification</h3>
+                        <h3>Classificació de Canvis</h3>
                         
                         <div class="classification-layout">
                             <div class="classification-description">
-                                <p>This tool allows you to classify a potential infrastructure change based on its characteristics. By providing details such as Service ID, Service CI, Categorization Tiers, and Product Categories, the system will use the trained machine learning model to predict the likely <strong>Priority</strong> (e.g., P1, P2, P3, P4).</p>
-                                <p>This classification can help assess the potential risk associated with the change and inform preventive measures.</p>
+                                <p>Aquesta eina us permet classificar un possible canvi d'infraestructura segons les seves característiques. En proporcionar detalls com l'ID de Servei, el CI de Servei, els Tiers de Categorització i les Categories de Producte, el sistema utilitzarà el model de machine learning entrenat per predir la probable <strong>Prioritat</strong> (per exemple, P1, P2, P3, P4).</p>
+                                <p>Aquesta classificació pot ajudar a avaluar el risc potencial associat al canvi i a informar sobre mesures preventives.</p>
                                 <!-- Add more descriptive text here if needed -->
                             </div>
                             
@@ -173,7 +173,7 @@
                                     
                                     <div class="form-actions">
                                         <button type="submit" id="submitChangeBtn" class="btn-primary">
-                                            <i class="fas fa-analytics"></i> Analyze Change
+                                            <i class="fas fa-analytics"></i> Analitzar Canvi
                                         </button>
                                     </div>
                                 </form>
@@ -181,7 +181,7 @@
                         </div>
                         
                         <div id="classificationResults" class="classification-results hidden">
-                            <h4>Classification Results</h4>
+                            <h4>Resultats de Classificació</h4>
                             <div id="resultsContent" class="results-content">
                                 <!-- Prediction will be displayed here -->
                             </div>
@@ -195,20 +195,20 @@
                 <aside class="sidebar">
                     <div class="chatbot-container">
                         <div class="chatbot-header">
-                            <h3><i class="fas fa-robot"></i> ML Insights Assistant</h3>
+                            <h3><i class="fas fa-robot"></i> Assistent d'Insights de ML</h3>
                         </div>
                         <div class="chatbot-messages" id="chatMessages">
                             <div class="message bot">
                                 <div class="message-content">
-                                    Hello! I'm your ML Insights Assistant. Please use the form below <a href="#changeClassificationSection" class="scroll-to-form">Scroll to form</a> to submit detailed change information for classification.
+                                    Hola! Sóc el teu Assistent d'Insights de ML. Si us plau, utilitza el formulari següent <a href="#changeClassificationSection" class="scroll-to-form">Desplaça't al formulari</a> per enviar informació detallada del canvi per a la classificació.
                                     {% if use_mock %}
-                                    <br><br><small><i>Note: I'm currently running in demo mode with predefined responses.</i></small>
+                                    <br><br><small><i>Nota: Actualment estic executant-me en mode de demostració amb respostes predefinides.</i></small>
                                     {% endif %}
                                 </div>
                             </div>
                         </div>
                         <div class="chatbot-input">
-                            <input type="text" id="userInput" placeholder="Type your message here..." disabled>
+                            <input type="text" id="userInput" placeholder="Escriu el teu missatge aquí..." disabled>
                             <button id="sendButton" disabled><i class="fas fa-paper-plane"></i></button>
                         </div>
                     </div>
@@ -219,7 +219,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 MPCDC - Machine Learning Clustering Model</p>
+            <p>&copy; 2025 MPCDC - Model de Clustering de Machine Learning</p>
         </div>
     </footer>
 

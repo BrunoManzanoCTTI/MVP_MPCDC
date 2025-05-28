@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Add "Thinking..." text
         const thinkingText = document.createElement('span');
-        thinkingText.textContent = 'Thinking';
+        thinkingText.textContent = 'Pensant';
         thinkingText.className = 'thinking-text';
         loadingContent.appendChild(thinkingText);
 
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     } else {
                         // If plans are expected but missing in valid JSON, inform the user or log
                         console.warn("Actionable plans missing or displayActionablePlans function not available.");
-                        addMessage("AI provided an explanation, but no actionable plans were found or could be displayed.", false);
+                        addMessage("L'IA ha proporcionat una explicació, però no s'han trobat plans d'acció o no s'han pogut mostrar.", false);
                     }
                 } else {
                     // If llmResponse is null or doesn't have the expected structure
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.error("Raw LLM response received:", rawResponseText);
                     // Display a user-friendly message and the raw response for debugging.
                     // The addMessage function will use marked.parse, so if the raw response is Markdown, it will render.
-                    addMessage("The AI's response could not be fully processed into the expected format. Displaying raw response:\n\n" + rawResponseText, false);
+                    addMessage("La resposta de l'IA no s'ha pogut processar completament al format esperat. Es mostra la resposta original:\n\n" + rawResponseText, false);
                 }
             }
         } catch (error) {
