@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const loadingDiv = document.createElement('div');
         loadingDiv.className = 'results-card';
         loadingDiv.id = 'loading-results';
-        loadingDiv.innerHTML = '<p>Analyzing change data...</p>';
+        loadingDiv.innerHTML = '<p>Analitzant dades de canvi...</p>';
         
         resultsContent.innerHTML = '';
         resultsContent.appendChild(loadingDiv);
@@ -112,11 +112,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const errorCard = document.createElement('div');
             errorCard.className = 'results-card error'; // Use error styling
             errorCard.innerHTML = `
-                <h5>Prediction Unavailable</h5>
-                <p>${data.message || 'The model returned a response, but the prediction could not be extracted.'}</p>
+                <h5>Predicció no disponible</h5>
+                <p>${data.message || 'El model ha retornat una resposta, però la predicció no s\'ha pogut extreure.'}</p>
                 ${data.raw_response ? `
                 <div class="raw-response-toggle">
-                    <a href="#" onclick="toggleRawResponse(event)">Show Technical Details</a>
+                    <a href="#" onclick="toggleRawResponse(event)">Mostrar detalls tècnics</a>
                     <div class="raw-response hidden">
                         <pre>${JSON.stringify(data.raw_response, null, 2)}</pre>
                     </div>
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (data.raw_response) {
              cardContent += `
                 <div class="raw-response-toggle">
-                    <a href="#" onclick="toggleRawResponse(event)">Show Raw Model Response</a>
+                    <a href="#" onclick="toggleRawResponse(event)">Mostrar resposta bruta del model</a>
                     <div class="raw-response hidden">
                         <pre>${JSON.stringify(data.raw_response, null, 2)}</pre>
                     </div>
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const isHidden = rawResponseDiv.classList.contains('hidden');
         
         rawResponseDiv.classList.toggle('hidden');
-        event.target.textContent = isHidden ? 'Hide Technical Details' : 'Show Technical Details';
+        event.target.textContent = isHidden ? 'Amagar detalls tècnics' : 'Mostrar detalls tècnics';
     };
     
     // Handle form submission
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function() {
             resultsContent.innerHTML = `
                 <div class="results-card">
                     <h5>Error</h5>
-                    <p>An error occurred while processing your request: ${error.message}</p>
+                    <p>S'ha produït un error en processar la sol·licitud: ${error.message}</p>
                 </div>
             `;
             classificationResults.classList.remove('hidden');
@@ -270,7 +270,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (plans && plans.length > 0) {
             const plansTitle = document.createElement('h5');
-            plansTitle.textContent = 'Recommended Actionable Plans:';
+            plansTitle.textContent = 'Plans d\'acció recomanats:';
             plansContainer.appendChild(plansTitle);
 
             const ul = document.createElement('ul');
@@ -284,13 +284,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const planDesc = document.createElement('p');
                 // Correctly access plan.plan_description based on the actual key from LLM/console
-                console.log("Value of plan.plan_description BEFORE marked.parseInline:", plan.plan_description); 
-                planDesc.innerHTML = marked.parseInline(plan.plan_description || "No description provided."); 
+                console.log("Value of plan.plan BEFORE marked.parseInline:", plan.plan); 
+                planDesc.innerHTML = marked.parseInline(plan.plan || "No s'ha proporcionat cap descripció."); 
 
                 const planConfidence = document.createElement('p');
                 planConfidence.className = 'plan-confidence';
                 // Ensure consistency with confidence_score key from LLM output
-                planConfidence.innerHTML = `<strong>Confidence:</strong> ${plan.confidence_score || 'N/A'}`;
+                planConfidence.innerHTML = `<strong>Confiança:</strong> ${plan.confidence_score || 'N/A'}`;
                 
                 li.appendChild(planDesc);
                 li.appendChild(planConfidence);
@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (initialMessage) {
         const formText = initialMessage.innerHTML.replace(
             'You can also use the form below',
-            '<a href="#" class="scroll-to-form">You can also use the form below</a>'
+            '<a href="#" class="scroll-to-form">També pots utilitzar el formulari següent</a>'
         );
         initialMessage.innerHTML = formText;
         
