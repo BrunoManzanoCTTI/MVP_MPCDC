@@ -206,7 +206,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "serviceci", "ASORG", "ASGRP", "categorization_tier_1", "categorization_tier_2",
             "categorization_tier_3", "product_cat_tier_1", "product_cat_tier_2", "product_cat_tier_3",
             "change_request_status", "f01_chr_tipoafectacion"
-            // "infrastructure_change_id" is also collected but primarily for identification/logging, not a direct model input feature.
         ];
 
         modelFeatures.forEach(feature => {
@@ -220,14 +219,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // infrastructure_change_id is handled by the loop above if present in FormData
-        // If it's required but could be missing from the form, ensure it's handled:
-        if (!('infrastructure_change_id' in changeData) || changeData['infrastructure_change_id'] === "") {
-            // Decide if it should be null or if an error should be thrown if it's mandatory and missing
-            // For now, let's assume it might be sent as empty and the backend handles it or it's truly optional for the API call itself.
-            // If it's strictly required by the API and not just for model features, validation might be needed here or on the backend.
-        }
-
         try {
             showLoading();
             
@@ -284,8 +275,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const planDesc = document.createElement('p');
                 // Correctly access plan.plan_description based on the actual key from LLM/console
-                console.log("Value of plan.plan BEFORE marked.parseInline:", plan.plan); 
-                planDesc.innerHTML = marked.parseInline(plan.plan || "No s'ha proporcionat cap descripció."); 
+                console.log("Value of plan.description BEFORE marked.parseInline:", plan.description); 
+                planDesc.innerHTML = marked.parseInline(plan.description || "No s'ha proporcionat cap descripció."); 
 
                 const planConfidence = document.createElement('p');
                 planConfidence.className = 'plan-confidence';
