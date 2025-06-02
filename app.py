@@ -108,7 +108,7 @@ model = genai.GenerativeModel(
 chat_session = model.start_chat()
 
 # Path to the equivalence CSV
-EQUIVALENCE_CSV_PATH = "AI_Failure_Prediction_and_Prevention_for_CTTI.csv"
+EQUIVALENCE_CSV_PATH = "equivalence_mapping.csv"
 
 # Define the feature columns that the new model expects as input (before indexing)
 # These are the raw names from your form/data.
@@ -181,7 +181,7 @@ def load_equivalence_map(csv_path):
         # IMPORTANT: Assuming the CSV is not excessively large for memory
         df_equiv = pd.read_csv(csv_path)
         for _, row in df_equiv.iterrows():
-            equiv_map[(row['Column'], row['Label'])] = row['Index']
+            equiv_map[(row['Column'], row['Value'])] = row['Index']
         app.logger.info(f"Successfully loaded {len(equiv_map)} mappings.")
         return equiv_map
     except FileNotFoundError:
@@ -241,7 +241,26 @@ def create_feature_vector(raw_data):
             # Given the model structure (all StringIndexed), all inputs are effectively treated as strings
             # before indexing. So, ensure label_value is string for lookup.
             
-            current_label_for_lookup = str(label_value)
+            # current_label_for_lookup = str(label_value) # Original line to be replaced
+
+            # New logic:
+            # Strip whitespace first for all potential labels
+            processed_label_value = str(label_value).strip()
+
+            if raw_feature_name in ["submit_date", "scheduled_start_date", "scheduled_end_date"]:
+                try:
+                    # Input format from datetime-local is typically 'YYYY-MM-DDTHH:MM'
+                    dt_obj = datetime.strptime(processed_label_value, '%Y-%m-%dT%H:%M')
+                    # Convert to the format in EQUIVALENCE_MAP: 'dd/mm/YYYY HH:MM:SS'
+                    current_label_for_lookup = dt_obj.strftime('%d/%m/%Y %H:%M:%S')
+                    app.logger.info(f"For date column '{raw_feature_name}', attempted conversion from '{processed_label_value}' to '{current_label_for_lookup}' for map lookup.")
+                except ValueError:
+                    # This can happen if processed_label_value is empty, not a date, or not in the expected 'T' format.
+                    app.logger.warning(f"Could not parse date string '{processed_label_value}' for column '{raw_feature_name}' as 'YYYY-MM-DDTHH:MM'. Using raw (stripped) value for lookup: '{processed_label_value}'.")
+                    current_label_for_lookup = processed_label_value # Fallback to the stripped original
+            else:
+                current_label_for_lookup = processed_label_value
+            # End of new logic
 
             index = EQUIVALENCE_MAP.get((raw_feature_name, current_label_for_lookup))
             if index is not None:
